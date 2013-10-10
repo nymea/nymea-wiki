@@ -15,7 +15,7 @@ If the download is finished, unzip and flash the image to the SD card.
 Under linux you can do that with the command (make shore the SD is not mounted)
 > replace /dev/sdX with your SD path -> you can find out with the command `fdisk -l`
 
-`dd if=/path/to/image/version-wheezy.img of=/dev/sdX bs=4M`
+laptop$`dd if=/path/to/image/version-wheezy.img of=/dev/sdX bs=4M`
 
 This could take some minutes...
 
@@ -24,7 +24,7 @@ To connect over ssh with the RPi we have to find out what IP address the RPi got
 
 >**replace** 10.10.10.1 with the IP from your router
 
-`nmap -sP 10.10.10.1/24`
+laptop$`nmap -sP 10.10.10.1/24`
 
 you should see something like this:
 
@@ -37,6 +37,11 @@ Now we can ssh login into the RPi in the terminal.
 
 `ssh pi@10.10.10.52`
 
-If you want to change the password type `passwd`, enter the current password and than two times your new password. You need to install several packages to compile 
+If you want to change the password type `passwd`, enter the current password and than two times your new password. You need to install several packages to compile hive:
+
+`pi$ sudo apt-get update`
+
+`pi$ sudo apt-get upgrade`
+
 
 
