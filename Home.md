@@ -10,6 +10,7 @@ To getting started with th code you need:
 * a breadbord or something similar to connect the RF-modules to the GPIO Pins of the RPi
 
 # Setting up Raspberry Pi
+### On the Linux PC
 First we need the latest Raspbian image [download](http://www.raspberrypi.org/downloads).
 If the download is finished, unzip and flash the image to the SD card.
 Under linux you can do that with the command (make shore the SD is not mounted)
@@ -37,11 +38,21 @@ Now we can ssh login into the RPi in the terminal.
 
 `ssh pi@10.10.10.52`
 
+### On the Raspberry Pi
 If you want to change the password type `passwd`, enter the current password and than two times your new password. You need to install several packages to compile hive:
 
-`pi$ sudo apt-get update`
+`sudo apt-get update`
 
-`pi$ sudo apt-get upgrade`
+`sudo apt-get upgrade`
 
+For this application we need the _wiringPi_ lib from [wiringPi](http://wiringpi.com/download-and-install/). To install this lib we have to do following commands:
 
+`cd ~`
 
+`mkdir development`
+
+`cd development/`
+
+`git clone git://git.drogon.net/wiringPi`
+
+`cd wiringPi/`
