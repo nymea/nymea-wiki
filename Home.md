@@ -46,3 +46,5 @@ If you want to change the password type `passwd`, enter the current password and
 `sudo apt-get upgrade`
 
 For this application we need the _wiringPi_ lib from [wiringPi](http://wiringpi.com/download-and-install/). To install this lib we have to do following commands:
+
+To setup the Qt 5 on RPi follow this [guide](http://www.ics.com/blog/building-qt-5-raspberry-pi#.Ulcn1pyPlv9)
