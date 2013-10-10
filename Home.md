@@ -28,11 +28,9 @@ To connect over ssh with the RPi we have to find out what IP address the RPi got
 
 you should see something like this:
 
-_MAC Address: B8:27:EB:57:AC:CA (Raspberry Pi Foundation)_
-
-_Nmap scan report for 10.10.10.41_
-
-_Host is up (0.0068s latency).`_
+_Nmap scan report for 10.10.10.52
+Host is up (0.013s latency).
+MAC Address: B8:27:EB:57:AC:CA (Raspberry Pi Foundation)_
 
 Now we can ssh login into the RPi in the terminal.
 > default user: _pi_ , password: _raspberry_
