@@ -33,5 +33,10 @@ Host is up (0.013s latency).
 MAC Address: B8:27:EB:57:AC:CA (Raspberry Pi Foundation)_
 
 Now we can ssh login into the RPi in the terminal.
-> default user: _pi_ , password: _raspberry_
+> **replace** 10.10.10.52 with the IP from your RPi | default user: _pi_ , password: _raspberry_
+
+`ssh pi@10.10.10.52`
+
+If you want to change the password type `passwd`, enter the current password and than two times your new password. You need to install several packages to compile 
+
 
