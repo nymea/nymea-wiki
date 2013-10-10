@@ -46,13 +46,3 @@ If you want to change the password type `passwd`, enter the current password and
 `sudo apt-get upgrade`
 
 For this application we need the _wiringPi_ lib from [wiringPi](http://wiringpi.com/download-and-install/). To install this lib we have to do following commands:
-
-`cd ~`
-
-`mkdir development`
-
-`cd development/`
-
-`git clone git://git.drogon.net/wiringPi`
-
-`cd wiringPi/`
