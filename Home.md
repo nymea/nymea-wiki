@@ -12,7 +12,8 @@ To getting started with th code you need:
 # Setting up Raspberry Pi
 First we need the latest Raspbian image [download](http://www.raspberrypi.org/downloads).
 If the download is finished we have to flash the image to the SD card.
-Under linux you can do that with the command (replace /dev/sdX with your SD path -> you can find out with the command `fdisk -l`)
+Under linux you can do that with the command
+> replace /dev/sdX with your SD path -> you can find out with the command `fdisk -l`
 
 `dd if=/path/to/image/version-wheezy.img of=/dev/sdX bs=1M`
 
@@ -20,14 +21,15 @@ This could take some minutes...
 
 Now we have our image on the SD card and we boot our system. Put the SD into the RPI, connect the LAN cabel and start the RPi.
 To connect over ssh with the RPi we have to find out what IP address the RPi got from the router. A easy way to do that in the terminal is the following commend !!
-**replace** 10.10.10.1 with the IP from your router
+
+>**replace** 10.10.10.1 with the IP from your router
 
 `nmap -sP 10.10.10.1/24`
 
 you should see something like this:
->MAC Address: B8:27:EB:57:AC:CA (Raspberry Pi Foundation)
->Nmap scan report for 10.10.10.41
->Host is up (0.0068s latency).
 
+_MAC Address: B8:27:EB:57:AC:CA (Raspberry Pi Foundation)_
+_Nmap scan report for 10.10.10.41_
+_Host is up (0.0068s latency).`_
 
 
