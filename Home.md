@@ -3,7 +3,7 @@ Hive is a home automation platform for the raspberry pi and can contoll several 
 
 For this project a custom wheezy image was created with all the packages needed for this project (Qt 5.1.2, ruby 2.1, Rails 4 ecc.). The image currently is just available for the developer team, so please be patient, the end-users image will be published in 2014. 
 
-##Tabel of content
+#Tabel of content
 * [Getting started](https://github.com/HiveFive/Hive/wiki/_preview#getting-started)
     * [Setting up Raspberry Pi](https://github.com/HiveFive/Hive/wiki/_preview#setting-up-raspberry-pi)
 
@@ -14,11 +14,10 @@ To getting started with the code you need:
 * SD Card (minimum 8 GB SD or SDHC card)
 * a breadbord or something similar to connect the RF-modules to the GPIO Pins of the RPi
 
-## Setting up Raspberry Pi
-### On the Linux PC
-First we have to download the latest hive-wheezy-image from the [hiveyourhome.org FTP](http://www.hiveyourhome.org/) area (just available for the hive developer team, sorry).
+## Setup Raspberry Pi SD
+First we have to download the latest hive-wheezy-image from the [hiveyourhome.org FTP](http://www.hiveyourhome.org/) area (currently just available for the hive developer team, sorry).
 If the download is finished, unzip and flash the image to the SD card.
-Under linux (or Mac OSX) you can do that with the command (make shore the SD is not mounted)
+Under linux and Mac OSX you can do that with the command (make shore the SD is not mounted)
 > replace /dev/sdX with your SD path -> you can find out with the command `fdisk -l` (under Mac OSX `diskutil list`
 
 `dd if=/path/to/image/version-wheezy.img of=/dev/sdX bs=4M`
@@ -46,7 +45,11 @@ Now we can ssh login into the RPi in the terminal.
 
 `ssh hive@10.10.10.52`
 
-### Basic setups on your Raspberry Pi
-If you want to change the password type `passwd`, enter the current password and than two times your new password. You need to install several packages to compile hive:
+## Customize your new system on the Raspberry Pi
+### Change your password
+If you want to change the password type `passwd`, enter the current password and than two times your new password.
 
+### Setup your WiFi network
+
+### Compile and execute the Hive sourcecode
 
