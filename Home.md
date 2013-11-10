@@ -4,9 +4,11 @@ Hive is a home automation platform for the raspberry pi and can contoll several 
 For this project a custom wheezy image was created with all the packages needed for this project (Qt 5.1.2, ruby 2.1, Rails 4 ecc.). The image currently is just available for the developer team, so please be patient, the end-users image will be published in 2014. 
 
 #Tabel of content
-* [Getting started](https://github.com/HiveFive/Hive/wiki/_preview#getting-started)
-    * [Setting up Raspberry Pi](https://github.com/HiveFive/Hive/wiki/_preview#setting-up-raspberry-pi)
-
+* [Getting started](https://github.com/HiveFive/Hive/wiki#getting-started)
+* [Setup Raspberry Pi SD ](https://github.com/HiveFive/Hive/wiki#setup-raspberry-pi-sd)
+* [Customize your new system on the Raspberry Pi](https://github.com/HiveFive/Hive/wiki#customize-your-new-system-on-the-raspberry-pi)
+    * [Change your password](https://github.com/HiveFive/Hive/wiki#change-your-password)
+    * [Setup your WLAN network](https://github.com/HiveFive/Hive/wiki#setup-your-WLAN-network)
 ##Getting started
 To getting started with the code you need:
 * Raspberry Pi (Model B)
@@ -49,7 +51,7 @@ Now we can ssh login into the RPi in the terminal.
 ### Change your password
 If you want to change the password type `passwd`, enter the current password and than two times your new password.
 
-### Setup your WiFi network
+### Setup your WLAN network
 
 ### Compile and execute the Hive sourcecode
 
