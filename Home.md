@@ -8,8 +8,8 @@ For this project a custom wheezy image was created with all the packages needed 
 * [Setup Raspberry Pi SD ](https://github.com/HiveFive/Hive/wiki#setup-raspberry-pi-sd)
 * [Customize your new system on the Raspberry Pi](https://github.com/HiveFive/Hive/wiki#customize-your-new-system-on-the-raspberry-pi)
     * [Change your password](https://github.com/HiveFive/Hive/wiki#change-your-password)
-    * [Setup your WLAN network](https://github.com/HiveFive/Hive/wiki/_preview#setup-your-wlan-network)
-    * [Compile and execute the Hive sourcecode](https://github.com/HiveFive/Hive/wiki/_preview#compile-and-execute-the-hive-sourcecode)
+    * [Setup your WLAN network](https://github.com/HiveFive/Hive/wiki#setup-your-wlan-network)
+    * [Compile and execute the Hive sourcecode](https://github.com/HiveFive/Hive/wiki#compile-and-execute-the-hive-sourcecode)
 
 ##Getting started
 To getting started with the code you need:
