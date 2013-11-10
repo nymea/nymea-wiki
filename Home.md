@@ -44,9 +44,8 @@ Now we can ssh login into the RPi in the terminal.
 ### On the Raspberry Pi
 If you want to change the password type `passwd`, enter the current password and than two times your new password. You need to install several packages to compile hive:
 
-`sudo apt-get update`
-
-`sudo apt-get upgrade`
+    sudo apt-get update
+    sudo apt-get upgrade
 
 For this application we need the _wiringPi_ lib from [wiringPi](http://wiringpi.com/download-and-install/). To install this lib we have to do following commands:
 
