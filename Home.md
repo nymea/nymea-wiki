@@ -8,7 +8,7 @@ For this project a custom wheezy image was created with all the packages needed 
 * [Setup Raspberry Pi SD ](https://github.com/HiveFive/Hive/wiki#setup-raspberry-pi-sd)
 * [Customize your new system on the Raspberry Pi](https://github.com/HiveFive/Hive/wiki#customize-your-new-system-on-the-raspberry-pi)
     * [Change your password](https://github.com/HiveFive/Hive/wiki#change-your-password)
-    * [Setup your WLAN network](https://github.com/HiveFive/Hive/wiki#setup-your-wlan-network)
+    * [Setup your WLAN network](https://github.com/HiveFive/Hive/wiki/#setup-your-wlan-network)
     * [Compile and execute the Hive sourcecode](https://github.com/HiveFive/Hive/wiki#compile-and-execute-the-hive-sourcecode)
 
 ##Getting started
@@ -50,9 +50,26 @@ Now we can ssh login into the RPi in the terminal.
 `ssh hive@10.10.10.52`
 
 ## Customize your new system on the Raspberry Pi
+now you should be logged in as hive user in your system.
 ### Change your password
 If you want to change the password type `passwd`, enter the current password and than two times your new password.
 
 ### Setup your WLAN network
+first you can look if your WiFi stick got recognized by the system. With `lsusb` you should see something like this:
+
+`Bus 001 Device 004: ID 7392:7811 Edimax Technology Co., Ltd EW-7811Un 802.11n Wireless Adapter [Realtek RTL8188CUS]`
+
+With following command you can check all networkinterfaces:
+
+`ifconfig`
+
+if the wlan0 interface appears you can try to scan for your networks with the command:
+
+> NOTE: if you want all information about the visible networks just run `iwlist scan`
+
+`iwlist scan | grep ESSID`
+
+
+
 
 ### Compile and execute the Hive sourcecode
