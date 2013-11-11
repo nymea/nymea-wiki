@@ -69,7 +69,9 @@ if the wlan0 interface appears you can try to scan for your networks with the co
 
 `iwlist scan | grep ESSID`
 
+Now you can try to connect to your WiFi network. To do that automaticaly you need to create a wpa_passphrase an add you network into /etc/wpa_supplicant/wpa_supplicant.conf
 
-
+    hive@hivepi ~ $ sudo su
+    [root@hivepi hive]# wpa_passphrase "my_essid" "secret_password" >> /etc/wpa_supplicant/wpa_supplicant.conf
 
 ### Compile and execute the Hive sourcecode
