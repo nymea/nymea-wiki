@@ -6,10 +6,12 @@ For this project a custom wheezy image was created with all the packages needed 
 #Tabel of content
 * [Getting started](https://github.com/HiveFive/Hive/wiki#getting-started)
 * [Setup Raspberry Pi SD ](https://github.com/HiveFive/Hive/wiki#setup-raspberry-pi-sd)
-* [Customize your new system on the Raspberry Pi](https://github.com/HiveFive/Hive/wiki#customize-your-new-system-on-the-raspberry-pi)
+* [Customize your new system on the Raspberry Pi](https://github.com/HiveFive/Hive/wiki#customize-your-new-
+system-on-the-raspberry-pi)
     * [Change your password](https://github.com/HiveFive/Hive/wiki#change-your-password)
     * [Setup your WLAN network](https://github.com/HiveFive/Hive/wiki/#setup-your-wlan-network)
     * [Compile and execute the Hive sourcecode](https://github.com/HiveFive/Hive/wiki#compile-and-execute-the-hive-sourcecode)
+    * [Mount the image on the laptop](https://github.com/HiveFive/Hive/wiki#wiki-mount-the-image-on-the-laptop)
 
 ##Getting started
 To getting started with the code you need:
