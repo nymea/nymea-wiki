@@ -80,6 +80,7 @@ Now you can try to connect to your WiFi network. To do that automaticaly you nee
 
 run the udate_hive.sh in the hive home directory...
 
+`cd ~`
 `./update_hive.sh`
 
 this skript updates hive. if everything is ok you can run hive simple with the command hive. If any errors occure, please send me the ~/updatelog.txt file.
