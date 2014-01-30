@@ -75,3 +75,15 @@ Now you can try to connect to your WiFi network. To do that automaticaly you nee
     [root@hivepi hive]# wpa_passphrase "my_essid" "secret_password" >> /etc/wpa_supplicant/wpa_supplicant.conf
 
 ### Compile and execute the Hive sourcecode
+
+run the udate_hive.sh in the hive home directory...
+
+`./update_hive.sh`
+
+this skript updates hive. if everything is ok you can run hive simple with the command hive. If any errors occure, please send me the ~/updatelog.txt file.
+
+### Compile and execute the Hive sourcecode
+change something in the image without booting on raspberry pi:
+
+`sudo mount -o loop,offset=62914560 20140130_hive-wheezy.img /mnt/hiveimage`
+
