@@ -82,8 +82,9 @@ run the udate_hive.sh in the hive home directory...
 
 this skript updates hive. if everything is ok you can run hive simple with the command hive. If any errors occure, please send me the ~/updatelog.txt file.
 
-### Compile and execute the Hive sourcecode
-change something in the image without booting on raspberry pi:
-
+### Mount the image on the laptop
+if you want to mount the image on the laptop run following command:
 `sudo mount -o loop,offset=62914560 20140130_hive-wheezy.img /mnt/hiveimage`
+if you change something in the image and unmount it you can reflash the system with this changes...
+
 
