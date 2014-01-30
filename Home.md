@@ -85,6 +85,7 @@ this skript updates hive. if everything is ok you can run hive simple with the c
 ### Mount the image on the laptop
 if you want to mount the image on the laptop run following command:
 `sudo mount -o loop,offset=62914560 20140130_hive-wheezy.img /mnt/hiveimage`
+
 if you change something in the image and unmount it you can reflash the system with this changes...
 
 
