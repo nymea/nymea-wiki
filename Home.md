@@ -10,8 +10,8 @@ For this project a custom wheezy image was created with all the packages needed 
 system-on-the-raspberry-pi)
     * [Change your password](https://github.com/HiveFive/guh/wiki#change-your-password)
     * [Setup your WLAN network](https://github.com/HiveFive/guh/wiki/#setup-your-wlan-network)
-    * [Compile and execute the Hive sourcecode](https://github.com/HiveFive/guh/wiki#wiki-compile-and-execute-the-hive-sourcecode
-    * [Mount the image on the laptop](https://github.com/HiveFive/Hive/wiki#wiki-mount-the-image-on-the-laptop)
+    * [Compile and execute the guh sourcecode](https://github.com/HiveFive/guh/wiki#wiki-compile-and-execute-the-guh-sourcecode
+    * [Mount the image on the laptop](https://github.com/HiveFive/guh/wiki#wiki-mount-the-image-on-the-laptop)
 
 ##Getting started
 To getting started with the code you need:
@@ -21,7 +21,7 @@ To getting started with the code you need:
 * a breadbord or something similar to connect the RF-modules to the GPIO Pins of the RPi
 
 ## Setup Raspberry Pi SD
-First we have to download the latest guh-wheezy-image from the [hiveyourhome.org FTP](http://www.hiveyourhome.org/) area (currently just available for the hive developer team, sorry).
+First we have to download the latest guh-wheezy-image from the [guh.guru FTP](http://www.guh.guru/) area (currently just available for the guh developer team, sorry).
 If the download is finished, unzip and flash the image to the SD card.
 Under linux and Mac OSX you can do that with the command (make shore the SD is not mounted)
 > replace /dev/sdX with your SD path -> you can find out with the command `fdisk -l` (under Mac OSX `diskutil list`
@@ -47,12 +47,12 @@ you should see something like this:
     MAC Address: B8:27:EB:57:AC:CA (Raspberry Pi Foundation)
 
 Now we can ssh login into the RPi in the terminal.
-> **replace** 10.10.10.52 with the IP from your RPi |-> default user: _hive_ , password: _hive_
+> **replace** 10.10.10.52 with the IP from your RPi |-> default user: _guh_ , password: _guh_
 
-`ssh hive@10.10.10.52`
+`ssh guh@10.10.10.52`
 
 ## Customize your new system on the Raspberry Pi
-now you should be logged in as hive user in your system.
+now you should be logged in as guh user in your system.
 ### Change your password
 If you want to change the password type `passwd`, enter the current password and than two times your new password.
 
@@ -73,22 +73,22 @@ if the wlan0 interface appears you can try to scan for your networks with the co
 
 Now you can try to connect to your WiFi network. To do that automaticaly you need to create a wpa_passphrase an add you network into /etc/wpa_supplicant/wpa_supplicant.conf
 
-    hive@hivepi ~ $ sudo su
-    [root@hivepi hive]# wpa_passphrase "my_essid" "secret_password" >> /etc/wpa_supplicant/wpa_supplicant.conf
+    guh@guhpi ~ $ sudo su
+    [root@guhpi hive]# wpa_passphrase "my_essid" "secret_password" >> /etc/wpa_supplicant/wpa_supplicant.conf
 
-### Compile and execute the Hive sourcecode
+### Compile and execute the guh sourcecode
 
-run the udate_hive.sh in the hive home directory...
+run the udate_guh.sh in the guh home directory...
 
 `cd ~`
 
-`./update_hive.sh`
+`./update_guh.sh`
 
-this skript updates hive. if everything is ok you can run hive simple with the command hive. If any errors occure, please send me the ~/updatelog.txt file.
+this skript updates guh. if everything is ok you can run guh simple with the command guh. If any errors occure, please send me the ~/updatelog.txt file.
 
 ### Mount the image on the laptop
 if you want to mount the image on the laptop run following command:
-`sudo mount -o loop,offset=62914560 20140130_hive-wheezy.img /mnt/hiveimage`
+`sudo mount -o loop,offset=62914560 20140130_guh-wheezy.img /mnt/guhimage`
 
 if you change something in the image and unmount it you can reflash the system with this changes...
 
