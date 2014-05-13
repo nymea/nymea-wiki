@@ -1,16 +1,16 @@
-#Hive wiki
-Hive is a home automation platform for the raspberry pi and can contoll several RF-Modules like swiches and sensors...
+#guh wiki
+guh is a home automation platform for the raspberry pi and can contoll several RF-Modules like swiches and sensors...
 
 For this project a custom wheezy image was created with all the packages needed for this project (Qt 5.1.2, ruby 2.1, Rails 4 ecc.). The image currently is just available for the developer team, so please be patient, the end-users image will be published in 2014. 
 
 #Tabel of content
-* [Getting started](https://github.com/HiveFive/Hive/wiki#getting-started)
-* [Setup Raspberry Pi SD ](https://github.com/HiveFive/Hive/wiki#setup-raspberry-pi-sd)
-* [Customize your new system on the Raspberry Pi](https://github.com/HiveFive/Hive/wiki#customize-your-new-
+* [Getting started](https://github.com/HiveFive/guh/wiki#getting-started)
+* [Setup Raspberry Pi SD ](https://github.com/HiveFive/guh/wiki#setup-raspberry-pi-sd)
+* [Customize your new system on the Raspberry Pi](https://github.com/HiveFive/guh/wiki#customize-your-new-
 system-on-the-raspberry-pi)
-    * [Change your password](https://github.com/HiveFive/Hive/wiki#change-your-password)
-    * [Setup your WLAN network](https://github.com/HiveFive/Hive/wiki/#setup-your-wlan-network)
-    * [Compile and execute the Hive sourcecode](https://github.com/HiveFive/Hive/wiki#wiki-compile-and-execute-the-hive-sourcecode)
+    * [Change your password](https://github.com/HiveFive/guh/wiki#change-your-password)
+    * [Setup your WLAN network](https://github.com/HiveFive/guh/wiki/#setup-your-wlan-network)
+    * [Compile and execute the Hive sourcecode](https://github.com/HiveFive/guh/wiki#wiki-compile-and-execute-the-hive-sourcecode
     * [Mount the image on the laptop](https://github.com/HiveFive/Hive/wiki#wiki-mount-the-image-on-the-laptop)
 
 ##Getting started
@@ -21,7 +21,7 @@ To getting started with the code you need:
 * a breadbord or something similar to connect the RF-modules to the GPIO Pins of the RPi
 
 ## Setup Raspberry Pi SD
-First we have to download the latest hive-wheezy-image from the [hiveyourhome.org FTP](http://www.hiveyourhome.org/) area (currently just available for the hive developer team, sorry).
+First we have to download the latest guh-wheezy-image from the [hiveyourhome.org FTP](http://www.hiveyourhome.org/) area (currently just available for the hive developer team, sorry).
 If the download is finished, unzip and flash the image to the SD card.
 Under linux and Mac OSX you can do that with the command (make shore the SD is not mounted)
 > replace /dev/sdX with your SD path -> you can find out with the command `fdisk -l` (under Mac OSX `diskutil list`
