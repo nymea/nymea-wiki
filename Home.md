@@ -10,7 +10,7 @@ For this project a custom wheezy image was created with all the packages needed 
 system-on-the-raspberry-pi)
     * [Change your password](https://github.com/HiveFive/guh/wiki#change-your-password)
     * [Setup your WLAN network](https://github.com/HiveFive/guh/wiki/#setup-your-wlan-network)
-    * [Compile and execute the guh sourcecode](https://github.com/HiveFive/guh/wiki#wiki-compile-and-execute-the-guh-sourcecode
+    * [Compile and execute the guh sourcecode](https://github.com/HiveFive/guh/wiki#wiki-compile-and-execute-the-guh-sourcecode)
     * [Mount the image on the laptop](https://github.com/HiveFive/guh/wiki#wiki-mount-the-image-on-the-laptop)
 
 ##Getting started
