@@ -1,2 +1,2 @@
-# Set up *guh* on the Beaglebone Black
+# Install *guh*-core on the Beaglebone Black
 --------------------------------------------

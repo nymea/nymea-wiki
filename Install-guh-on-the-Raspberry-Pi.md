@@ -1,2 +1,3 @@
-# Set up *guh* on Ubuntu
+# Install *guh*-core on the Raspberry Pi
 --------------------------------------------
+
