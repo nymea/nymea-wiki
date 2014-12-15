@@ -3,7 +3,7 @@
 *guh*-core can be installed from the [*guh* repository](http://repo.guh.guru/) which provides amd64 packages for 
 
 * [Ubuntu 14.04 LTS (Trusty Thar)](https://github.com/guh/guh/wiki/Install-guh-on-Ubuntu#ubuntu-1404-lts)
-* [Ubuntu 14.10 (Utopic Unicorn)]()
+* [Ubuntu 14.10 (Utopic Unicorn)](https://github.com/guh/guh/wiki/Install-guh-on-Ubuntu#ubuntu-1410)
 
 
 ## Ubuntu 14.04 LTS
