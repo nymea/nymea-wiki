@@ -5,7 +5,6 @@
 * [Ubuntu 14.04 LTS (Trusty Thar)](https://github.com/guh/guh/wiki/Install-guh-core-on-Ubuntu#ubuntu-1404-lts)
 * [Ubuntu 14.10 (Utopic Unicorn)](https://github.com/guh/guh/wiki/Install-guh-core-on-Ubuntu#ubuntu-1410)
 
-
 ## Ubuntu 14.04 LTS
 --------------------------------------------
 In order to install *guh* on Ubuntu 14.04 LTS amd64 you need to add the *guh*-repository to your `/etc/apt/sources.list`:
