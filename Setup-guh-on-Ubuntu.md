@@ -1,3 +1,2 @@
-# *guh* on the Raspberry Pi
+# Set up *guh* on Ubuntu
 --------------------------------------------
-

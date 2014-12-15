@@ -1,3 +1,2 @@
-# *guh* on the Raspberry Pi
+# Compile the *guh* source code
 --------------------------------------------
-
