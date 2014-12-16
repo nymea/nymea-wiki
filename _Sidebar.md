@@ -1,4 +1,5 @@
+**[[Home]]**
 **[[Getting started]]**
-
-* [[Install]]
-** [[Raspberry Pi]]
+* [[Raspberry Pi]]
+* [[Beaglebone Black]]
+* [[Ubuntu]]
