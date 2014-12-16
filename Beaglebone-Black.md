@@ -7,6 +7,8 @@
 * [Install *guh*](https://github.com/guh/guh/wiki/Beaglebone-Black#install-guh)
 * [Autostart *guh* on boot](https://github.com/guh/guh/wiki/Beaglebone-Black#autostart-guh-on-boot)
 
+--------------------------------------------
+
 ## Install Ubuntu Trusty
 In order to install guh on the [Beaglebone Black](http://beagleboard.org/black) we recomand to use the Ubuntu Trusty 14.04 LTS image. A verry good an easy installation instruction for the microSD card can be found here: 
 
