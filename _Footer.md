@@ -1,1 +1,1 @@
-[guh](https://www.guh.guru) | [Home](https://github.com/guh/guh/wiki) | [Getting started](https://github.com/guh/guh/wiki/Getting-started)
+[Home](https://github.com/guh/guh/wiki) | [Getting started](https://github.com/guh/guh/wiki/Getting-started)

@@ -1,4 +1,5 @@
 **[[Home]]**
+* [[Structure]]
 
 **[[Getting started]]**
 * [[Raspberry Pi]]
