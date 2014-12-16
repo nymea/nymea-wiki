@@ -5,9 +5,9 @@
 ## Install *guh*-core
 Depending on the your platform and operating system, you can choose between following installation instructions:
 
-* [Ubuntu (64.Bit)](https://github.com/guh/guh/wiki/Install-guh-core-on-Ubuntu) 
-* [Raspberry Pi](https://github.com/guh/guh/wiki/Install-guh-on-the-Raspberry-Pi)
-* [Beaglebone Black - (armhf)](https://github.com/guh/guh/wiki/Install-guh-on-the-Beaglebone-Black)
+* [[Ubuntu]]
+* [[Raspberry Pi]]
+* [[Beaglebone Black]]
 
 or you can compile the source code for your own platform / system by following 
 
