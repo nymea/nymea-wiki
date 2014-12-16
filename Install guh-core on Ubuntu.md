@@ -11,7 +11,7 @@ In order to install *guh* on Ubuntu 14.04 LTS amd64 you need to add the *guh*-re
 
 Open the file source list:
     
-    $ nano /etc/apt/sources.list
+    $ sudo nano /etc/apt/sources.list
         
 add the repository at the end of the file:
     
@@ -50,7 +50,7 @@ guh provides following packages:
 
 install guh with following command:
     
-    $ apt-get install guh
+    $ sudo apt-get install guh
     
 Once, the installation is finised you can start the core with following command:
 
@@ -62,7 +62,7 @@ In order to install *guh* on Ubuntu 14.10 amd64 you need to add the *guh*-reposi
 
 Open the file source list:
     
-    $ nano /etc/apt/sources.list
+    $ sudo nano /etc/apt/sources.list
         
 add the repository at the end of the file:
     
@@ -101,7 +101,7 @@ guh provides following packages:
 
 install guh with following command:
     
-    $ apt-get install guh
+    $ sudo apt-get install guh
     
 Once, the installation is finised you can start the core with following command:
 

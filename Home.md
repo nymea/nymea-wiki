@@ -11,3 +11,5 @@ The whole system has basically three layers:
 2. [*guh* rails:](https://github.com/guh/guh_rails) the *guh* rails application is an application written in [Ruby on Rails](http://rubyonrails.org/) and contains a webserver which provides a REST api. This application communicates directly with the core and translates the JSON-RPC to the REST api.
 
 3. [*guh* angular:](https://github.com/guh/guh_angular) the *guh* angular application is an application written in [AngularJS](https://angularjs.org/) and provides the browser based user interface. The application uses the REST api from the guh rails server and offers the user an easy and beautiful possibility to interact with his home. 
+
+# Getting started
