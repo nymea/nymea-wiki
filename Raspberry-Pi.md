@@ -13,10 +13,10 @@ This tutorial shows you how to install *guh* on the [Raspberry Pi](http://www.ra
         * [...using Windows](https://github.com/guh/guh/wiki/Raspberry-Pi#using-windows)
     * [2. Copy files](https://github.com/guh/guh/wiki/Raspberry-Pi#2-copy-files-to-sd-card)
     * [3. Install *guh*](https://github.com/guh/guh/wiki/Raspberry-Pi#3-install-guh)
-    * [Install *guh* on existing debian *jessie*]()
+    * [Install *guh* on existing debian *jessie*](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-existing-debian-jessie)
 * [Install *guh* on debian *wheezy*](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-wheezy)
-    * Add Qt repository
-    * Install *guh*
+    * [Add Qt repository](https://github.com/guh/guh/wiki/Raspberry-Pi#add-qt-repository)
+    * [Install *guh*](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh)
 
 --------------------------------------------
 ## Install *guh* on debian *jessie*
@@ -123,45 +123,91 @@ Now you have to format the new partition to vfat (FAT32).
 #### ...using Windows
 > Comming soon...
 
-
 ### 2. Copy files to SD card
 
--> First you need to mount the created partition from your SD card
+This step should be clear for Windows and MacOS users. Just download the latest [guh-netinstall-v0.X.X.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip) and unzip the file to the new 64 MB partition. 
 
-    mount -t vfat /dev/sdb1 /mnt/raspberry-rootfs/
+Also Linux users can do that with the mouse, but for the completeness here are the concole instructions:
 
--> change directory to the partition
 
-    cd /mnt/raspberry-rootfs/
+mount the SD card:
+    
+    $ sudo mkdir /mnt/raspberry-boot/
+    $ sudo mount -t vfat /dev/sdb1 /mnt/raspberry-boot/    
+    $ cd /mnt/raspberry-boot/
 
--> download the latest guh-netinstall-v0.X.X.zip file ([link](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip))
+download the latest latest [guh-netinstall-v0.X.X.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip) file:
 
-    wget http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip
+    $ sudo wget http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip
 
--> unzip the file
+unzip the file:
 
-    unzip guh-netinstall-v0.1.5.zip
+    $ sudo unzip guh-netinstall-v0.1.5.zip
 
--> remove the zip file
+delete the zip file:
 
-    rm guh-netinstall-v0.1.5.zip
+    $ sudo rm guh-netinstall-v0.1.5.zip
 
--> umount the partition
+umount the partition:
 
-    cd ../
-    umount /dev/sdb1
+    $ cd ../
+    $ sudo umount /dev/sdb1
 
 ###  3. Install *guh*
-Insert your prepared SD card into your Raspberry Pi, connect the ethernet cable (internet connection needed) and then connect the power supply.
+Insert your prepared SD card into your Raspberry Pi, connect the ethernet cable (internet connection needed) and then connect the power supply. That's it! Now you have to wait ~20-30 minutes. Once the installation is finished, the new system will reboot. 
 
-> Note: The order of connection is important. Now you have to wait ~20-30 minutes. You can follow the installation process if you connect a display. When the installation is finished, the new system will reboot and is ready for you:
+> **Note:** It's important to connect the network cable **before** you connect the power cable! DHCP will be one of the first things during the installation!
 
-    ssh root@192.168.1.51
-    password: guh
+> Info: You can follow the installation process if you connect the Raspberry Pi to a HDMI display!
+> Info: The log file of the whole *guh*-installation process can be found in `/var/log/installer.log`.
+
+In order to check if the installation has finished you can try to connect over ssh to the Raspberry Pi. When the installation has finished, the Raspberry Pi will reboot and boot the fresh system and you will be able to connect:
+
+    $ ssh root@192.168.1.51
+    $ password: guh
+
+Now you have a fresh, clean and minimalistic installation of debian *jessie* with *guh*. The root password is `guh`!
+
+You can proceed with the [[Getting started]] instructions.
 
 ### Install *guh* on existing debian *jessie*
+If you allready have a debian jessie installation and want to install *guh* you need to add the *guh*-repository to your `/etc/apt/sources.list`:
 
+1. Add the [*guh*-repo](http://repo.guh.guru/) to the source list file:
+        
+        $ sudo nano /etc/apt/sources.list
+            
+    append following two lines at the end of the file:
+    
+        ## guh repo
+        deb http://repo.guh.guru jessie main
 
+2. Update your package lists:
+    
+        $ sudo apt-get update
+    
+    The *guh*-repo provides following packages:
+    
+        $ apt-cache search guh
+    
+        guh - server for home automation systems - meta package
+        guh-dbg - server for home automation systems - debug symbols
+        guh-doc - documentation for the guh package (on-site)
+        guh-plugins - server for home automation systems - plugins
+        guh-tests - tests for the guh package
+        guhd - server for home automation systems
+        libguh1 - server for home automation systems - core library
+        libguh1-dev - server for home automation systems - development files
+
+3. Install *guh* with following command:
+    
+        $ sudo apt-get install guh libgl1-mesa-dev -y --force-yes
+        
+    > Note: you need to install the packages without verification.
+
+    The repository contains always the latest stable build of the *guh* `master` branch. 
+
+Once, the installation is finised you continue with the [[Getting started]] instruction.
 
 --------------------------------------------
 ## Install *guh* on debian *wheezy*
