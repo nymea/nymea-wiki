@@ -21,15 +21,17 @@ This tutorial shows you how to install *guh* on the [Raspberry Pi](http://www.ra
 --------------------------------------------
 ## Install *guh* on debian *jessie*
 
-If you want a fresh, new and minimal installation of *guh* on the Raspberry Pi, we recommand to use the [raspbian-netinstall](https://github.com/guh/raspbian-netinstall-config) provided by *guh*, which will install everything you need to run *guh*. Basically you just need to do following three steps:
+If you want a fresh, new and minimal installation of *guh* on the [Raspberry Pi](http://www.raspberrypi.org/), we recommand to use the [raspbian-netinstall](https://github.com/guh/raspbian-netinstall-config) provided by *guh*, which will install everything you need to run *guh*. Basically you just need to do following three steps:
 
-1. Create a `64 Mb FAT32` partition (has to be the only partition) on the SD (1GB is enought).
-2. mount the parition and unzip the latest [guh-netinstall-v0.X.X.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip) file on it.
-3. Insert the SD card into the Raspberry Pi, connect the network cable, connect the current cable and wait until the Raspberry Pi performs a reboot.
+1. delete all partitions of the SD card (minimal size of 1GB) and create a new single `64 Mb FAT32` partition.
+2. Mount the parition and unzip the latest [guh-netinstall-v0.X.X.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip) file on it.
+3. Insert the SD card into the Raspberry Pi, connect the network cable, connect the power cable and wait until the Raspberry Pi performs a reboot.
+
+This procedure will install the whole system directly from the internet with the newest packages and a preconfigured guh installation.
 
 ### 1. Prepare the SD card 
 
-In this step we delete all partitions of the SD card and create a single `64 Mb FAT32` partition.
+In this step we delete all partitions of the SD card and create a new single `64 Mb FAT32` partition.
 
 #### ...using Linux
 Assuming your SD card is the device `/dev/sdb`...
@@ -105,7 +107,7 @@ Now your partition table should look like this (`p`):
     Device     Boot Start    End Sectors Size Id Type
     /dev/sdb1        2048 133119  131072  64M 83 Linux
     
-write the table to disk and exit using `w`
+write the partition table to the disk and exit using `w`
 
     Command (m for help): w
     
@@ -154,7 +156,7 @@ umount the partition:
     $ sudo umount /dev/sdb1
 
 ###  3. Install *guh*
-Insert your prepared SD card into your Raspberry Pi, connect the ethernet cable (internet connection needed) and then connect the power supply. That's it! Now you have to wait ~20-30 minutes. Once the installation is finished, the new system will reboot. 
+Insert your prepared SD card into your [Raspberry Pi](http://www.raspberrypi.org/), connect the ethernet cable (internet connection needed) and then connect the power supply. That's it! Now you have to wait ~20-30 minutes. Once the installation is finished, the new system will reboot. 
 
 > **Note:** It's important to connect the network cable **before** you connect the power cable! DHCP will be one of the first things during the installation!
 
