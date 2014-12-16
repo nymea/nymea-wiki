@@ -6,18 +6,16 @@ This tutorial shows you how to install *guh* on the [Raspberry Pi](http://www.ra
 
 ## Table of contents:
 
-* Install *guh* on debian *jessie*
-    1. Prepare the SD card  
-        * ...using Linux
-        * ...using MacOS
-        * ...using Windows
-    2. Copy files
-    3. Install *guh*
-* Install *guh* on debian *wheezy*
-    * Prepare the SD card  
-        * ...using Linux
-        * ...using MacOS
-        * ...using Windows
+* [Install *guh* on debian *jessie*](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie)
+    * [1. Prepare the SD card](https://github.com/guh/guh/wiki/Raspberry-Pi#1-prepare-the-sd-card)  
+        * [...using Linux](https://github.com/guh/guh/wiki/Raspberry-Pi#using-linux)
+        * [...using MacOS](https://github.com/guh/guh/wiki/Raspberry-Pi#using-macos)
+        * [...using Windows](https://github.com/guh/guh/wiki/Raspberry-Pi#using-windows)
+    * [2. Copy files](https://github.com/guh/guh/wiki/Raspberry-Pi#2-copy-files-to-sd-card)
+    * [3. Install *guh*](https://github.com/guh/guh/wiki/Raspberry-Pi#3-install-guh)
+    * [Install *guh* on existing debian *jessie*]()
+* [Install *guh* on debian *wheezy*](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-wheezy)
+    * Add Qt repository
     * Install *guh*
 
 --------------------------------------------
@@ -126,7 +124,7 @@ Now you have to format the new partition to vfat (FAT32).
 > Comming soon...
 
 
-## 2. Copy files to SD card
+### 2. Copy files to SD card
 
 -> First you need to mount the created partition from your SD card
 
@@ -153,7 +151,7 @@ Now you have to format the new partition to vfat (FAT32).
     cd ../
     umount /dev/sdb1
 
-##  3. Install *guh*
+###  3. Install *guh*
 Insert your prepared SD card into your Raspberry Pi, connect the ethernet cable (internet connection needed) and then connect the power supply.
 
 > Note: The order of connection is important. Now you have to wait ~20-30 minutes. You can follow the installation process if you connect a display. When the installation is finished, the new system will reboot and is ready for you:
@@ -161,16 +159,17 @@ Insert your prepared SD card into your Raspberry Pi, connect the ethernet cable 
     ssh root@192.168.1.51
     password: guh
 
-
+### Install *guh* on existing debian *jessie*
 
 
 
 --------------------------------------------
 ## Install *guh* on debian *wheezy*
 > Comming soon...
-
-
-
+### Add Qt repository
+> Comming soon...
+### Install *guh*
+> Comming soon...
 
 
 
