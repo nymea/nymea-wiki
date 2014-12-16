@@ -1,12 +1,11 @@
 **[[Home]]**
 * [[Structure]]
 
-**[[Getting started]]**
-
 **[[Install]]**
 
+* [[Ubuntu]]
 * [[Raspberry Pi]]
 * [[Beaglebone Black]]
-* [[Ubuntu]]
 * [[Compile guh]]
 
+**[[Getting started]]**

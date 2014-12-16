@@ -1,1 +1,1 @@
-[Home](https://github.com/guh/guh/wiki) | [Getting started](https://github.com/guh/guh/wiki/Getting-started)
+[[Home]] | [[Install]] | [[Getting started]]
