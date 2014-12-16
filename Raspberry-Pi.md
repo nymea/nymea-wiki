@@ -156,14 +156,15 @@ umount the partition:
     $ sudo umount /dev/sdb1
 
 ###  3. Install *guh*
-Insert your prepared SD card into your [Raspberry Pi](http://www.raspberrypi.org/), connect the ethernet cable (internet connection needed) and then connect the power supply. That's it! Now you have to wait ~20-30 minutes. Once the installation is finished, the new system will reboot. 
+Insert your prepared SD card into your [Raspberry Pi](http://www.raspberrypi.org/), connect the ethernet cable (internet connection needed) and then connect the power supply. That's it! Now you have to wait ~20-30 minutes. Once the installation is finished, the Raspberry Pi will reboot and boot into the new system. 
 
 > **Note:** It's important to connect the network cable **before** you connect the power cable! DHCP will be one of the first things during the installation!
 
 > Info: You can follow the installation process if you connect the Raspberry Pi to a HDMI display!
+
 > Info: The log file of the whole *guh*-installation process can be found in `/var/log/installer.log`.
 
-In order to check if the installation has finished you can try to connect over ssh to the Raspberry Pi. When the installation has finished, the Raspberry Pi will reboot and boot the fresh system and you will be able to connect:
+In order to check if the installation has finished you can try to connect over `ssh` to the Raspberry Pi. When the installation has finished, the Raspberry Pi will reboot and boot the fresh system...and you will be able to connect:
 
     $ ssh root@192.168.1.51
     $ password: guh
@@ -213,10 +214,15 @@ Once, the installation is finised you continue with the [[Getting started]] inst
 
 --------------------------------------------
 ## Install *guh* on debian *wheezy*
+
 > Comming soon...
+
 ### Add Qt repository
+
 > Comming soon...
+
 ### Install *guh*
+
 > Comming soon...
 
 
