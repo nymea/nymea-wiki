@@ -10,7 +10,7 @@ The whole system has basically three layers:
 
 In following figure you can see the structure of the whole system:
 
-![Structure of guhOS](wiki/images/structure.png)
+![Structure of guhOS](wiki/wiki/images/structure.png)
 
 
 
