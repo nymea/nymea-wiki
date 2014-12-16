@@ -9,6 +9,6 @@ Depending on the your platform and operating system, you can choose between foll
 * [[Raspberry Pi]]
 * [[Beaglebone Black]]
 
-or you can compile the source code for your own platform / system by following 
+If you want to use *guh*-core somewere else, you can also compile the code by using following instructions:
 
 * [Compile the *guh*-core source code](https://github.com/guh/guh/wiki/Compile-guh)

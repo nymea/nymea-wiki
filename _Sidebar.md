@@ -3,7 +3,7 @@
 
 **[[Getting started]]**
 
-**Installation**
+**[[Install]]**
 
 * [[Raspberry Pi]]
 * [[Beaglebone Black]]
