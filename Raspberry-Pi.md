@@ -23,7 +23,7 @@ This tutorial shows you how to install *guh* on the [Raspberry Pi](http://www.ra
 
 If you want a fresh, new and minimal installation of *guh* on the [Raspberry Pi](http://www.raspberrypi.org/), we recommand to use the [raspbian-netinstall](https://github.com/guh/raspbian-netinstall-config) provided by *guh*, which will install everything you need to run *guh*. Basically you just need to do following three steps:
 
-1. delete all partitions of the SD card (minimal size of 1GB) and create a new single `64 Mb FAT32` partition.
+1. Delete all partitions of the SD card (minimal size of 1GB) and create a new single `64 Mb FAT32` partition.
 2. Mount the parition and unzip the latest [guh-netinstall-v0.X.X.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip) file on it.
 3. Insert the SD card into the Raspberry Pi, connect the network cable, connect the power cable and wait until the Raspberry Pi performs a reboot.
 
@@ -160,9 +160,9 @@ Insert your prepared SD card into your [Raspberry Pi](http://www.raspberrypi.org
 
 > **Note:** It's important to connect the network cable **before** you connect the power cable! DHCP will be one of the first things during the installation!
 
-> Info: You can follow the installation process if you connect the Raspberry Pi to a HDMI display!
+> **Info:** You can follow the installation process if you connect the Raspberry Pi to a HDMI display!
 
-> Info: The log file of the whole *guh*-installation process can be found in `/var/log/installer.log`.
+> **Info:** The log file of the whole *guh*-installation process can be found in `/var/log/installer.log`.
 
 In order to check if the installation has finished you can try to connect over `ssh` to the Raspberry Pi. When the installation has finished, the Raspberry Pi will reboot and boot the fresh system...and you will be able to connect:
 
