@@ -50,12 +50,11 @@ guh provides following packages:
 
 install guh with following command:
     
-    $ sudo apt-get install guh
+    $ sudo apt-get install guh -y --force-yes
     
-Once, the installation is finised you can start the core with following command:
+The repository contains always the latest stable build of the *guh* `master` branch. 
+Once, the installation is finised you continue with the [[Getting started]] instruction.
 
-    $ guhd
-    
 ## Ubuntu 14.10
 --------------------------------------------
 In order to install *guh* on Ubuntu 14.10 amd64 you need to add the *guh*-repository to your `/etc/apt/sources.list`:
@@ -101,9 +100,8 @@ guh provides following packages:
 
 install guh with following command:
     
-    $ sudo apt-get install guh
+    $ sudo apt-get install guh -y --force-yes
     
-Once, the installation is finised you can start the core with following command:
-
-    $ guhd
+The repository contains always the latest stable build of the *guh* `master` branch. 
+Once, the installation is finised you continue with the [[Getting started]] instruction.
     
