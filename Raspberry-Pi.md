@@ -176,7 +176,11 @@ Umount the partition:
     $ sudo umount /dev/sdb1
 
 ###  3. Install *guh*
-Insert your prepared SD card into your [Raspberry Pi](http://www.raspberrypi.org/), connect the ethernet cable (internet connection needed) and then connect the power supply. That's it! Now you have to wait ~20-30 minutes. Once the installation is finished, the Raspberry Pi will reboot and boot into the new system. 
+Insert your prepared SD card into your [Raspberry Pi](http://www.raspberrypi.org/), connect the ethernet cable (internet connection needed) and then connect the power supply. 
+
+**That's it!**
+
+Now you have to wait ~20-30 minutes. Once the installation is finished, the Raspberry Pi will reboot and boot into the new system. 
 
 > **Note:** It's important to connect the network cable **before** you connect the power cable! DHCP will be one of the first things during the installation!
 
