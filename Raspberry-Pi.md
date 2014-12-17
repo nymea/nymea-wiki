@@ -120,7 +120,20 @@ Now you have to format the new partition to vfat (FAT32).
     $ sudo mkfs.vfat /dev/sdb1
 
 #### ...using MacOS
-> Coming soon...
+In order to prepare the SD card under MacOS, you need to download the SD Formatter 4.0 for Mac. The *Disk Utility* application from MacOS some how does not fotmat the FAT32 patition corretly. 
+
+1. Download the the *SD Formatter 4.0* application from following link:
+    [https://www.sdcard.org/downloads/formatter_4/eula_mac/](https://www.sdcard.org/downloads/formatter_4/eula_mac/)
+
+    You need to agree to the *End User License Agreement* to download the application.
+    
+2. Install the application by opening the downloaded file `pkg` file and follow the wizard.
+
+3. Open the application (you need to enter your password), choose "Quick Format", name the partiiton to "Boot" and click  `Format `:
+
+    ![SD Formatter MacOS](images/macos-sd-formatter.png)
+    
+Once the formating is complete you can continue with step [2. Copy files](https://github.com/guh/guh/wiki/Raspberry-Pi#2-copy-files-to-sd-card)
 
 #### ...using Windows
 > Coming soon...
