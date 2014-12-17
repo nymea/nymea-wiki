@@ -10,7 +10,7 @@
 --------------------------------------------
 
 ## Install Ubuntu Trusty
-In order to install guh on the [Beaglebone Black](http://beagleboard.org/black) we recomand to use the Ubuntu Trusty 14.04 LTS image. A verry good an easy installation instruction for the microSD card can be found here: 
+In order to install guh on the [Beaglebone Black](http://beagleboard.org/black) we recommend to use the Ubuntu Trusty 14.04 LTS image. A very good an easy installation instruction for the microSD card can be found here: 
 
 > Note: this will delete all data from your microSD card!
 
@@ -19,7 +19,7 @@ In order to install guh on the [Beaglebone Black](http://beagleboard.org/black) 
 [Installation of Ubuntu Trusty 14.04 LTS on the BeagleBone Black](http://www.armhf.com/boards/beaglebone-black/bbb-sd-install/)
 
 ### Install Ubuntu to eMMC (internal flash drive)
-Once you have installed Ubuntu Trusty 14.04 LTS on your microSD you can connect the network cable and power on the Beaglebone Black. This description works theoreticaly with eny other distribution (not tested).
+Once you have installed Ubuntu Trusty 14.04 LTS on your microSD you can connect the network cable and power on the Beaglebone Black. This description works theoretically with any other distribution (not tested).
 
 1. Finding the Beaglebone Black in the network. Assuming the router has the ip `192.168.1.1` you can use `nmap` for discovering your device:
     
@@ -33,7 +33,7 @@ Once you have installed Ubuntu Trusty 14.04 LTS on your microSD you can connect 
         
     > Note: the device with *Texas Instruments* in it is possibly the Beaglebone Black.
 
-2. SSH login to the Beaglebone Black with the user `ubuntu` and the password `ubuntu` (also the nativ root password): 
+2. SSH login to the Beaglebone Black with the user `ubuntu` and the password `ubuntu` (also the native root password): 
         
         $ ssh ubuntu@192.168.1.51
         
@@ -62,7 +62,7 @@ Once you have installed Ubuntu Trusty 14.04 LTS on your microSD you can connect 
         $ sudo mkfs.vfat /dev/mmcblk1p1
         $ sudo mkfs.ext4 /dev/mmcblk1p2
     
-5. Mount the partions:
+5. Mount the partitions:
     
         $ sudo mkdir /mnt/boot
         $ sudo mount /dev/mmcblk1p1 /mnt/boot/
@@ -83,11 +83,11 @@ Once you have installed Ubuntu Trusty 14.04 LTS on your microSD you can connect 
 
 ## Install *guh*
 
-> Comming soon...
+> Coming soon...
 
 ## Autostart *guh* on boot
 
-> Comming soon...
+> Coming soon...
 
 
 

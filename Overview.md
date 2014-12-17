@@ -1,6 +1,6 @@
 # Overview of *guh*-core
 --------------------------------------------
-A detailed documentation of the source code can be found in the [*guh* | developer documentation](http://dev.guh.guru/).The source code of *guh* is basicaly structured in three moduls:
+A detailed documentation of the source code can be found in the [*guh* | developer documentation](http://dev.guh.guru/). The source code of *guh* is basically structured in three modules:
 
 * ***server:*** The *guh* server is the instance that communicates with the hardware and provides a JSON-RPC interface for communicating with the clients. It also contains the rule engine and the core application. The detailed documentation of it can be found [here](http://dev.guh.guru/server-module.html).
 

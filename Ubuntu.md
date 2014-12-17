@@ -13,7 +13,7 @@ In order to install *guh* on Ubuntu 14.04 LTS amd64 you need to add the *guh*-re
         
         $ sudo nano /etc/apt/sources.list
             
-    append following two lines at the end of the file:
+    Append following two lines at the end of the file:
     
         ## guh repo
         deb http://repo.guh.guru trusty main
@@ -56,7 +56,7 @@ In order to install *guh* on Ubuntu 14.04 LTS amd64 you need to add the *guh*-re
 
     The repository contains always the latest stable build of the *guh* `master` branch. 
 
-Once, the installation is finised you continue with the [[Getting started]] instruction.
+Once, the installation is finished you continue with the [[Getting started]] instruction.
 
 ## Ubuntu 14.10
 --------------------------------------------
@@ -66,7 +66,7 @@ In order to install *guh* on Ubuntu 14.10 amd64 you need to add the *guh*-reposi
         
         $ sudo nano /etc/apt/sources.list
             
-    append following two lines at the end of the file:
+    Append following two lines at the end of the file:
     
         ## guh repo
         deb http://repo.guh.guru utopic main
@@ -109,5 +109,5 @@ In order to install *guh* on Ubuntu 14.10 amd64 you need to add the *guh*-reposi
     
     The repository contains always the latest stable build of the *guh* `master` branch. 
 
-Once, the installation is finised you continue with the [[Getting started]] instruction.
+Once, the installation is finished you continue with the [[Getting started]] instruction.
     
