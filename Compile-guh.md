@@ -4,34 +4,33 @@ This tutorial shows you how to compile *guh*.
 
 *guh* is written in [Qt](http://qt-project.org/) which is a full development framework with tools designed to streamline the creation of applications and user interfaces for desktop, embedded, and mobile platforms. With Qt, you can reuse code efficiently to target multiple platforms with one code base.
 
-**You need a Qt version >= 5.2.1**
+**You need a Qt version >= 5.2**
 
 Officially is *guh* only supported on Linux platforms, which means this guide is for Linux users only.
 
 --------------------------------------------
 ## Compile *guh* with QtCreator
 
-1. If you want to open the *guh*-project wit the Qt-SDK (`qtcreator`), you need to install the needed packages either from the official repository of your distribution 
+1. If you want to open the *guh*-project wit the Qt-SDK (`qtcreator`), you have to install the needed packages either from the official repository of your distribution 
 
         $ sudo apt-get install build-essential qt5-default qtcreator git
 
-    or you can install Qt manually with the *Qt Installer for Linux*. All neccessary downloads can be found here:
+    or you can install Qt manually with the *Qt Installer for Linux*. All necessary downloads can be found here:
 
     [Download Qt](http://www.qt.io/download-open-source/#)
 
 2. Once you installed Qt you can clone the *guh* source code:
-    > **Note:** It's good practice to create a subfolder with the name of the application. The QtCreator will create by default a build directory next to the source folder. This keeps the source folder free of output and binary files. 
+    > **Note:** It's good practice to create a sub folder with the name of the application. The QtCreator will create by default a build directory next to the source folder. This keeps the source folder free of output and binary files. 
 
         $ mkdir guh
         $ cd guh/
         $ git clone https://github.com/guh/guh.git
 
-    Now open the project file (`/guh/guh/guh.pro`) with the QtCreator and configure your project. You can use the default setting, which will create a `build-guh-<Kit>-Debug` directory next to the source code directory where all build output files and binarys will be generated.
+    Now open the project file (`/guh/guh/guh.pro`) with the QtCreator and configure your project. You can use the default setting, which will create a `build-guh-<Kit>-Debug` directory next to the source code directory where all build output files and binary's will be generated.
 
 3. In order to speed up the the compilation process you need to know how many CPU's you have:
 
         $ nproc
-        
         8
         
     In the QtCreator (`guh.pro` opened) do following steps:
@@ -39,10 +38,11 @@ Officially is *guh* only supported on Linux platforms, which means this guide is
     * Go to *Projects* on the left side of the window.
     * Go to the *Build* tab of your Kit
     * Under *Build Steps* click on *Detail* of the `Make:` line
-    * Write in the *Make arguments* feeld: `-j9`
+    * Write in the *Make arguments* field: `-j9`
+    
     > **Note:** the `-j` argument specifies the number of jobs (commands) to run simultaneously. With `n` CPU's you can run `n+1` jobs.
 
-4. Press the *Build* button on the bottom left of the QtCreator window (or press `Ctrl + b`) and follow the build process in the *Compile output* section (`Alt` + `4`).
+4. Press the *Build* button on the bottom left of the QtCreator window (or `Ctrl + b`) and follow the build process in the *Compile output* section (`Alt` + `4`).
 
 5. Before you can run the fresh compiled *guh* binary, you need to export the library path to the libguh, otherwise you will get following message:
     
@@ -72,7 +72,7 @@ You can proceed with the [[Getting started]] instructions.
         $ sudo apt-get install build-essential qt5-default git
 
 2. Clone the source code git repository:
-   > **Note:** It's good practice to create a subfolder with the name of the application and create a build directory next to the source directory. This keeps the source folder free of output and binary files. 
+   > **Note:** It's good practice to create a sub-folder with the name of the application and create a build directory next to the source directory. This keeps the source folder free of output and binary files. 
         
         $ mkdir guh
         $ cd guh/
@@ -90,7 +90,6 @@ You can proceed with the [[Getting started]] instructions.
 5. In order to speed up the the compilation process you need to know how many CPU's you have:
     
         $ nproc
-        
         8  
         
     Compile *guh*:
@@ -103,7 +102,7 @@ You can proceed with the [[Getting started]] instructions.
 
     * If you want to install your compiled *guh* version you can type following command in the build directory:
 
-        $ sudo make install    
+            $ sudo make install    
     
     * If you don't want to install the application you need to export the library path to the libguh before you can start the application, otherwise you will get following message:
     
@@ -118,10 +117,10 @@ You can proceed with the [[Getting started]] instructions.
     
 > **Note:** ensure that there is no other *guh* installation in your system. If you already have installed *guh* somewhere, there could be a collision with the different libs!
     
-    Now you can run *guh* with following command:
+Now you can run *guh* with following command:
 
-        $ cd build-guh/server/
-        $ ./guhd
+    $ cd build-guh/server/
+    $ ./guhd
 
 You can proceed with the [[Getting started]] instructions.
 
