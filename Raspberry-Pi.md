@@ -8,8 +8,7 @@ This tutorial shows you how to install *guh* on the [Raspberry Pi](http://www.ra
 
 * [Install *guh* on Debian *jessie* (minimal **net-install** system)](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-minimal-net-install-system)
     * [1. Prepare the SD card](https://github.com/guh/guh/wiki/Raspberry-Pi#1-prepare-the-sd-card)  
-    * [2. Copy files](https://github.com/guh/guh/wiki/Raspberry-Pi#2-copy-files-to-sd-card)
-    * [3. Install](https://github.com/guh/guh/wiki/Raspberry-Pi#3-install)
+    * [2. Install](https://github.com/guh/guh/wiki/Raspberry-Pi#2-install)
 * [Install *guh* on Debian *jessie* (existing system)](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-existing-system)
 * [Install *guh* on Debian *wheezy*](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-wheezy)
     * [Add Qt repository](https://github.com/guh/guh/wiki/Raspberry-Pi#add-qt-repository)
@@ -120,40 +119,6 @@ Now you have to format the new partition to vfat (FAT32).
 
     $ sudo mkfs.vfat /dev/sdb1
 
-Once the formatting is finished you can continue with step [2. Copy files](https://github.com/guh/guh/wiki/Raspberry-Pi#2-copy-files-to-sd-card)
-
---------------------------------------------
-#### ...using MacOS
-In order to prepare the SD card under MacOS, you need to download the SD Formatter 4.0 for Mac. The *Disk Utility* application from MacOS some how does not format the FAT32 partition correctly. 
-
-1. Download the the *SD Formatter 4.0* application from following link:
-    [https://www.sdcard.org/downloads/formatter_4/eula_mac/](https://www.sdcard.org/downloads/formatter_4/eula_mac/)
-
-    You need to agree to the *End User License Agreement* to download the application.
-    
-2. Install the application by opening the downloaded `pkg` file and follow the wizard.
-
-3. Open the application (you need to enter your password), choose "*Quick Format*" option, name the partition to "BOOT" and click the `Format` button:
-
-    > **Note:** this will delete all data from your SD card!
-
-    ![SD Formatter MacOS](images/macos-sd-formatter.png)
-    
-Once the formatting is finished you can continue with step [2. Copy files](https://github.com/guh/guh/wiki/Raspberry-Pi#2-copy-files-to-sd-card)
-
---------------------------------------------
-#### ...using Windows
-> Coming soon...
-
---------------------------------------------
-### 2. Copy files to SD card
-
-This step should be clear for Windows and MacOS users. Just download the latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip) and unzip the file to the formated BOOT partition. 
-
-> **Note:** the files have to be in the `/` directory of the SD card. There shouldn't be any folders on the partition. 
-
-Also Linux users can do that with the mouse, but for the completeness here are the console instructions:
-
 Mount the SD card:
     
     $ sudo mkdir /mnt/raspberry-boot/
@@ -177,7 +142,61 @@ Umount the partition:
     $ cd ../
     $ sudo umount /dev/sdb1
 
-###  3. Install
+
+Now you can continue with the installation step: [2. Install](https://github.com/guh/guh/wiki/Raspberry-Pi#2-install).
+
+--------------------------------------------
+#### ...using MacOS
+In order to prepare the SD card under MacOS, you need to download the SD Formatter 4.0 for Mac. The *Disk Utility* application from MacOS some how does not format the FAT32 partition correctly. 
+
+1. Download the the *SD Formatter 4.0* application from following link:
+    [https://www.sdcard.org/downloads/formatter_4/eula_mac/](https://www.sdcard.org/downloads/formatter_4/eula_mac/)
+
+    You need to agree to the *End User License Agreement* to download the application.
+    
+2. Install the application by opening the downloaded `pkg` file and following the wizard.
+
+3. Open the application (you need to enter your password), choose "*Quick Format*" option, name the partition to "BOOT" and click the `Format` button:
+
+    > **Note:** this will delete all data from your SD card!
+
+    ![SD Formatter MacOS](images/macos-sd-formatter.png)
+    
+4. Unzip the latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip) to the BOOT partition on the SD card:
+
+    ![SD card directory](images/macos-sd-directory.png)
+    
+    
+Now you can continue with the installation step: [2. Install](https://github.com/guh/guh/wiki/Raspberry-Pi#2-install).
+
+--------------------------------------------
+#### ...using Windows
+
+In order to prepare the SD card under Windows, you need to download the SD Formatter 4.0. 
+
+1. Download the the *SD Formatter 4.0* application from following link:
+    [https://www.sdcard.org/downloads/formatter_4/eula_windows/](https://www.sdcard.org/downloads/formatter_4/eula_windows/)
+
+    You need to agree to the *End User License Agreement* to download the application.
+    
+2. Install the application by opening the downloaded `setup.exe` file and following the wizard.
+
+3. Open the application (you need to enter your password), choose "*Quick Format*" option, name the partition to "BOOT" and click the `Format` button:
+
+    > **Note:** this will delete all data from your SD card!
+
+    ![SD Formatter Windows](images/windows-sd-formatter.png)
+    
+    ![SD Formatter Windows Complete](windows-sd-formatter-complete.png)
+
+4. Unzip the latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip) to the BOOT partition on the SD card:
+
+    ![SD card directory](images/windows-sd-directory.png)
+    
+    
+Now you can continue with the installation step: [2. Install](https://github.com/guh/guh/wiki/Raspberry-Pi#2-install).
+
+###  2. Install
 Insert your prepared SD card into your [Raspberry Pi](http://www.raspberrypi.org/), connect the ethernet cable (internet connection needed) and then connect the power supply. 
 
 **That's it!**
