@@ -1,30 +1,27 @@
 # Install *guh*-core on the Raspberry Pi
 --------------------------------------------
 
-This tutorial shows you how to install *guh* on the [Raspberry Pi](http://www.raspberrypi.org/). The easiest and recommended way is to use the [raspbian-netinstall](https://github.com/guh/raspbian-netinstall-config) provided by *guh* 
+This tutorial shows you how to install *guh* on the [Raspberry Pi](http://www.raspberrypi.org/). The easiest and recommended way is to use the [guh-netinstall](https://github.com/guh/raspbian-netinstall-config) provided by *guh* 
 > Thanks to the awesome work of [raspbian-ua-netinst](https://github.com/debian-pi/raspbian-ua-netinst).
 
 ## Table of contents:
 
-* [Install *guh* on Debian *jessie*](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie)
+* [Install *guh* on Debian *jessie* (minimal **net-install** system)](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie)
     * [1. Prepare the SD card](https://github.com/guh/guh/wiki/Raspberry-Pi#1-prepare-the-sd-card)  
-        * [...using Linux](https://github.com/guh/guh/wiki/Raspberry-Pi#using-linux)
-        * [...using MacOS](https://github.com/guh/guh/wiki/Raspberry-Pi#using-macos)
-        * [...using Windows](https://github.com/guh/guh/wiki/Raspberry-Pi#using-windows)
     * [2. Copy files](https://github.com/guh/guh/wiki/Raspberry-Pi#2-copy-files-to-sd-card)
-    * [3. Install *guh*](https://github.com/guh/guh/wiki/Raspberry-Pi#3-install-guh)
-    * [Install *guh* on existing Debian *jessie*](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-existing-debian-jessie)
+    * [3. Install](https://github.com/guh/guh/wiki/Raspberry-Pi#3-install-guh)
+* [Install *guh* on Debian *jessie* (existing system)](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-existing-debian-jessie)
 * [Install *guh* on Debian *wheezy*](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-wheezy)
     * [Add Qt repository](https://github.com/guh/guh/wiki/Raspberry-Pi#add-qt-repository)
     * [Install *guh*](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh)
 
 --------------------------------------------
-## Install *guh* on Debian *jessie*
+## Install *guh* on Debian *jessie* (minimal **net-install** system)
 
-If you want a fresh, new and minimal installation of *guh* on the [Raspberry Pi](http://www.raspberrypi.org/), we recommand to use the [raspbian-netinstall](https://github.com/guh/raspbian-netinstall-config) provided by *guh*, which will install everything you need to run *guh*. Basically you just need to do following three steps:
+If you want a fresh, new and minimal installation of *guh* on the [Raspberry Pi](http://www.raspberrypi.org/), we recommand to this tutorial, which will install everything you need to run *guh*. Basically you just need to do following three steps:
 
-1. Delete all partitions of the SD card (minimal size of 1GB) and create a new single `64 Mb FAT32` partition.
-2. Mount the parition and unzip the latest [guh-netinstall-v0.X.X.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip) file on it.
+1. Delete all partitions of the SD card (minimal size of 1GB) and create a new single `FAT32` partition.
+2. Mount the parition and unzip the latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip) file on it.
 3. Insert the SD card into the Raspberry Pi, connect the network cable, connect the power cable and wait until the Raspberry Pi performs a reboot.
 
 This procedure will install the whole system directly from the internet with the newest packages and a pre-configured guh installation.
@@ -151,7 +148,7 @@ Once the formatting is finished you can continue with step [2. Copy files](https
 --------------------------------------------
 ### 2. Copy files to SD card
 
-This step should be clear for Windows and MacOS users. Just download the latest [guh-netinstall-v0.X.X.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip) and unzip the file to the formated BOOT partition. 
+This step should be clear for Windows and MacOS users. Just download the latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip) and unzip the file to the formated BOOT partition. 
 
 > **Note:** the files have to be in the `/` directory of the SD card. There shouldn't be any folders on the partition. 
 
@@ -163,7 +160,7 @@ Mount the SD card:
     $ sudo mount -t vfat /dev/sdb1 /mnt/raspberry-boot/    
     $ cd /mnt/raspberry-boot/
 
-Download the latest latest [guh-netinstall-v0.X.X.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip) file:
+Download the latest latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip) file:
 
     $ sudo wget http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip
 
@@ -180,7 +177,7 @@ Umount the partition:
     $ cd ../
     $ sudo umount /dev/sdb1
 
-###  3. Install *guh*
+###  3. Install
 Insert your prepared SD card into your [Raspberry Pi](http://www.raspberrypi.org/), connect the ethernet cable (internet connection needed) and then connect the power supply. 
 
 **That's it!**
@@ -203,7 +200,7 @@ Now you have a fresh, clean and minimal installation of Debian *jessie* with *gu
 You can proceed with the [[Getting started]] instructions.
 
 --------------------------------------------
-### Install *guh* on existing Debian *jessie*
+## Install *guh* on existing Debian *jessie*
 If you already have a Debian *jessie* installation and want to install *guh* you need to add the *guh*-repository to your `/etc/apt/sources.list`:
 
 1. Add the [*guh*-repo](http://repo.guh.guru/) to the source list file:
@@ -236,7 +233,7 @@ If you already have a Debian *jessie* installation and want to install *guh* you
     
         $ sudo apt-get install guh libgl1-mesa-dev -y --force-yes
         
-    > Note: you need to install the packages without verification.
+    > **Note:** you need to install the packages without verification.
 
     The repository contains always the latest stable build of the *guh* `master` branch. 
 
@@ -248,9 +245,18 @@ Once, the installation is finished you continue with the [[Getting started]] ins
 > Coming soon...
 
 ### Add Qt repository
+       
+Thanks to [Sébastien Noel](http://twolife.be/raspbian/)
 
-> Coming soon...
+    $ sudo echo "deb http://twolife.be/raspbian/ wheezy main backports" >> /etc/apt/sources.list.d/twolife.list
+    $ sudo echo "deb-src http://twolife.be/raspbian/ wheezy main backports" >> /etc/apt/sources.list.d/twolife.list
 
+    $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 2578B775
+
+    $ apt-get update
+    $ apt-get upgrade
+    
+    
 ### Install *guh*
 
 > Coming soon...
