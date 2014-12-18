@@ -9,7 +9,7 @@ This tutorial shows you how to compile *guh*.
 Officially is *guh* only supported on Linux platforms, which means this guide is for Linux users only.
 
 --------------------------------------------
-## Compile *guh* with QtCreator
+## Compile *guh* with the QtCreator
 
 1. If you want to open the *guh*-project wit the Qt-SDK (`qtcreator`), you have to install the needed packages either from the official repository of your distribution 
 
@@ -114,10 +114,10 @@ You can proceed with the [[Getting started]] instructions.
             $ export LD_LIBRARY_PATH=/PATH_TO_GUH/guh/build-guh/libguh/
     
         To make it permanent, you can add this line to the `/etc/bash.bashrc` file. 
-    
-> **Note:** ensure that there is no other *guh* installation in your system. If you already have installed *guh* somewhere, there could be a collision with the different libs!
-    
+        
 Now you can run *guh* with following command:
+
+> **Note:** ensure that there is no other *guh* installation in your system. If you already have installed *guh* somewhere, there could be a collision with the different libs!
 
     $ cd build-guh/server/
     $ ./guhd
@@ -125,3 +125,19 @@ Now you can run *guh* with following command:
 You can proceed with the [[Getting started]] instructions.
 
 ## *qmake* configuration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
