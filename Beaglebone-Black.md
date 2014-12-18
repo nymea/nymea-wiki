@@ -18,6 +18,7 @@ In order to install guh on the [Beaglebone Black](http://beagleboard.org/black) 
 
 [Installation of Ubuntu Trusty 14.04 LTS on the BeagleBone Black](http://www.armhf.com/boards/beaglebone-black/bbb-sd-install/)
 
+--------------------------------------------
 ### Install Ubuntu to eMMC (internal flash drive)
 Once you have installed Ubuntu Trusty 14.04 LTS on your microSD you can connect the network cable and power on the Beaglebone Black. This description works theoretically with any other distribution (not tested).
 
@@ -81,10 +82,12 @@ Once you have installed Ubuntu Trusty 14.04 LTS on your microSD you can connect 
     
 8. Poweroff the Beaglebone Black, remove the microSD card and boot into your brand new Ubuntu Trusty 14.04 LTS.
 
+--------------------------------------------
 ## Install *guh*
 
 > Coming soon...
 
+--------------------------------------------
 ## Autostart *guh* on boot
 
 > Coming soon...

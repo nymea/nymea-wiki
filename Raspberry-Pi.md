@@ -29,12 +29,14 @@ If you want a fresh, new and minimal installation of *guh* on the [Raspberry Pi]
 
 This procedure will install the whole system directly from the internet with the newest packages and a pre-configured guh installation.
 
+--------------------------------------------
 ### 1. Prepare the SD card 
 
 In this step we delete all partitions of the SD card and create a new single `64 Mb FAT32` partition.
 
 > **Note:** this will delete all data from your SD card!
 
+--------------------------------------------
 #### ...using Linux
 Assuming your SD card is the device `/dev/sdb`...
 
@@ -123,6 +125,7 @@ Now you have to format the new partition to vfat (FAT32).
 
 Once the formatting is finished you can continue with step [2. Copy files](https://github.com/guh/guh/wiki/Raspberry-Pi#2-copy-files-to-sd-card)
 
+--------------------------------------------
 #### ...using MacOS
 In order to prepare the SD card under MacOS, you need to download the SD Formatter 4.0 for Mac. The *Disk Utility* application from MacOS some how does not format the FAT32 partition correctly. 
 
@@ -141,9 +144,11 @@ In order to prepare the SD card under MacOS, you need to download the SD Formatt
     
 Once the formatting is finished you can continue with step [2. Copy files](https://github.com/guh/guh/wiki/Raspberry-Pi#2-copy-files-to-sd-card)
 
+--------------------------------------------
 #### ...using Windows
 > Coming soon...
 
+--------------------------------------------
 ### 2. Copy files to SD card
 
 This step should be clear for Windows and MacOS users. Just download the latest [guh-netinstall-v0.X.X.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip) and unzip the file to the formated BOOT partition. 
@@ -197,6 +202,7 @@ Now you have a fresh, clean and minimal installation of Debian *jessie* with *gu
 
 You can proceed with the [[Getting started]] instructions.
 
+--------------------------------------------
 ### Install *guh* on existing Debian *jessie*
 If you already have a Debian *jessie* installation and want to install *guh* you need to add the *guh*-repository to your `/etc/apt/sources.list`:
 
