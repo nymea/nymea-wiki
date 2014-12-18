@@ -6,11 +6,11 @@ This tutorial shows you how to install *guh* on the [Raspberry Pi](http://www.ra
 
 ## Table of contents:
 
-* [Install *guh* on Debian *jessie* (minimal **net-install** system)](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie)
+* [Install *guh* on Debian *jessie* (minimal **net-install** system)](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-minimal-net-install-system)
     * [1. Prepare the SD card](https://github.com/guh/guh/wiki/Raspberry-Pi#1-prepare-the-sd-card)  
     * [2. Copy files](https://github.com/guh/guh/wiki/Raspberry-Pi#2-copy-files-to-sd-card)
-    * [3. Install](https://github.com/guh/guh/wiki/Raspberry-Pi#3-install-guh)
-* [Install *guh* on Debian *jessie* (existing system)](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-existing-debian-jessie)
+    * [3. Install](https://github.com/guh/guh/wiki/Raspberry-Pi#3-install)
+* [Install *guh* on Debian *jessie* (existing system)](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-existing-debian-jessie-existing-system)
 * [Install *guh* on Debian *wheezy*](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-wheezy)
     * [Add Qt repository](https://github.com/guh/guh/wiki/Raspberry-Pi#add-qt-repository)
     * [Install *guh*](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh)
@@ -200,7 +200,7 @@ Now you have a fresh, clean and minimal installation of Debian *jessie* with *gu
 You can proceed with the [[Getting started]] instructions.
 
 --------------------------------------------
-## Install *guh* on existing Debian *jessie*
+##Install *guh* on Debian *jessie* (existing system)
 If you already have a Debian *jessie* installation and want to install *guh* you need to add the *guh*-repository to your `/etc/apt/sources.list`:
 
 1. Add the [*guh*-repo](http://repo.guh.guru/) to the source list file:
