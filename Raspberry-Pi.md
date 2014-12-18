@@ -181,13 +181,13 @@ In order to prepare the SD card under Windows, you need to download the SD Forma
     
 2. Install the application by opening the downloaded `setup.exe` file and following the wizard.
 
-3. Open the application (you need to enter your password), choose "*Quick Format*" option, name the partition to "BOOT" and click the `Format` button:
+3. Open the application, choose "*Quick Format*" option, name the partition to "BOOT" and click the `Format` button:
 
     > **Note:** this will delete all data from your SD card!
 
     ![SD Formatter Windows](images/windows-sd-formatter.png)
     
-    ![SD Formatter Windows Complete](windows-sd-formatter-complete.png)
+    ![SD Formatter Windows Complete](images/windows-sd-formatter-complete.png)
 
 4. Unzip the latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v0.1.5.zip) to the BOOT partition on the SD card:
 
