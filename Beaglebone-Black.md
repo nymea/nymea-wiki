@@ -57,7 +57,7 @@ Once you have installed Ubuntu Trusty 14.04 LTS on your microSD you can connect 
     In this case, the partitions of the eMMC have allready the right size and system.
 
 4. Format the partitions:
-    > Note: this will delete all data from your microSD eMMC!
+    > Note: this will delete all data from your eMMC!
     
         $ sudo mkfs.vfat /dev/mmcblk1p1
         $ sudo mkfs.ext4 /dev/mmcblk1p2

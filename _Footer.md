@@ -1,1 +1,1 @@
-[[Home]] | [[Install]] | [[Getting started]]
+[[Home]] | [[Install]] | [[Getting started]] | [[Configuration]] | [[FAQ]] | [[License]]

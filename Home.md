@@ -17,7 +17,9 @@
 * [[Compile guh]]
 
 **[[Getting started]]**
-
+**[[Configuration]]**
+**[[FAQ]]**
+**[[License]]**
 
     
 
