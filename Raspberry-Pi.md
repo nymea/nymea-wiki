@@ -10,7 +10,7 @@ This tutorial shows you how to install *guh* on the [Raspberry Pi](http://www.ra
     * [1. Prepare the SD card](https://github.com/guh/guh/wiki/Raspberry-Pi#1-prepare-the-sd-card)  
     * [2. Copy files](https://github.com/guh/guh/wiki/Raspberry-Pi#2-copy-files-to-sd-card)
     * [3. Install](https://github.com/guh/guh/wiki/Raspberry-Pi#3-install)
-* [Install *guh* on Debian *jessie* (existing system)](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-existing-debian-jessie-existing-system)
+* [Install *guh* on Debian *jessie* (existing system)](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-existing-system)
 * [Install *guh* on Debian *wheezy*](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-wheezy)
     * [Add Qt repository](https://github.com/guh/guh/wiki/Raspberry-Pi#add-qt-repository)
     * [Install *guh*](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh)
@@ -231,7 +231,7 @@ If you already have a Debian *jessie* installation and want to install *guh* you
 
 3. Install *guh* with following command:
     
-        $ sudo apt-get install guh libgl1-mesa-dev -y --force-yes
+        $ sudo apt-get install guh libgl1-mesa-dev
         
     > **Note:** you need to install the packages without verification.
 
@@ -246,7 +246,7 @@ Once, the installation is finished you continue with the [[Getting started]] ins
 
 ### Add Qt repository
        
-Thanks to [Sébastien Noel](http://twolife.be/raspbian/)
+> Thanks to [Sébastien Noel](http://twolife.be/raspbian/)!!
 
     $ sudo echo "deb http://twolife.be/raspbian/ wheezy main backports" >> /etc/apt/sources.list.d/twolife.list
     $ sudo echo "deb-src http://twolife.be/raspbian/ wheezy main backports" >> /etc/apt/sources.list.d/twolife.list

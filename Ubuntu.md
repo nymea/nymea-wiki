@@ -51,7 +51,7 @@ In order to install *guh* on Ubuntu 14.04 LTS amd64 you need to add the *guh*-re
 
 3. Install *guh* with following command:
     
-        $ sudo apt-get install guh -y --force-yes
+        $ sudo apt-get install guh
         
     > Note: you need to install the packages without verification.
 
@@ -105,7 +105,7 @@ In order to install *guh* on Ubuntu 14.10 amd64 you need to add the *guh*-reposi
 
 3. Install *guh* with following command:
     
-        $ sudo apt-get install guh -y --force-yes
+        $ sudo apt-get install guh
     
     > Note: you need to install the packages without verification.
     
