@@ -75,7 +75,8 @@ You can proceed with the [[Getting started]] instructions.
 ## Compile *guh* in the terminal
 
 1. Install needed packages to compile *guh*:
-
+    > **Note:** If you want to compile *guh* on the Raspbian *wheezy* you need to add a new repository to get `qt5-default` ([Qt5 on raspbian wheezy](https://github.com/guh/guh/wiki/Raspberry-Pi#add-qt-repository))
+    
         $ sudo apt-get install build-essential qt5-default git
 
 2. Clone the source code git repository:

@@ -248,13 +248,18 @@ Once, the installation is finished you continue with the [[Getting started]] ins
        
 > Thanks to [Sébastien Noel](http://twolife.be/raspbian/)!!
 
+Add the *twolife.be* repository source list:
+
     $ sudo echo "deb http://twolife.be/raspbian/ wheezy main backports" >> /etc/apt/sources.list.d/twolife.list
     $ sudo echo "deb-src http://twolife.be/raspbian/ wheezy main backports" >> /etc/apt/sources.list.d/twolife.list
 
+Download the public key:
+
     $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 2578B775
 
-    $ apt-get update
-    $ apt-get upgrade
+Update to fetch the new package list:
+
+    $ apt-get update    
     
     
 ### Install *guh*
