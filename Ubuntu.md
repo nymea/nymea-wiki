@@ -21,7 +21,7 @@ In order to install *guh* on Ubuntu 14.04 LTS amd64 you need to add the *guh*-re
         
     > **Note:** alternative:
     > 
-    >       sudo echo -e "\n## guh repo\ndeb http://repo.guh.guru trusty main" >> /etc/apt/sources.list
+    >       $ sudo echo -e "\n## guh repo\ndeb http://repo.guh.guru trusty main" >> /etc/apt/sources.list
 
         
 2. Update your package lists:
@@ -80,7 +80,7 @@ In order to install *guh* on Ubuntu 14.10 amd64 you need to add the *guh*-reposi
         
     > **Note:** alternative:
     >
-    >       sudo echo -e "\n## guh repo\ndeb http://repo.guh.guru utopic main" >> /etc/apt/sources.list
+    >       $ sudo echo -e "\n## guh repo\ndeb http://repo.guh.guru utopic main" >> /etc/apt/sources.list
 
 2. Update your package lists:
     

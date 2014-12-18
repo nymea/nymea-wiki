@@ -12,7 +12,7 @@
 ## Install Ubuntu Trusty
 In order to install guh on the [Beaglebone Black](http://beagleboard.org/black) we recommend to use the Ubuntu Trusty 14.04 LTS image. A very good an easy installation instruction for the microSD card can be found here: 
 
-> Note: this will delete all data from your microSD card!
+> **Note:** this will delete all data from your microSD card!
 
 [Downloads Ubuntu Trusty 14.04 LTS on the BeagleBone Black](http://www.armhf.com/download/)
 
@@ -32,7 +32,7 @@ Once you have installed Ubuntu Trusty 14.04 LTS on your microSD you can connect 
         Host is up (-0.093s latency).
         MAC Address: 11:22:33:44:55:66 (Texas Instruments)
         
-    > Note: the device with *Texas Instruments* in it is possibly the Beaglebone Black.
+    > **Note:** the device with *Texas Instruments* in it is possibly the Beaglebone Black.
 
 2. SSH login to the Beaglebone Black with the user `ubuntu` and the password `ubuntu` (also the native root password): 
         
@@ -58,7 +58,7 @@ Once you have installed Ubuntu Trusty 14.04 LTS on your microSD you can connect 
     In this case, the partitions of the eMMC have allready the right size and system.
 
 4. Format the partitions:
-    > Note: this will delete all data from your eMMC!
+    > **Note:** this will delete all data from your eMMC!
     
         $ sudo mkfs.vfat /dev/mmcblk1p1
         $ sudo mkfs.ext4 /dev/mmcblk1p2
