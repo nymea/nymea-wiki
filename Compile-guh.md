@@ -91,7 +91,7 @@ You can proceed with the [[Getting started]] instructions.
         $ mkdir build-guh
         $ cd build-guh
         
-4. Run `qmake` (See also [*qmake* configuration]())
+4. Run `qmake` (See also [*qmake* configuration](https://github.com/guh/guh/wiki/Compile-guh#qmake-configuration))
     
         $ qmake ../guh/
         

@@ -70,7 +70,7 @@ Once you have installed Ubuntu Trusty 14.04 LTS on your microSD you can connect 
         $ sudo mkdir /mnt/rootfs
         $ sudo mount /dev/mmcblk1p2 /mnt/rootfs/
     
-6. Download the uboot and the rootfs of Ubuntu Trusty 14.04 LTS (links from [here](http://www.armhf.com/download/):
+6. Download the uboot and the rootfs of Ubuntu Trusty 14.04 LTS (links from [here](http://www.armhf.com/download/)):
     
         $ wget http://s3.armhf.com/dist/bone/bone-uboot.tar.xz
         $ wget http://s3.armhf.com/dist/bone/ubuntu-trusty-14.04-rootfs-3.14.4.1-bone-armhf.com.tar.xz
@@ -80,8 +80,11 @@ Once you have installed Ubuntu Trusty 14.04 LTS on your microSD you can connect 
         $ sudo tar xJvf bone-uboot.tar.xz -C /mnt/boot/
         $ sudo tar xJvf ubuntu-trusty-14.04-rootfs-3.14.4.1-bone-armhf.com.tar.xz -C /mnt/rootfs/
     
-8. Poweroff the Beaglebone Black, remove the microSD card and boot into your brand new Ubuntu Trusty 14.04 LTS.
-
+8. Poweroff the Beaglebone Black, remove the microSD card, power on and the Beaglebone Black will boot into your brand new Ubuntu Trusty 14.04 LTS.
+    
+        User:       ubuntu
+        Password:   ubuntu
+        
 --------------------------------------------
 ## Install *guh*
 
