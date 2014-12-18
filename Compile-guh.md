@@ -9,6 +9,13 @@ This tutorial shows you how to compile *guh*.
 Officially is *guh* only supported on Linux platforms, which means this guide is for Linux users only.
 
 --------------------------------------------
+## Table of contents:
+
+* [Compile *guh* with the QtCreator](https://github.com/guh/guh/wiki/Compile-guh#compile-guh-with-the-qtcreator)
+* [Compile *guh* in the terminal](https://github.com/guh/guh/wiki/Compile-guh#compile-guh-in-the-terminal)
+* [*qmake* configuration](https://github.com/guh/guh/wiki/Compile-guh#qmake-configuration)
+
+--------------------------------------------
 ## Compile *guh* with the QtCreator
 
 1. If you want to open the *guh*-project wit the Qt-SDK (`qtcreator`), you have to install the needed packages either from the official repository of your distribution 
@@ -40,7 +47,7 @@ Officially is *guh* only supported on Linux platforms, which means this guide is
     * Under *Build Steps* click on *Detail* of the `Make:` line
     * Write in the *Make arguments* field: `-j9`
     
-    > **Note:** the `-j` argument specifies the number of jobs (commands) to run simultaneously. With `n` CPU's you can run `n+1` jobs.
+        > **Note:** the `-j` argument specifies the number of jobs (commands) to run simultaneously. With `n` CPU's you can run `n+1` jobs.
 
 4. Press the *Build* button on the bottom left of the QtCreator window (or `Ctrl + b`) and follow the build process in the *Compile output* section (`Alt` + `4`).
 
