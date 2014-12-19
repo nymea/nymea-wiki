@@ -1,4 +1,4 @@
-# Using Buttons in *guh*
+# Using *buttons* in *guh*
 --------------------------------------------
 
 > Coming soon...

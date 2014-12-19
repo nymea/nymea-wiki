@@ -1,4 +1,4 @@
-# Using encoders in *guh*
+# Using *encoders* in *guh*
 --------------------------------------------
 
 > Coming soon...
