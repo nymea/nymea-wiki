@@ -17,6 +17,8 @@
     * [[Compile guh]]
 
 * **[[Getting started]]**
+    * [[Webserver]]
+    * [[cmdmgr]]
 
 * **[[Hardware]]**
     * [[RF 433 MHz]]
@@ -24,7 +26,9 @@
     * [[Encoders]]
 
 * **[[Special Plugins]]**
+    * [[Mockdevice]]
     * [[Boblightd]]
+    * [[Lirc]]
 
 * **[[Configuration]]**
 

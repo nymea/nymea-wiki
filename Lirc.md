@@ -1,3 +1,4 @@
-# Special plugins
+# Using the *lirc* plugin
 --------------------------------------------
 
+> Coming soon...
