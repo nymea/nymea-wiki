@@ -1,4 +1,4 @@
-# Using the *cmdmgr*
+# Using the *guh-cli*
 --------------------------------------------
 
 > Coming soon...

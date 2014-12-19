@@ -10,7 +10,7 @@
 
 **[[Getting started]]**
 * [[Webserver]]
-* [[cmdmgr]]
+* [[guh cli]]
 
 **[[Hardware]]**
 * [[RF 433 MHz]]
