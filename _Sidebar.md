@@ -9,6 +9,7 @@
 * [[Compile guh]]
 
 **[[Getting started]]**
+* [[Webserver]]
 * [[cmdmgr]]
 
 **[[Hardware]]**
@@ -17,8 +18,10 @@
 * [[Encoders]]
 
 **[[Special Plugins]]**
+* [[Mockdevice]]
 * [[Boblightd]]
-
+* [[Lirc]]
+    
 **[[Configuration]]**
 
 **[[FAQ]]**
