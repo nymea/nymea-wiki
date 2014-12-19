@@ -1,4 +1,4 @@
-# Using the *boblightd* plugin
+# Using encoders in *guh*
 --------------------------------------------
 
 > Coming soon...

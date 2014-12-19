@@ -1,4 +1,4 @@
-# Welcome to the *guh* wiki!
+# License
 --------------------------------------------
 
                  GNU GENERAL PUBLIC LICENSE

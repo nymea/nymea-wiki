@@ -28,7 +28,7 @@ This procedure will install the whole system directly from the internet with the
 --------------------------------------------
 ### 1. Prepare the SD card 
 
-In this step we delete all partitions of the SD card and create a new single `64 Mb FAT32` partition.
+In this step we delete all partitions of the SD card and create a new single `FAT32` partition.
 
 > **Note:** this will delete all data from your SD card!
 
@@ -38,7 +38,7 @@ Assuming your SD card is the device `/dev/sdb`...
 
     $ sudo fdisk /dev/sdb
 
-Print the partition table using `p` to make sure this is the correct device! (In this example it is a 4GB SD card)
+Print the partition table using `p` to make sure this is the correct device! (In this example it is a 4GB SD card):
 
     Command (m for help): p
     Disk /dev/sdb: 3.7 GiB, 3947888640 bytes, 7710720 sectors
@@ -53,7 +53,7 @@ Print the partition table using `p` to make sure this is the correct device! (In
     /dev/sdb2          97728   7710719 3806496  83 Linux
 
 
-Delete all partitions (using `d`, `enter`, `d`)
+Delete all partitions (using `d`, `enter`, `d`):
 
     Command (m for help): d
     Partition number (1,2, default 2): 
@@ -64,12 +64,12 @@ Delete all partitions (using `d`, `enter`, `d`)
     Selected partition 1
     Partition 1 has been deleted.
     
-Create a new dos partition table using `o`
+Create a new dos partition table using `o`:
     
     Command (m for help): o
     Created a new DOS disklabel with disk identifier 0x2abef6c0.
     
-Create a new 64MB partition (`n`, `enter`, `enter`, `enter`, `+64M`)
+Create a new 64MB partition (`n`, `enter`, `enter`, `enter`, `+64M`):
         
     Command (m for help): n
     
@@ -85,7 +85,7 @@ Create a new 64MB partition (`n`, `enter`, `enter`, `enter`, `+64M`)
 
     Created a new partition 1 of type 'Linux' and of size 64 MiB.
     
-Change the partition type to W95 FAT32 (`t`, `b`)
+Change the partition type to W95 FAT32 (`t`, `b`):
     
     Command (m for help): t
     
@@ -107,7 +107,7 @@ Now your partition table should look like this (`p`):
     Device     Boot Start    End Sectors Size Id Type
     /dev/sdb1        2048 133119  131072  64M 83 Linux
     
-Write the partition table to the disk and exit using `w`
+Write the partition table to the disk and exit using `w`:
 
     Command (m for help): w
     
@@ -115,7 +115,7 @@ Write the partition table to the disk and exit using `w`
     Calling ioctl() to re-read partition table.
     Syncing disks.
 
-Now you have to format the new partition to vfat (FAT32).
+Now you have to format the new partition to vfat (FAT32):
 
     $ sudo mkfs.vfat /dev/sdb1
 

@@ -1,4 +1,4 @@
-# Using the *boblightd* plugin
+# Using the *cmdmgr*
 --------------------------------------------
 
 > Coming soon...

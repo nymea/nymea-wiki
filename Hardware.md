@@ -1,4 +1,4 @@
-# Using the *boblightd* plugin
+# Hardware
 --------------------------------------------
 
 > Coming soon...

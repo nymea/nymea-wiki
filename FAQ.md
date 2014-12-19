@@ -1,6 +1,7 @@
 # FAQ - Frequently asked questions
 --------------------------------------------
-> Coming soon... (
+
+> Coming soon...
 
     
 

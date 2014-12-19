@@ -1,4 +1,4 @@
-# Using the *boblightd* plugin
+# Using Buttons in *guh*
 --------------------------------------------
 
 > Coming soon...

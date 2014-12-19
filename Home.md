@@ -18,6 +18,14 @@
 
 * **[[Getting started]]**
 
+* **[[Hardware]]**
+    * [[RF 433 MHz]]
+    * [[Buttons]]
+    * [[Encoders]]
+
+* **[[Special Plugins]]**
+    * [[Boblightd]]
+
 * **[[Configuration]]**
 
 * **[[FAQ]]**

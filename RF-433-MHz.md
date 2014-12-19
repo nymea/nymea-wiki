@@ -1,4 +1,4 @@
-# Using the *boblightd* plugin
+# Using RF 433 MHz in *guh*
 --------------------------------------------
 
 > Coming soon...
