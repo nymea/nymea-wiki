@@ -5,6 +5,7 @@
 * [Devices](https://github.com/guh/guh/wiki/Configuration#devices)
 * [Rules](https://github.com/guh/guh/wiki/Configuration#rules)
 * [Reset configuration](https://github.com/guh/guh/wiki/Configuration#reset-configuration)
+
 --------------------------------------------
 
 *guh* saves all the configured devices and rules in two separated config files, which can be found in
