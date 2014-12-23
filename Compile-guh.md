@@ -136,15 +136,28 @@ You can proceed with the [[Getting started]] instructions.
 
 In order to customize the build process, qmake offers some configurations.
 
-### Compile guh without *tests*
+#### Compile guh without *tests*
 
-    $ qmake ../guh/ CONFIG+=
+If you want to compile *guh* witout the test packages you can configure qmake like this:
 
-### Compile guh with *boblightd* support
+    $ qmake ../guh/ CONFIG+=disabletesting
+    
+> **Note:** this will shorten the compilation time significantly.
+
+#### Compile guh with *boblightd* support
 
     $ qmake ../guh/ CONFIG+=boblight
     
-### Compile with *coverage* support
+If you want to compile *guh* with the boblightd plugin, you need to install the boblight libs first.
+
+    > **Note:**If the boblight libs could not be found, you need to export the library path:
+    $ export LD_LIBRARY_PATH=/usr/local/lib/
+        
+To make it permanent, you can add this line to the `/etc/bash.bashrc` file. 
+
+See also: [[Boblightd]]
+    
+#### Compile with *coverage*
 
     qmake ../guh/ CONFIG+=coverage
 
