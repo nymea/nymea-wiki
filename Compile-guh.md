@@ -134,8 +134,19 @@ You can proceed with the [[Getting started]] instructions.
 
 ## *qmake* configuration
 
+In order to customize the build process, qmake offers some configurations.
 
+### Compile guh without *tests*
 
+    $ qmake ../guh/ CONFIG+=
+
+### Compile guh with *boblightd* support
+
+    $ qmake ../guh/ CONFIG+=boblight
+    
+### Compile with *coverage* support
+
+    qmake ../guh/ CONFIG+=coverage
 
 
 

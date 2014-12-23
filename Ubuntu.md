@@ -4,7 +4,7 @@
 
 * [Ubuntu 14.04 LTS (Trusty Thar)](https://github.com/guh/guh/wiki/Install-guh-core-on-Ubuntu#ubuntu-1404-lts)
 * [Ubuntu 14.10 (Utopic Unicorn)](https://github.com/guh/guh/wiki/Install-guh-core-on-Ubuntu#ubuntu-1410)
-
+* [Autostart *guh* on boot]()
 --------------------------------------------
 ## Ubuntu 14.04 LTS
 
@@ -121,4 +121,9 @@ In order to install *guh* on Ubuntu 14.10 amd64 you need to add the *guh*-reposi
     The repository contains always the latest stable build of the *guh* `master` branch. 
 
 Once, the installation is finished you continue with the [[Getting started]] instruction.
+
+--------------------------------------------
+## Autostart *guh* on boot
+
+> Coming soon...
     
