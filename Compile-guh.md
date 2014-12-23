@@ -33,7 +33,7 @@ Officially is *guh* only supported on Linux platforms, which means this guide is
         $ cd guh/
         $ git clone https://github.com/guh/guh.git
 
-    Now open the project file (`/guh/guh/guh.pro`) with the QtCreator and configure your project. You can use the default setting, which will create a `build-guh-<Kit>-Debug` directory next to the source code directory where all build output files and binary's will be generated.
+    Now open the project file (`/guh/guh/guh.pro`) with the QtCreator and configure your project. You can use the default setting, which will create a `build-guh-<Kit>-Debug` directory next to the source code directory where all build output files and binaries will be generated.
 
 3. In order to speed up the the compilation process you need to know how many CPU's you have:
 

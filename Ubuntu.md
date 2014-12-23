@@ -4,7 +4,8 @@
 
 * [Ubuntu 14.04 LTS (Trusty Thar)](https://github.com/guh/guh/wiki/Install-guh-core-on-Ubuntu#ubuntu-1404-lts)
 * [Ubuntu 14.10 (Utopic Unicorn)](https://github.com/guh/guh/wiki/Install-guh-core-on-Ubuntu#ubuntu-1410)
-* [Autostart *guh* on boot]()
+* [Autostart *guh* on boot](https://github.com/guh/guh/wiki/Ubuntu#autostart-guh-on-boot)
+
 --------------------------------------------
 ## Ubuntu 14.04 LTS
 
