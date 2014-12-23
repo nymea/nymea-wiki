@@ -9,7 +9,7 @@
 --------------------------------------------
 ## Ubuntu 14.04 LTS
 
-In order to install *guh* on Ubuntu 14.04 LTS amd64 you need to add the *guh*-repository to your `/etc/apt/sources.list`:
+In order to install *guh* on Ubuntu 14.04 LTS (64 bit) you need to add the *guh*-repository to your `/etc/apt/sources.list`:
 
 1. Add the [*guh*-repo](http://repo.guh.guru/) to the source list file:
         
@@ -68,7 +68,7 @@ Once, the installation is finished you continue with the [[Getting started]] ins
 --------------------------------------------
 ## Ubuntu 14.10
 
-In order to install *guh* on Ubuntu 14.10 amd64 you need to add the *guh*-repository to your `/etc/apt/sources.list`:
+In order to install *guh* on Ubuntu 14.10 (64 bit) you need to add the *guh*-repository to your `/etc/apt/sources.list`:
 
 1. Add the [*guh*-repo](http://repo.guh.guru/) to the source list file:
         

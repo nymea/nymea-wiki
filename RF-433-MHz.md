@@ -3,6 +3,7 @@
 * [RF 433 MHz Transmitter](https://github.com/guh/guh/wiki/RF-433-MHz#rf-433-mhz-transmitter)
 * [RF 433 MHz Receiver](https://github.com/guh/guh/wiki/RF-433-MHz#rf-433-mhz-receiver)
 * [Schematics](https://github.com/guh/guh/wiki/RF-433-MHz#schematics)
+
 --------------------------------------------
 
 
@@ -13,7 +14,7 @@
 
 
 
-> **Note:** See also [[Configuration]]
+> **Note:** See also [Configuration](https://github.com/guh/guh/wiki/Configuration#gpio-section)
 
 ## RF 433 MHz Receiver
 
@@ -23,7 +24,7 @@
 
 
 
-> **Note:** See also [[Configuration]]
+> **Note:** See also [Configuration](https://github.com/guh/guh/wiki/Configuration#gpio-section)
 
 ## Schematics
 
@@ -33,4 +34,4 @@
 
 
 
-> **Note:** See also [[Configuration]]
+> **Note:** See also [Configuration](https://github.com/guh/guh/wiki/Configuration#gpio-section)
