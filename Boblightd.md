@@ -20,11 +20,13 @@ Configure the project:
 
     $ cd boblight
     $ ./configure
+    
     > **Note:** install the missing packages if *configure* will not finish successfully!
 
 Build everything:
         
     $ make -j9
+    
     > **Note:** the `-j` argument specifies the number of jobs (commands) to run simultaneously. With `n` CPU's you can run `n+1` jobs.
     
 Install the binary's, libs and includes:
