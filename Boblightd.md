@@ -45,4 +45,4 @@ Now you can start the boblight daemon:
     
 This daemon has to run, otherwise the *boblight-plugin* from guh will not work. The plugin tries to connect to the daemon on `localhost:19333`. The configured light devices from the `/etc/boblight.conf` device will appear automatically in the *guh* device list. 
 
-See also: Compile guh with boblightd support.
+See also: [Compile guh with *boblightd* support](https://github.com/guh/guh/wiki/Compile-guh#compile-guh-with-boblightd-support).
