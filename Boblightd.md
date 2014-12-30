@@ -1,7 +1,7 @@
 # Using the *boblightd* plugin
 --------------------------------------------
 
-In order to user the *boblightd* you need to compile and install boblight. This tutorial shows you how to that.
+In order to use the *boblightd* you need to compile and install boblight. This tutorial shows you how to that.
 
 ## Build and install boblight
 
