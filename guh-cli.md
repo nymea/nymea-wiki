@@ -1,9 +1,10 @@
 # Using the *guh-cli*
 --------------------------------------------
 
-The *guh-cli* (command line interface) is an admin tool to written in python to communicate with the guh JSON-RPC API and test functionality of *guh*. The *guh-cli* application can be started in the terminal.
+The *guh-cli* (command line interface) is an admin tool written in python to communicate with the [*guh*](https://github.com/guh/guh) JSON-RPC API and test functionality of *guh*.
 
 ## Installation 
+--------------------------------------------
 
 First make sure you have installed *python 2.7*. You can find the installation instruction on the [official python homepage](https://www.python.org/download/releases/2.7/).
 
@@ -12,7 +13,9 @@ Now you can clone the [guh-cli repository](https://github.com/guh/guh-cli) from 
     $ git clone https://github.com/guh/guh-cli.git
     $ cd guh-cli/    
 
-## Usage    
+## Usage 
+--------------------------------------------
+   
 In order to start guh-cli you need to know on which host *guh* is currently running. If guh is running on `localhost`, you can start the application as follows:
 
     $ python2 guh-cli.py
