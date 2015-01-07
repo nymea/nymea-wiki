@@ -28,9 +28,8 @@ If you ant to stop the service, currently you need to do that the hard way:
 
     $ killall guhd
 
-    > **Note:** For the `killall` command you need to install `psmisc`.
 
-
+> **Note:** For the `killall` command you need to install `psmisc`.
 
 In order to interact with the guhd you can use the `guh-cli` application.
 
