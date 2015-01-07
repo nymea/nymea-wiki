@@ -22,13 +22,13 @@ In order to get help you can type in the terminal `guhd -h`:
        -e,     --executable        start guh as application, not as daemon
 
     
-The `-e` argument executs `guhd` as executable binary. Without this parameter, guh will start as daemon in the background.
+The `-e` argument executes `guhd` as executable binary. Without this parameter, guh will start as daemon in the background.
 
 If you ant to stop the service, currently you need to do that the hard way:
 
     $ killall guhd
 
-> **Note:** For the `killall` you need to install `psmisc`.
+    > **Note:** For the `killall` command you need to install `psmisc`.
 
 
 
