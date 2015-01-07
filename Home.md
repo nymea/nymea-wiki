@@ -17,8 +17,9 @@
     * [[Compile guh]]
 
 * **[[Getting started]]**
-    * [[Webserver]]
     * [[guh cli]]
+    * [[Webserver]]
+    
 
 * **[[Hardware]]**
     * [[RF 433 MHz]]
