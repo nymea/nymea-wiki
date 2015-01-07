@@ -1,11 +1,11 @@
 # Getting started with *guh*-core
 --------------------------------------------
-Once you have installed *guh* successfully you can start the *guhd* daemon. There are two possibilitys to start guhd:
+Once you have installed *guh* successfully you can start the *guhd* daemon. There are two possibility's to start guhd:
 
 * starting guh as daemon (service) 
 * starting guh as application (terminal application) and see all debug outputs.
 
-In ordert to get help you can type in the terminal `guhd -h`:
+In order to get help you can type in the terminal `guhd -h`:
 
     $ guhd -h
     
