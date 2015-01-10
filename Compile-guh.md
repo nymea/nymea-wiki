@@ -150,7 +150,8 @@ If you want to compile *guh* witout the test packages you can configure qmake li
     
 If you want to compile *guh* with the boblightd plugin, you need to install the boblight libs first.
 
-    > **Note:**If the boblight libs could not be found, you need to export the library path:
+> **Note:**If the boblight libs could not be found, you need to export the library path:
+    
     $ export LD_LIBRARY_PATH=/usr/local/lib/
         
 To make it permanent, you can add this line to the `/etc/bash.bashrc` file. 

@@ -17,6 +17,7 @@
     * [[Compile guh]]
 
 * **[[Getting started]]**
+    * [Autostart guhd]()
     * [[guh cli]]
     * [[Webserver]]
     

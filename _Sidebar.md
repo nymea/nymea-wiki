@@ -9,9 +9,9 @@
 * [[Compile guh]]
 
 **[[Getting started]]**
+* [Autostart guhd]()
 * [[guh cli]]
 * [[Webserver]]
-
 
 **[[Hardware]]**
 * [[RF 433 MHz]]
