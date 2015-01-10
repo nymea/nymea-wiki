@@ -9,7 +9,7 @@
 * [[Compile guh]]
 
 **[[Getting started]]**
-* [Autostart guhd]()
+* [Autostart guhd](https://github.com/guh/guh/wiki/Getting-started#autostart-guhd)
 * [[guh cli]]
 * [[Webserver]]
 
