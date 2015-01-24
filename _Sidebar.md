@@ -1,6 +1,7 @@
 **[[Home]]**
 * [[Overview]]
 * [[Structure]]
+* [[Reporting bugs]]
 
 **[[Install]]**
 * [[Ubuntu]]
