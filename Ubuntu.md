@@ -4,16 +4,15 @@
 
 * [Ubuntu 14.04 LTS (Trusty Thar)](https://github.com/guh/guh/wiki/Install-guh-core-on-Ubuntu#ubuntu-1404-lts)
 * [Ubuntu 14.10 (Utopic Unicorn)](https://github.com/guh/guh/wiki/Install-guh-core-on-Ubuntu#ubuntu-1410)
-* [Autostart *guh* on boot](https://github.com/guh/guh/wiki/Ubuntu#autostart-guh-on-boot)
 
 --------------------------------------------
 ## Ubuntu 14.04 LTS
 
-In order to install *guh* on Ubuntu 14.04 LTS (64 bit) you need to add the *guh*-repository to your `/etc/apt/sources.list`:
+In order to install *guh* on Ubuntu 14.04 LTS (64 bit) you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
 
 1. Add the [*guh*-repo](http://repo.guh.guru/) to the source list file:
         
-        $ sudo nano /etc/apt/sources.list
+        $ sudo nano /etc/apt/sources.list.d/guh.list
             
     Append following two lines at the end of the file:
     
@@ -123,8 +122,4 @@ In order to install *guh* on Ubuntu 14.10 (64 bit) you need to add the *guh*-rep
 
 Once, the installation is finished you continue with the [[Getting started]] instruction.
 
---------------------------------------------
-## Autostart *guh* on boot
-
-> Coming soon...
     
