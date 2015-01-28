@@ -9,6 +9,8 @@
 * **[[Home]]**
     * [[Overview]]
     * [[Structure]]
+    * [[Reporting bugs]]
+    * [[Coding style]]
 
 * **[[Install]]**
     * [[Ubuntu]]
