@@ -17,13 +17,13 @@ This tutorial shows you how to install *guh* on the [Raspberry Pi](http://www.ra
 --------------------------------------------
 ## Install *guh* on Debian *jessie* (minimal **net-install** system)
 
-If you want a fresh, new and minimal installation of *guh* on the [Raspberry Pi](http://www.raspberrypi.org/), we recommand to this tutorial, which will install everything you need to run *guh*. Basically you just need to do following three steps:
+If you want a fresh, new and minimal installation of *guh* on the [Raspberry Pi](http://www.raspberrypi.org/), we recommend to this tutorial, which will install everything you need to run *guh*. Basically you just need to do following three steps:
 
 1. Delete all partitions of the SD card (minimal size of 1GB) and create a new single `FAT32` partition.
-2. Mount the parition and unzip the latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.6.zip) file on it.
+2. Mount the partition and unzip the latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.6.zip) file on it.
 3. Insert the SD card into the Raspberry Pi, connect the network cable, connect the power cable and wait until the Raspberry Pi performs a reboot.
 
-This procedure will install the whole system directly from the internet with the newest packages and a pre-configured guh installation.
+This procedure will install the whole system directly from the internet with the newest packages and a pre-configured *guh* installation.
 
 --------------------------------------------
 ### 1. Prepare the SD card 
@@ -36,7 +36,7 @@ In this step we delete all partitions of the SD card and create a new single `FA
 #### ...using Linux
 First you need to check which device is your SD card:
 
-> **Note:** please be verry careful in this step!! You can delete your whole system if you choose the wrong device!!
+> **Note:** please be very careful in this step!! You can delete your whole system if you choose the wrong device!!
 
 
     $ lsblk
@@ -120,7 +120,7 @@ Now your partition table should look like this (`p`):
     Sector size (logical/physical): 512 bytes / 512 bytes
     I/O size (minimum/optimal): 512 bytes / 512 bytes
     Disklabel type: dos
-    Disk identifier: 0x00000000
+    Disk identifier: 0x2abef6c0
     
     Device     Boot Start    End Sectors Size Id Type
     /dev/sdb1        2048 133119  131072  64M 83 Linux
@@ -253,7 +253,7 @@ If you already have a Debian *jessie* installation and want to install *guh* you
     
         $ sudo apt-get update
     
-    The *guh*-repo provides following packages:
+    The *guh*-repository provides following packages:
     
         $ apt-cache search guh
     
@@ -301,6 +301,5 @@ Update to fetch the new package list:
 ### Install *guh*
 
 > Coming soon...
-
 
 
