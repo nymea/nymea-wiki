@@ -39,7 +39,7 @@ In order to install *guh* on Ubuntu 14.04 LTS (64 bit) you need to create the `/
     >       
     >       W: Failed to fetch http://repo.guh.guru/dists/trusty/main/binary-i386/Packages  404  Not Found
             
-    > You can ignore this error unless you have a i386 system. Until now we do not provide packages for i386 systems. If you have a i386 system, please take a look at [[Compile guh]].
+    > You can ignore this error unless you have an i386 system. Until now we do not provide packages for i386 systems. If you have an i386 system, please take a look at [[Compile guh]].
 
     The *guh*-repo provides following packages:
     
@@ -97,7 +97,7 @@ In order to install *guh* on Ubuntu 14.10 (64 bit) you need to create the `/etc/
     >       
     >       W: Failed to fetch http://repo.guh.guru/dists/utopic/main/binary-i386/Packages  404  Not Found
             
-    > You can ignore this error unless you have a i386 system. Currently we do not provide packages for i386 systems. If you have a i386 system, please take a look at [[Compile guh]]. 
+    > You can ignore this error unless you have an i386 system. Currently we do not provide packages for i386 systems. If you have an i386 system, please take a look at [[Compile guh]]. 
 
     The *guh*-repo provides following packages:
     
