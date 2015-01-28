@@ -34,7 +34,25 @@ In this step we delete all partitions of the SD card and create a new single `FA
 
 --------------------------------------------
 #### ...using Linux
-Assuming your SD card is the device `/dev/sdb`...
+First you need to check which device is your SD card:
+
+> **Note:** please be verry careful in this step!! You can delete your whole system if you choose the wrong device!!
+
+
+    $ lsblk
+    
+    NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+    sda      8:0    0 465,9G  0 disk 
+    ├─sda1   8:1    0   200M  0 part /boot/efi
+    ├─sda2   8:2    0    45G  0 part 
+    ├─sda3   8:3    0 279,4G  0 part /
+    └─sda4   8:4    0 139,7G  0 part 
+    sdb      8:16   1   3,7G  0 disk 
+    ├─sdb1   8:17   1    56M  0 part 
+    └─sdb2   8:18   1     3G  0 part 
+
+
+In this case, the SD card (4 GB) is device `/dev/sdb`. Lets create a new partition table for this SD card:
 
     $ sudo fdisk /dev/sdb
 
@@ -201,7 +219,7 @@ Insert your prepared SD card into your [Raspberry Pi](http://www.raspberrypi.org
 
 **That's it!**
 
-Now you have to wait ~20-30 minutes. Once the installation is finished, the Raspberry Pi will reboot and boot into the new system. 
+Now you have to wait ~35-40 minutes. Once the installation is finished, the Raspberry Pi will reboot and boot into the new system. 
 
 > **Note:** It's important to connect the network cable **before** you connect the power cable! DHCP will be one of the first things during the installation!
 
@@ -220,11 +238,11 @@ You can proceed with the [[Getting started]] instructions.
 
 --------------------------------------------
 ##Install *guh* on Debian *jessie* (existing system)
-If you already have a Debian *jessie* installation and want to install *guh* you need to add the *guh*-repository to your `/etc/apt/sources.list`:
+If you already have a Debian *jessie* installation and want to install *guh* you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
 
 1. Add the [*guh*-repo](http://repo.guh.guru/) to the source list file:
         
-        $ sudo nano /etc/apt/sources.list
+        $ sudo nano /etc/apt/sources.list.d/guh.list
             
     Append following two lines at the end of the file:
     
@@ -279,7 +297,6 @@ Download the public key:
 Update to fetch the new package list:
 
     $ apt-get update    
-    
     
 ### Install *guh*
 
