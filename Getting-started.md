@@ -43,8 +43,8 @@ In order to restart the service you can call following command:
 
     $ sudo service guhd restart
 
-### Start the service
-In order to find out if the service is running you can call following command:
+### Get the status of the daemon
+In order to find out if the service is running or not you can call following command:
 
     $ sudo service guhd status
 

@@ -7,10 +7,12 @@
 * [Reset configuration](https://github.com/guh/guh/wiki/Configuration#reset-configuration)
 
 --------------------------------------------
-
 *guh* saves all the configured devices and rules in two separated config files, which can be found in
 
     $ ~/.config/guh/
+
+> **Note:** if you start guhd as daemon, the home folder will be currently at `/`, because a daemon does not need a user to start. All configuration files will be stred in `/.config/guh/`. This will be fixed as soon as possible.
+
 
 Depending on the user how starts *guh*, the config files will be stored in that home directory (`$ cd ~`). If you are starting *guh* as `root` this folder will be in the root home directory. 
 
