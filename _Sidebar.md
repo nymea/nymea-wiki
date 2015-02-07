@@ -15,11 +15,6 @@
 * [[guh cli]]
 * [[Webserver]]
 
-**[[Hardware]]**
-* [[RF 433 MHz]]
-* [[Buttons]]
-* [[Encoders]]
-
 **[[Special Plugins]]**
 * [[Mockdevice]]
 * [[Boblightd]]
