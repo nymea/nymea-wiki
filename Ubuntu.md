@@ -2,15 +2,15 @@
 --------------------------------------------
 *guh*-core can be installed from the [*guh* repository](http://repo.guh.guru/) which provides `amd64` packages for: 
 
-* [Ubuntu 14.04 LTS (Trusty Thar)](https://github.com/guh/guh/wiki/Install-guh-core-on-Ubuntu#ubuntu-1404-lts)
-* [Ubuntu 14.10 (Utopic Unicorn)](https://github.com/guh/guh/wiki/Install-guh-core-on-Ubuntu#ubuntu-1410)
+* [Ubuntu 14.04 LTS (Trusty Thar)](https://github.com/guh/guh/wiki/Ubuntu#ubuntu-1404-lts)
+* [Ubuntu 14.10 (Utopic Unicorn)](https://github.com/guh/guh/wiki/Ubuntu#ubuntu-1410)
 
 --------------------------------------------
 ## Ubuntu 14.04 LTS
 
 In order to install *guh* on Ubuntu 14.04 LTS (64 bit) you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
 
-1. Add the [*guh*-repo](http://repo.guh.guru/) to the source list file:
+1. Create the [*guh*-repo](http://repo.guh.guru/) list file:
         
         $ sudo nano /etc/apt/sources.list.d/guh.list
             
@@ -29,19 +29,6 @@ In order to install *guh* on Ubuntu 14.04 LTS (64 bit) you need to create the `/
 2. Update your package lists:
     
         $ sudo apt-get update
-    
-    > **Note:** You may notice that following error will appear:
-    >   
-    >       ...
-    >       
-    >       Err http://repo.guh.guru trusty/main i386 Packages                    
-    >           404  Not Found
-    >       
-    >       ...
-    >       
-    >       W: Failed to fetch http://repo.guh.guru/dists/trusty/main/binary-i386/Packages  404  Not Found
-            
-    > You can ignore this error unless you have an i386 system. Until now we do not provide packages for i386 systems. If you have an i386 system, please take a look at [[Compile guh]].
 
     The *guh*-repo provides following packages:
     
@@ -60,7 +47,7 @@ In order to install *guh* on Ubuntu 14.04 LTS (64 bit) you need to create the `/
 
 3. Install *guh* with following command:
     
-        $ sudo apt-get install guh
+        $ sudo apt-get install guh guh-webserver
         
     The repository contains always the latest stable build of the *guh* `master` branch. 
 
@@ -71,7 +58,7 @@ Once, the installation is finished you continue with the [[Getting started]] ins
 
 In order to install *guh* on Ubuntu 14.10 (64 bit) you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
 
-1. Add the [*guh*-repo](http://repo.guh.guru/) to the source list file:
+1. Create the [*guh*-repo](http://repo.guh.guru/) list file:
         
         $ sudo nano /etc/apt/sources.list.d/guh.list
             
@@ -88,20 +75,7 @@ In order to install *guh* on Ubuntu 14.10 (64 bit) you need to create the `/etc/
     
 2. Update your package lists:
     
-        $ sudo apt-get update
-    
-    > **Note:** You may notice that following error will appear:
-    >   
-    >       ...
-    >       
-    >       Err http://repo.guh.guru utopic/main i386 Packages                    
-    >           404  Not Found
-    >       
-    >       ...
-    >       
-    >       W: Failed to fetch http://repo.guh.guru/dists/utopic/main/binary-i386/Packages  404  Not Found
-            
-    > You can ignore this error unless you have an i386 system. Currently we do not provide packages for i386 systems. If you have an i386 system, please take a look at [[Compile guh]]. 
+        $ sudo apt-get update 
 
     The *guh*-repo provides following packages:
     
@@ -120,7 +94,7 @@ In order to install *guh* on Ubuntu 14.10 (64 bit) you need to create the `/etc/
 
 3. Install *guh* with following command:
     
-        $ sudo apt-get install guh
+        $ sudo apt-get install guh guh-webserver
         
     The repository contains always the latest stable build of the *guh* `master` branch. 
 
