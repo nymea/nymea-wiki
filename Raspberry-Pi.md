@@ -249,6 +249,10 @@ If you already have a Debian *jessie* installation and want to install *guh* you
         ## guh repo
         deb http://repo.guh.guru jessie main
 
+    Add the public key of the guh-repo to your keylist.
+    
+        $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 6B9376B0
+    
 2. Update your package lists:
     
         $ sudo apt-get update
@@ -262,6 +266,8 @@ If you already have a Debian *jessie* installation and want to install *guh* you
         guh-doc - documentation for the guh package (on-site)
         guh-plugins - server for home automation systems - plugins
         guh-tests - tests for the guh package
+        guh-webinterface - Browser based user interface for guh
+        guh-webserver - A REST-API webserver for the guh-webinterface
         guhd - server for home automation systems
         libguh1 - server for home automation systems - core library
         libguh1-dev - server for home automation systems - development files
@@ -270,8 +276,6 @@ If you already have a Debian *jessie* installation and want to install *guh* you
     
         $ sudo apt-get install guh libgl1-mesa-dev
         
-    > **Note:** you need to install the packages without verification.
-
     The repository contains always the latest stable build of the *guh* `master` branch. 
 
 Once, the installation is finished you continue with the [[Getting started]] instruction.
