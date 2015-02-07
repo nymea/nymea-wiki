@@ -1,9 +1,9 @@
 # Install *guh*-core
 Depending on the your platform and operating system, you can choose between following installation instructions:
 
-* [[Ubuntu]] (x86_64)
-* [[Raspberry Pi]] (armel)
-* [[Beaglebone Black]] (armhf)
+* [[Ubuntu]]
+* [[Raspberry Pi]]
+* [[Beaglebone Black]]
 
 | Ubuntu     | 14.04 Trusty | 14.10 Utopic |
 |:-----------|-------------:|:------------:|
