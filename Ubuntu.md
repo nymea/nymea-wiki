@@ -19,10 +19,12 @@ In order to install *guh* on Ubuntu 14.04 LTS (64 bit) you need to create the `/
         ## guh repo
         deb http://repo.guh.guru trusty main
         
-    > **Note:** alternative:
-    > 
-    >       $ sudo echo -e "\n## guh repo\ndeb http://repo.guh.guru trusty main" >> /etc/apt/sources.list.d/guh.list
-
+    > **Alternative:** `$ sudo echo -e "\n## guh repo\ndeb http://repo.guh.guru trusty main" >> /etc/apt/sources.list.d/guh.list`
+    
+    Add the public key of the guh-repo to your keylist.
+    
+        $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 6B9376B0
+    
         
 2. Update your package lists:
     
@@ -50,6 +52,8 @@ In order to install *guh* on Ubuntu 14.04 LTS (64 bit) you need to create the `/
         guh-doc - documentation for the guh package (on-site)
         guh-plugins - server for home automation systems - plugins
         guh-tests - tests for the guh package
+        guh-webinterface - Browser based user interface for guh
+        guh-webserver - A REST-API webserver for the guh-webinterface
         guhd - server for home automation systems
         libguh1 - server for home automation systems - core library
         libguh1-dev - server for home automation systems - development files
@@ -58,8 +62,6 @@ In order to install *guh* on Ubuntu 14.04 LTS (64 bit) you need to create the `/
     
         $ sudo apt-get install guh
         
-    > Note: you need to install the packages without verification.
-
     The repository contains always the latest stable build of the *guh* `master` branch. 
 
 Once, the installation is finished you continue with the [[Getting started]] instruction.
@@ -78,10 +80,12 @@ In order to install *guh* on Ubuntu 14.10 (64 bit) you need to create the `/etc/
         ## guh repo
         deb http://repo.guh.guru utopic main
         
-    > **Note:** alternative:
-    >
-    >       $ sudo echo -e "\n## guh repo\ndeb http://repo.guh.guru utopic main" >> /etc/apt/sources.list.d/guh.list
-
+    > **Alternative:** `$ sudo echo -e "\n## guh repo\ndeb http://repo.guh.guru utopic main" >> /etc/apt/sources.list.d/guh.list`
+    
+    Add the public key of the guh-repo to your keylist.
+    
+        $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 6B9376B0
+    
 2. Update your package lists:
     
         $ sudo apt-get update
@@ -108,6 +112,8 @@ In order to install *guh* on Ubuntu 14.10 (64 bit) you need to create the `/etc/
         guh-doc - documentation for the guh package (on-site)
         guh-plugins - server for home automation systems - plugins
         guh-tests - tests for the guh package
+        guh-webinterface - Browser based user interface for guh
+        guh-webserver - A REST-API webserver for the guh-webinterface
         guhd - server for home automation systems
         libguh1 - server for home automation systems - core library
         libguh1-dev - server for home automation systems - development files
@@ -115,9 +121,7 @@ In order to install *guh* on Ubuntu 14.10 (64 bit) you need to create the `/etc/
 3. Install *guh* with following command:
     
         $ sudo apt-get install guh
-    
-    > Note: you need to install the packages without verification.
-    
+        
     The repository contains always the latest stable build of the *guh* `master` branch. 
 
 Once, the installation is finished you continue with the [[Getting started]] instruction.
