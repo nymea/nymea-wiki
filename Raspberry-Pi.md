@@ -135,7 +135,7 @@ Write the partition table to the disk and exit using `w`:
 
 Now you have to format the new partition to vfat (FAT32):
 
-    $ sudo mkfs.vfat /dev/sdb1
+    $ sudo mkfs.vfat -n BOOT /dev/sdb1
 
 Mount the SD card:
     
@@ -223,7 +223,7 @@ Now you have to wait ~35-40 minutes. Once the installation is finished, the Rasp
 
 > **Note:** It's important to connect the network cable **before** you connect the power cable! DHCP will be one of the first things during the installation!
 
-> **Info:** You can follow the installation process if you connect the Raspberry Pi to a HDMI display!
+> **Info:** You can follow the installation process if you connect the Raspberry Pi to a HDMI display! Some **WARNINGS** during the installation are normal.
 
 > **Info:** The log file of the whole *guh*-installation process can be found in `/var/log/installer.log`.
 
@@ -249,7 +249,7 @@ If you already have a Debian *jessie* installation and want to install *guh* you
         ## guh repo
         deb http://repo.guh.guru jessie main
 
-    Add the public key of the guh-repo to your keylist.
+    Add the public key of the guh-repo to your keylist:
     
         $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 6B9376B0
     
@@ -274,7 +274,7 @@ If you already have a Debian *jessie* installation and want to install *guh* you
 
 3. Install *guh* with following command:
     
-        $ sudo apt-get install guh libgl1-mesa-dev
+        $ sudo apt-get install guh guh-webserver libgl1-mesa-dev
         
     The repository contains always the latest stable build of the *guh* `master` branch. 
 
