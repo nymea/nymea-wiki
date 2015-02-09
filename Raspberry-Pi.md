@@ -223,7 +223,9 @@ Now you have to wait ~35-40 minutes. Once the installation is finished, the Rasp
 
 > **Note:** It's important to connect the network cable **before** you connect the power cable! DHCP will be one of the first things during the installation!
 
-> **Info:** You can follow the installation process if you connect the Raspberry Pi to a HDMI display! Some **WARNINGS** during the installation are normal.
+> **Note:** The **WARNINGS** (i.e. `dpkg: warning: ignoring pre-dependency problem!`) during the installation are normal.
+
+> **Info:** You can follow the installation process if you connect the Raspberry Pi to a HDMI display! 
 
 > **Info:** The log file of the whole *guh*-installation process can be found in `/var/log/installer.log`.
 
