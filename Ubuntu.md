@@ -19,7 +19,7 @@ In order to install *guh* on Ubuntu 14.04 LTS (64 bit) you need to create the `/
         ## guh repo
         deb http://repo.guh.guru trusty main
         
-    > **Alternative:** `$ sudo echo -e "\n## guh repo\ndeb http://repo.guh.guru trusty main" >> /etc/apt/sources.list.d/guh.list`
+    > **Alternative:** `$ echo -e "\n## guh repo\ndeb http://repo.guh.guru trusty main" | sudo tee /etc/apt/sources.list.d/guh.list`
     
     Add the public key of the guh-repo to your keylist.
     
@@ -67,7 +67,7 @@ In order to install *guh* on Ubuntu 14.10 (64 bit) you need to create the `/etc/
         ## guh repo
         deb http://repo.guh.guru utopic main
         
-    > **Alternative:** `$ sudo echo -e "\n## guh repo\ndeb http://repo.guh.guru utopic main" >> /etc/apt/sources.list.d/guh.list`
+    > **Alternative:** `$ echo -e "\n## guh repo\ndeb http://repo.guh.guru utopic main" | sudo tee /etc/apt/sources.list.d/guh.list`
     
     Add the public key of the guh-repo to your keylist.
     
