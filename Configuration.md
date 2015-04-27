@@ -62,9 +62,13 @@ The guh-webserver configuration file can be found here:
     StaticFolder = "/usr/share/guh-webinterface/public"
 
 `IP`           ...The IP of the web server
+
 `Port`         ...The port of the web server
+
 `GuhIP`        ...The IP where guhd is running
+
 `GuhPort`      ...The port where guhd is listening 
+
 `StaticFolder` ...The folder containing the static files of guh-webinterface
 
 
