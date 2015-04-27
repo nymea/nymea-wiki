@@ -13,7 +13,7 @@
 **[[Getting started]]**
 * [Autostart guhd](https://github.com/guh/guh/wiki/Getting-started#autostart-guhd)
 * [[guh cli]]
-* [[Webserver]]
+* [Webserver](https://github.com/guh/guh/wiki/Getting-started#guh-webserver)
 
 **[[Special Plugins]]**
 * [[Mockdevice]]
