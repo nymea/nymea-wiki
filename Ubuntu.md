@@ -4,7 +4,7 @@
 
 * [Ubuntu 14.04 LTS (Trusty Thar)](https://github.com/guh/guh/wiki/Ubuntu#ubuntu-1404-lts)
 * [Ubuntu 14.10 (Utopic Unicorn)](https://github.com/guh/guh/wiki/Ubuntu#ubuntu-1410)
-* [Ubuntu 15.04 (Vivid Vervet)](https://github.com/guh/guh/wiki/Ubuntu#ubuntu-1540)
+* [Ubuntu 15.04 (Vivid Vervet)](https://github.com/guh/guh/wiki/Ubuntu#ubuntu-1504)
 
 --------------------------------------------
 ## Ubuntu 14.04 LTS
@@ -221,7 +221,7 @@ In order to install *guh* on Ubuntu 14.10 (64 bit) you need to create the `/etc/
 Once, the installation is finished you continue with the [[Getting started]] instruction.
 
 --------------------------------------------
-## Ubuntu 15.40
+## Ubuntu 15.04
 
 In order to install *guh* on Ubuntu 14.04 (64 bit) you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
 
