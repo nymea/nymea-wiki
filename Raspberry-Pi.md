@@ -235,6 +235,7 @@ In order to check if the installation has finished you can try to connect over `
     $ password: guh
 
 > **Note:** because avahi-daemon is runing by default and the webinterface should already running you can also open following link [http://guh.local:3000](http://guh.local:3000)
+
 Now you have a fresh, clean and minimal installation of Debian *jessie* with *guh*. The `root` password is `guh`!
 
 You can proceed with the [[Getting started]] instructions.
