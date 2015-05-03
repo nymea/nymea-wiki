@@ -17,31 +17,31 @@
 
 **[[Plugins]]**
 
-RF 433 Plugins
+* RF 433 Plugins
 
-* [[Conrad]]
-* [[Elro]]
-* [[Intertechno]]
-* [[Leynew]]
-* [[Elro]]
-* [[Unitec]]
+    * [[Conrad]]
+    * [[Elro]]
+    * [[Intertechno]]
+    * [[Leynew]]
+    * [[Elro]]
+    * [[Unitec]]
 
-Service Plugins
+* Service Plugins
 
-* [[Application and script launcher]]
-* [[Time]]
-* [[eQ-3 Max]]
-* [[Generic elements]]
-* [[Mail Notification]]
-* [[Open Weather Map]]
+    * [[Application and script launcher]]
+    * [[Time]]
+    * [[eQ-3 Max]]
+    * [[Generic elements]]
+    * [[Mail Notification]]
+    * [[Open Weather Map]]
 
-Network Plugins
+* Network Plugins
 
-* [[LG SmartTv]]
-* [[Philips Hue]]
-* [[Wake On Lan]]
-* [[WeMo]]
-* [[WiFi Detector]]
+    * [[LG SmartTv]]
+    * [[Philips Hue]]
+    * [[Wake On Lan]]
+    * [[WeMo]]
+    * [[WiFi Detector]]
 
 **[[Special Plugins]]**
 * [[Mockdevice]]
