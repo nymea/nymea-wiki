@@ -1,1 +1,1 @@
-[[Home]] | [[Install]] | [[Getting started]] | [[Special Plugins]] | [[Configuration]] | [[FAQ]] | [[License]]
+[[Home]] | [[Install]] | [[Getting started]] | [[Plugins]] | [[Special Plugins]] | [[Configuration]] | [[FAQ]] | [[License]]
