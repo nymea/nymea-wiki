@@ -231,9 +231,10 @@ Now you have to wait ~35-40 minutes. Once the installation is finished, the Rasp
 
 In order to check if the installation has finished you can try to connect over `ssh` to the Raspberry Pi. When the installation has finished, the Raspberry Pi will reboot and boot the fresh system...and you will be able to connect:
 
-    $ ssh root@192.168.1.51
+    $ ssh root@guh.local
     $ password: guh
 
+> **Note:** because avahi-daemon is runing by default and the webinterface should already running you can also open following link [http://guh.local:3000](http://guh.local:3000)
 Now you have a fresh, clean and minimal installation of Debian *jessie* with *guh*. The `root` password is `guh`!
 
 You can proceed with the [[Getting started]] instructions.
