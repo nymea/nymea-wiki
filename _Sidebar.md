@@ -15,6 +15,24 @@
 * [[guh cli]]
 * [Webserver](https://github.com/guh/guh/wiki/Getting-started#guh-webserver)
 
+**[[Plugins]]
+* [[Conrad]]
+* [[Elro]]
+* [[Intertechno]]
+* [[Leynew]]
+* [[Elro]]
+* [[Unitec]]
+* [[Time]]
+* [[eQ-3 Max!]]
+* [[Generic elements]]
+* [[Mail Notification]]
+* [[Open Weather Map]]
+* [[LG SmartTv]]
+* [[Philips Hue]]
+* [[Wake On Lan]]
+* [[WeMo]]
+* [[WiFi Detector]]
+
 **[[Special Plugins]]**
 * [[Mockdevice]]
 * [[Boblightd]]
