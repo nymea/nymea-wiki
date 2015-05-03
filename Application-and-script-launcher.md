@@ -7,7 +7,7 @@ The application and script launcher plugin allows you to execute bash commands a
 
 The application launcher allows you to call bash applications or commands (with parameters) from *guh*. Once, the application started, the running state will change to true, if the application is finished, the running state will change to false.
 
-#### Examples
+#### Example
 
 An example command could be [espeak](http://linux.die.net/man/1/espeak). (apt-get install espeak)
 
@@ -17,7 +17,7 @@ An example command could be [espeak](http://linux.die.net/man/1/espeak). (apt-ge
 
 The bashscript launcher allows you to call bash script (with parameters) from *guh*. Once, the script is running, the running State will change to true, if the script is finished, the running State will change to false.
 
-#### Examples
+#### Example
 An example for a very usefull script could be a backup scrip like following `backup.sh` script
 
     #!/bin/sh

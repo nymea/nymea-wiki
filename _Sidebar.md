@@ -15,7 +15,7 @@
 * [[guh cli]]
 * [Webserver](https://github.com/guh/guh/wiki/Getting-started#guh-webserver)
 
-**[[Plugins]]
+**[[Plugins]]**
 * [[Conrad]]
 * [[Elro]]
 * [[Intertechno]]
