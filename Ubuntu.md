@@ -36,16 +36,17 @@ In order to install *guh* on Ubuntu 14.04 LTS (64 bit) you need to create the `/
     
         $ apt-cache search guh
     
-        guh - server for home automation systems - meta package
+        guh - Server for home automation systems - meta package
+        guh-cli - guh command line interface - python
         guh-dbg - server for home automation systems - debug symbols
-        guh-doc - documentation for the guh package (on-site)
-        guh-plugins - server for home automation systems - plugins
-        guh-tests - tests for the guh package
+        guh-doc - Documentation for the guh package (on-site) - documentation
+        guh-plugins - Plugins for guh server home automation systems
+        guh-tests - Tests for the guh package
         guh-webinterface - Browser based user interface for guh
         guh-webserver - A REST-API webserver for the guh-webinterface
-        guhd - server for home automation systems
-        libguh1 - server for home automation systems - core library
-        libguh1-dev - server for home automation systems - development files
+        guhd - Server daemon for home automation systems
+        libguh1 - Server for home automation systems - core library
+        libguh1-dev - Server for home automation systems - development files
 
 3. Install *guh* with following command:
     
@@ -89,16 +90,17 @@ In order to install *guh* on Ubuntu 14.10 (64 bit) you need to create the `/etc/
     
         $ apt-cache search guh
     
-        guh - server for home automation systems - meta package
+        guh - Server for home automation systems - meta package
+        guh-cli - guh command line interface - python
         guh-dbg - server for home automation systems - debug symbols
-        guh-doc - documentation for the guh package (on-site)
-        guh-plugins - server for home automation systems - plugins
-        guh-tests - tests for the guh package
+        guh-doc - Documentation for the guh package (on-site) - documentation
+        guh-plugins - Plugins for guh server home automation systems
+        guh-tests - Tests for the guh package
         guh-webinterface - Browser based user interface for guh
         guh-webserver - A REST-API webserver for the guh-webinterface
-        guhd - server for home automation systems
-        libguh1 - server for home automation systems - core library
-        libguh1-dev - server for home automation systems - development files
+        guhd - Server daemon for home automation systems
+        libguh1 - Server for home automation systems - core library
+        libguh1-dev - Server for home automation systems - development files
 
 3. Install *guh* with following command:
     
@@ -108,6 +110,7 @@ In order to install *guh* on Ubuntu 14.10 (64 bit) you need to create the `/etc/
     If you want to install the source code you can install:
         
         $ sudo apt-get source guh
+        $ sudo apt-get source guh-cli
         $ sudo apt-get source guh-webserver
         $ sudo apt-get source guh-webinterface
 
@@ -142,16 +145,17 @@ In order to install *guh* on Ubuntu 14.10 (64 bit) you need to create the `/etc/
     
         $ apt-cache search guh
     
-        guh - server for home automation systems - meta package
+        guh - Server for home automation systems - meta package
+        guh-cli - guh command line interface - python
         guh-dbg - server for home automation systems - debug symbols
-        guh-doc - documentation for the guh package (on-site)
-        guh-plugins - server for home automation systems - plugins
-        guh-tests - tests for the guh package
+        guh-doc - Documentation for the guh package (on-site) - documentation
+        guh-plugins - Plugins for guh server home automation systems
+        guh-tests - Tests for the guh package
         guh-webinterface - Browser based user interface for guh
         guh-webserver - A REST-API webserver for the guh-webinterface
-        guhd - server for home automation systems
-        libguh1 - server for home automation systems - core library
-        libguh1-dev - server for home automation systems - development files
+        guhd - Server daemon for home automation systems
+        libguh1 - Server for home automation systems - core library
+        libguh1-dev - Server for home automation systems - development files
 
 3. Install *guh* with following command:
     
@@ -161,6 +165,7 @@ In order to install *guh* on Ubuntu 14.10 (64 bit) you need to create the `/etc/
     If you want to install the source code you can install:
         
         $ sudo apt-get source guh
+        $ sudo apt-get source guh-cli
         $ sudo apt-get source guh-webserver
         $ sudo apt-get source guh-webinterface
 
@@ -195,16 +200,17 @@ In order to install *guh* on Ubuntu 14.10 (64 bit) you need to create the `/etc/
     
         $ apt-cache search guh
     
-        guh - server for home automation systems - meta package
+        guh - Server for home automation systems - meta package
+        guh-cli - guh command line interface - python
         guh-dbg - server for home automation systems - debug symbols
-        guh-doc - documentation for the guh package (on-site)
-        guh-plugins - server for home automation systems - plugins
-        guh-tests - tests for the guh package
+        guh-doc - Documentation for the guh package (on-site) - documentation
+        guh-plugins - Plugins for guh server home automation systems
+        guh-tests - Tests for the guh package
         guh-webinterface - Browser based user interface for guh
         guh-webserver - A REST-API webserver for the guh-webinterface
-        guhd - server for home automation systems
-        libguh1 - server for home automation systems - core library
-        libguh1-dev - server for home automation systems - development files
+        guhd - Server daemon for home automation systems
+        libguh1 - Server for home automation systems - core library
+        libguh1-dev - Server for home automation systems - development files
 
 3. Install *guh* with following command:
     
@@ -215,6 +221,7 @@ In order to install *guh* on Ubuntu 14.10 (64 bit) you need to create the `/etc/
     If you want to install the source code you can install:
         
         $ sudo apt-get source guh
+        $ sudo apt-get source guh-cli
         $ sudo apt-get source guh-webserver
         $ sudo apt-get source guh-webinterface
 
@@ -249,16 +256,17 @@ In order to install *guh* on Ubuntu 14.04 (64 bit) you need to create the `/etc/
     
         $ apt-cache search guh
     
-        guh - server for home automation systems - meta package
+        guh - Server for home automation systems - meta package
+        guh-cli - guh command line interface - python
         guh-dbg - server for home automation systems - debug symbols
-        guh-doc - documentation for the guh package (on-site)
-        guh-plugins - server for home automation systems - plugins
-        guh-tests - tests for the guh package
+        guh-doc - Documentation for the guh package (on-site) - documentation
+        guh-plugins - Plugins for guh server home automation systems
+        guh-tests - Tests for the guh package
         guh-webinterface - Browser based user interface for guh
         guh-webserver - A REST-API webserver for the guh-webinterface
-        guhd - server for home automation systems
-        libguh1 - server for home automation systems - core library
-        libguh1-dev - server for home automation systems - development files
+        guhd - Server daemon for home automation systems
+        libguh1 - Server for home automation systems - core library
+        libguh1-dev - Server for home automation systems - development files
 
 3. Install *guh* with following command:
     
@@ -269,6 +277,7 @@ In order to install *guh* on Ubuntu 14.04 (64 bit) you need to create the `/etc/
     If you want to install the source code you can install:
         
         $ sudo apt-get source guh
+        $ sudo apt-get source guh-cli
         $ sudo apt-get source guh-webserver
         $ sudo apt-get source guh-webinterface
 
