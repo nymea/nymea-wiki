@@ -77,9 +77,35 @@ If you want to disable auto starting guhd on boot, you can call following comman
        /etc/rc6.d/K20guhd
 
 --------------------------------------------
+# *guh* command line interface
+
 In order to interact and play with the guhd you can use the command line interface `guh-cli`.
 
-See also [guh-cli documantation](https://github.com/guh/guh/wiki/guh-cli)
+The *guh-cli* (command line interface) is an admin tool written in python to communicate with the [*guh*](https://github.com/guh/guh) JSON-RPC API and test functionality of *guh*. The installation guide can be found [[guh-cli]](here).
+
+In order to start guh-cli you need to know on which host *guh* is currently running. If guh is running on `localhost`, you can start the application as follows:
+
+    $ guh-cli
+
+If you need help you can run:
+
+    $ man guh-cli
+    
+or you can run directly:
+
+    $ guh-cli -h
+    usage: guh-cli [-h] [--host HOST] [--port PORT]
+    
+    The guh-cli (command line interface) is an admin tool written in python to communicate with the guh daemon JSON-RPC API and test functionality of guh.
+
+    optional arguments:
+    -h, --help   show this help message and exit
+    --host HOST  the location of the guh daemon (default 127.0.0.1)
+    --port PORT  the port of the the guh daemon (default 1234)
+
+Once *guh-cli* has established the connection to guhd, you will see the main menu. In the main menu you can either use the arrow keys to navigate or the item number of the menu list.
+
+In the you are using the `Log monitor` the output will auto scroll down if the marked line is at the end of the log list. If you are navigating in previous logs a terminal flash will inform you about a new log entry. With the `space` key you can jump down to the newest log entry and the auto scroll will be enabled again.
 
 # *guh* webserver
 --------------------------------------------
@@ -112,7 +138,5 @@ If you have installed avahi (`$ apt-get install avahi-daemon avahi-utils` you ca
 
 hostname.local:3000
 
-> Example: if you are using a Raspberry Pi and the [guh-netinstal](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-minimal-net-install-system) the hostame will be `guh`:
-
-[http://guh.local:3000](http://guh.local:3000)
+> Example: if you are using a Raspberry Pi and the [guh-netinstal](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-minimal-net-install-system) the hostame will be `guh` [http://guh.local:3000](http://guh.local:3000)
 

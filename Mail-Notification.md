@@ -3,7 +3,7 @@
 
 The mail notification plugin allows you to send a mail notification from a mail account by performing an Action.
 
-**Info**: The password currently will be saved as plain text in the guh settings file. This will be changed soon...
+> **Info**: The password currently will be saved as plain text in the guh settings file. This will be changed soon...
 
 Currently following mail clients are supported:
 
