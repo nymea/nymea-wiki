@@ -28,22 +28,22 @@ The `guhd` package provides also an initscript, which allows you to start, stop,
     $ sudo service guhd
     Usage: /etc/init.d/guhd {start|stop|restart|status}
 
-#### Start the service
+##### Start the service
 In order to start the service you can call following command:
 
     $ sudo service guhd start
 
-#### Stop the service
+##### Stop the service
 In order to stop the service you can call following command:
 
     $ sudo service guhd stop
 
-#### Restart the service
+##### Restart the service
 In order to restart the service you can call following command:
 
     $ sudo service guhd restart
 
-#### Get the status of the daemon
+##### Get the status of the daemon
 In order to find out if the service is running or not you can call following command:
 
     $ sudo service guhd status
