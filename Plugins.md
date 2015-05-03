@@ -14,7 +14,7 @@
 
 * [[Application and script launcher]]
 * [[Time]]
-* [[eQ-3 Max!]]
+* [[eQ-3 Max]]
 * [[Generic elements]]
 * [[Mail Notification]]
 * [[Open Weather Map]]

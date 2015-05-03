@@ -9,7 +9,7 @@ The application launcher allows you to call bash applications or commands (with 
 
 #### Example
 
-An example command could be [espeak](http://linux.die.net/man/1/espeak). (apt-get install espeak)
+An example command could be [espeak](http://linux.die.net/man/1/espeak). (`apt-get install espeak`)
 
      espeak -v en "Chuck Norris is using gooe" # gooe = guh pronounced correctly
   
