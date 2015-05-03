@@ -9,7 +9,7 @@ Depending on the your platform and operating system, you can choose between foll
 |:-----------|-------------:|:------------:|:------------:|
 | amd64      |      [x]     |      [x]     |      [x]     |
 | i386       |      [x]     |      [x]     |      [x]     |
-| armhf      |      [x]     |      [ ]     |      [ ]     |
+| armhf      |      [x]     |      [ ]     |      [x]     |
 
 
 | Devian     |    Wheezy    |    Jessie    |
