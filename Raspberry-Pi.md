@@ -250,6 +250,9 @@ If you already have a Debian *jessie* installation and want to install *guh* you
     
         ## guh repo
         deb http://repo.guh.guru jessie main
+        deb-src http://repo.guh.guru jessie main
+
+        > **Alternative:** `$ echo -e "\n## guh repo\ndeb http://repo.guh.guru jessie main\ndeb-src http://repo.guh.guru jessie main" | sudo tee /etc/apt/sources.list.d/guh.list`
 
     Add the public key of the guh-repo to your keylist:
     
@@ -263,22 +266,28 @@ If you already have a Debian *jessie* installation and want to install *guh* you
     
         $ apt-cache search guh
     
-        guh - server for home automation systems - meta package
+        guh - Server for home automation systems - meta package
+        guh-cli - guh command line interface - python
         guh-dbg - server for home automation systems - debug symbols
-        guh-doc - documentation for the guh package (on-site)
-        guh-plugins - server for home automation systems - plugins
-        guh-tests - tests for the guh package
+        guh-doc - Documentation for the guh package (on-site) - documentation
+        guh-plugins - Plugins for guh server home automation systems
+        guh-tests - Tests for the guh package
         guh-webinterface - Browser based user interface for guh
         guh-webserver - A REST-API webserver for the guh-webinterface
-        guhd - server for home automation systems
-        libguh1 - server for home automation systems - core library
-        libguh1-dev - server for home automation systems - development files
+        guhd - Server daemon for home automation systems
+        libguh1 - Server for home automation systems - core library
+        libguh1-dev - Server for home automation systems - development files
 
 3. Install *guh* with following command:
     
         $ sudo apt-get install guh guh-webserver libgl1-mesa-dev
         
     The repository contains always the latest stable build of the *guh* `master` branch. 
+    If you want to install the source code you can install:
+        
+        $ sudo apt-get source guh
+        $ sudo apt-get source guh-webserver
+        $ sudo apt-get source guh-webinterface
 
 Once, the installation is finished you continue with the [[Getting started]] instruction.
 
@@ -307,5 +316,4 @@ Update to fetch the new package list:
 ### Install *guh*
 
 > Coming soon...
-
 
