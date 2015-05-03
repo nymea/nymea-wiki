@@ -16,6 +16,7 @@
 * [Webserver](https://github.com/guh/guh/wiki/Getting-started#guh-webserver)
 
 **[[Plugins]]**
+
 RF 433 Plugins
 * [[Conrad]]
 * [[Elro]]
@@ -23,13 +24,16 @@ RF 433 Plugins
 * [[Leynew]]
 * [[Elro]]
 * [[Unitec]]
+
 Service Plugins
+
 * [[Application and script launcher]]
 * [[Time]]
 * [[eQ-3 Max]]
 * [[Generic elements]]
 * [[Mail Notification]]
 * [[Open Weather Map]]
+
 Network Plugins
 * [[LG SmartTv]]
 * [[Philips Hue]]
