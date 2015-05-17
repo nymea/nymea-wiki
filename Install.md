@@ -12,7 +12,7 @@ Depending on the your platform and operating system, you can choose between foll
 | armhf      |      [x]     |      [ ]     |      [x]     |
 
 
-| Devian     |    Wheezy    |    Jessie    |
+| Debian     |    Wheezy    |    Jessie    |
 |:-----------|-------------:|:------------:|
 | amd64      |      [ ]     |      [ ]     |
 | i386       |      [ ]     |      [ ]     |
