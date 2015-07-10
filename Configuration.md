@@ -71,7 +71,7 @@ The logging database is a sqlite3 database and contains every logg event of the 
 
 **user** - If you start guhd as user, the logging database will be stored in: 
 
-        ~/.config/guhd.log
+        ~/.config/guh/guhd.log
 
 **root** -  If you start guhd as root or the system starts it with the init script, the logging database will be stored in: 
 
