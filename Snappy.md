@@ -23,11 +23,11 @@ Now you can install the snappy-tools
 
 If you want to install Ubuntu Core on your device, you can follow the [official instruction](https://developer.ubuntu.com/en/snappy/start/#try-beaglebone) or use this one.
 
-#### Beaglebone Black
+### Beaglebone Black
 
 1. Download the system
 
-    $ wget http://releases.ubuntu.com/15.04/ubuntu-15.04-snappy-armhf-bbb.img.xz
+        $ wget http://releases.ubuntu.com/15.04/ubuntu-15.04-snappy-armhf-bbb.img.xz
  
 2. Insert SD card (minimum 4GB) in your system and check which device it is:
 
@@ -61,7 +61,7 @@ In this example I have a 8 GB SD card which is device `/dev/sdb`.
         $ ssh ubuntu@webdm.local	# password: ubuntu
 
 
-#### Raspberry Pi 2
+### Raspberry Pi 2
 
 1. Download the system
 
