@@ -2,6 +2,7 @@
 Depending on the your platform and operating system, you can choose between following installation instructions:
 
 * [[Ubuntu]]
+* [[Snappy]]
 * [[Raspberry Pi]]
 * [[Beaglebone Black]]
 
