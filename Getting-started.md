@@ -19,6 +19,7 @@ In order to get help you can type in the terminal `guhd -h`:
       -h, --help       Displays this help.
       -v, --version    Displays version information.
       -n, --no-daemon  Run guhd in the foreground, not as daemon.
+      -d, --debug <[No]DebugCategory>
 
     
 By default, `guhd` will start as a daemon. If you want to start guhd as an application, you can pass the parameter `-n` and it will start in the foreground. 

@@ -1,27 +1,21 @@
 # Install *guh*-core on Ubuntu
 --------------------------------------------
-*guh*-core can be installed from the [*guh* repository](http://repo.guh.guru/) which provides packages for: 
 
-* [Ubuntu 14.04 LTS (Trusty Thar)](https://github.com/guh/guh/wiki/Ubuntu#ubuntu-1404-lts)
-* [Ubuntu 14.10 (Utopic Unicorn)](https://github.com/guh/guh/wiki/Ubuntu#ubuntu-1410)
-* [Ubuntu 15.04 (Vivid Vervet)](https://github.com/guh/guh/wiki/Ubuntu#ubuntu-1504)
-
---------------------------------------------
-## Ubuntu 14.04 LTS
-
-In order to install *guh* on Ubuntu 14.04 LTS (64 bit) you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
+In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
 
 1. Create the [*guh*-repo](http://repo.guh.guru/) list file:
         
         $ sudo nano /etc/apt/sources.list.d/guh.list
             
-    Append following two lines at the end of the file:
+    Append following two lines at the end of the
     
+    *Note:* please replace **<dist>** with your Ubuntu distribution name. In the repository are following distributions available:`trusty` `utopic` `vivid`. Available architectures: `amd64``i386` and `armhf`.
+     
         ## guh repo
-        deb http://repo.guh.guru trusty main
-        deb-src http://repo.guh.guru trusty main
+        deb http://repo.guh.guru <dist> main
+        deb-src http://repo.guh.guru <dist> main
         
-    > **Alternative:** `$ echo -e "\n## guh repo\ndeb http://repo.guh.guru trusty main\ndeb-src http://repo.guh.guru trusty main" | sudo tee /etc/apt/sources.list.d/guh.list`
+    > **Alternative:** `$ echo -e "\n## guh repo\ndeb http://repo.guh.guru <dist> main\ndeb-src http://repo.guh.guru <dist> main" | sudo tee /etc/apt/sources.list.d/guh.list`
     
     Add the public key of the guh-repo to your keylist.
     
@@ -61,113 +55,3 @@ In order to install *guh* on Ubuntu 14.04 LTS (64 bit) you need to create the `/
         
 Once, the installation is finished you continue with the [[Getting started]] instruction.
 
---------------------------------------------
-## Ubuntu 14.10
-
-In order to install *guh* on Ubuntu 14.10 (64 bit) you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
-
-1. Create the [*guh*-repo](http://repo.guh.guru/) list file:
-        
-        $ sudo nano /etc/apt/sources.list.d/guh.list
-            
-    Append following two lines at the end of the file:
-    
-        ## guh repo
-        deb http://repo.guh.guru utopic main
-        deb-src http://repo.guh.guru utopic main
-        
-    > **Alternative:** `$ echo -e "\n## guh repo\ndeb http://repo.guh.guru utopic main\ndeb-src http://repo.guh.guru utopic main" | sudo tee /etc/apt/sources.list.d/guh.list`
-    
-    Add the public key of the guh-repo to your keylist.
-    
-        $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 6B9376B0
-    
-2. Update your package lists:
-    
-        $ sudo apt-get update 
-
-    The *guh*-repo provides following packages:
-    
-        $ apt-cache search guh
-    
-        guh - Server for home automation systems - meta package
-        guh-cli - guh command line interface - python
-        guh-dbg - server for home automation systems - debug symbols
-        guh-doc - Documentation for the guh package (on-site) - documentation
-        guh-plugins - Plugins for guh server home automation systems
-        guh-tests - Tests for the guh package
-        guh-webinterface - Browser based user interface for guh
-        guh-webserver - A REST-API webserver for the guh-webinterface
-        guhd - Server daemon for home automation systems
-        libguh1 - Server for home automation systems - core library
-        libguh1-dev - Server for home automation systems - development files
-
-3. Install *guh* with following command:
-    
-        $ sudo apt-get install guh guh-webserver
-        
-    The repository contains always the latest stable build of the *guh* `master` branch. 
-    If you want to install the source code you can install:
-        
-        $ sudo apt-get source guh
-        $ sudo apt-get source guh-cli
-        $ sudo apt-get source guh-webserver
-        $ sudo apt-get source guh-webinterface
-
-Once, the installation is finished you continue with the [[Getting started]] instruction.
-
---------------------------------------------
-## Ubuntu 15.04
-
-In order to install *guh* on Ubuntu 14.04 (64 bit) you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
-
-1. Create the [*guh*-repo](http://repo.guh.guru/) list file:
-        
-        $ sudo nano /etc/apt/sources.list.d/guh.list
-            
-    Append following two lines at the end of the file:
-    
-        ## guh repo
-        deb http://repo.guh.guru vivid main
-        deb-src http://repo.guh.guru vivid main
-        
-    > **Alternative:** `$ echo -e "\n## guh repo\ndeb http://repo.guh.guru vivid main\ndeb-src http://repo.guh.guru vivid main" | sudo tee /etc/apt/sources.list.d/guh.list`
-    
-    Add the public key of the guh-repo to your keylist.
-    
-        $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 6B9376B0
-    
-2. Update your package lists:
-    
-        $ sudo apt-get update 
-
-    The *guh*-repo provides following packages:
-    
-        $ apt-cache search guh
-    
-        guh - Server for home automation systems - meta package
-        guh-cli - guh command line interface - python
-        guh-dbg - server for home automation systems - debug symbols
-        guh-doc - Documentation for the guh package (on-site) - documentation
-        guh-plugins - Plugins for guh server home automation systems
-        guh-tests - Tests for the guh package
-        guh-webinterface - Browser based user interface for guh
-        guh-webserver - A REST-API webserver for the guh-webinterface
-        guhd - Server daemon for home automation systems
-        libguh1 - Server for home automation systems - core library
-        libguh1-dev - Server for home automation systems - development files
-
-3. Install *guh* with following command:
-    
-        $ sudo apt-get install guh guh-webserver
-        
-    The repository contains always the latest stable build of the *guh* `master` branch. 
-    
-    If you want to install the source code you can install:
-        
-        $ sudo apt-get source guh
-        $ sudo apt-get source guh-cli
-        $ sudo apt-get source guh-webserver
-        $ sudo apt-get source guh-webinterface
-
-Once, the installation is finished you continue with the [[Getting started]] instruction.
