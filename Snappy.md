@@ -111,6 +111,7 @@ In this example I have a 8 GB SD card which is device `/dev/sdb`.
 
         $ snappy-remote --url=ssh://webdm.local install guh_0.1.3_armhf.snap
 
+        =======================================================
         Installing guh_0.1.3_armhf.snap from local environment
         Installing /tmp/guh_0.1.3_armhf.snap
         2015/07/10 22:41:53 Signature check failed, but installing anyway as requested
@@ -119,6 +120,7 @@ In this example I have a 8 GB SD card which is device `/dev/sdb`.
         guh         2015-07-10 0.1.3   sideload  
         webdm       2015-06-11 0.9               
         pi2         2015-06-11 0.13 
+        =======================================================
 
 
 Now you have successfully installed guh on your `armhf` device and can continue with [[Getting-started-snappy]]
