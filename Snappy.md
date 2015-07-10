@@ -3,7 +3,7 @@
 
 > Ubuntu Core provides transactional updates with rigorous application isolation. This is the smallest, safest Ubuntu ever, on devices and on the cloud. We’re excited to unleash a new wave of developer innovation with snappy Ubuntu Core! ” - Mark Shuttleworth, founder of Ubuntu and Canonical.
 
-So we decidet to try the new system to use the advantages of the snappy package system and give you the possibility to play with Ubuntu Core and guh on you [Beaglebone Black](http://beagleboard.org/BLACK) or [Raspberry Pi 2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/). You can find a good documentation of the new operating system from Canonical [Ubunut Core](https://developer.ubuntu.com/en/snappy/).
+So we decidet to try the new system to use the advantages of the snappy package system and give you the possibility to play with Ubuntu Core and guh on you [Beaglebone Black](http://beagleboard.org/BLACK) or [Raspberry Pi 2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/). You can find a good documentation of the new operating system from Canonical [Ubuntu Core](https://developer.ubuntu.com/en/snappy/).
 
 Currently we provide a guh snappy package only `armhf`, but we have planend to change that soon. If you want to install guh on you device you can do following: 
 
@@ -54,7 +54,7 @@ In this example I have a 8 GB SD card which is device `/dev/sdb`.
         $ sudo dd if=ubuntu-15.04-snappy-armhf-bbb.img of=/dev/sdX bs=32M
         $ sync
 
-> **Note:** check [official instructions](https://developer.ubuntu.com/en/snappy/start/#try-beaglebone) for more information.
+    > **Note:** check [official instructions](https://developer.ubuntu.com/en/snappy/start/#try-beaglebone) for more information.
 
 5. Once the installation is finished you can insert the SD card into your Beaglebone Black and power it on. When the system has started you can log in with ssh in you new system:
 
@@ -65,7 +65,7 @@ In this example I have a 8 GB SD card which is device `/dev/sdb`.
 
 1. Download the system
 
-    $ wget http://people.canonical.com/~platform/snappy/raspberrypi2/ubuntu-15.04-snappy-armhf-rpi2.img.xz
+        $ wget http://people.canonical.com/~platform/snappy/raspberrypi2/ubuntu-15.04-snappy-armhf-rpi2.img.xz
  
 2. Insert SD card (minimum 4GB) in your system and check which device it is:
 
@@ -92,7 +92,7 @@ In this example I have a 8 GB SD card which is device `/dev/sdb`.
         $ sudo dd if=ubuntu-15.04-snappy-armhf-rpi2.img of=/dev/sdX bs=32M
         $ sync
 
-> **Note:** check [official instructions](https://developer.ubuntu.com/en/snappy/start/#snappy-raspi2) for more information.
+    > **Note:** check [official instructions](https://developer.ubuntu.com/en/snappy/start/#snappy-raspi2) for more information.
 
 5. Once the installation is finished you can insert the SD card into your Raspberry Pi 2 and power it on. When the system has started you can log in with ssh in you new system:
 
@@ -107,7 +107,7 @@ In this example I have a 8 GB SD card which is device `/dev/sdb`.
 
 2. Install guh snappy on the device:
 
-        > **Note:** the avahi sometimes does not work correctly. In this case try to replace `webdm.local` with the ip of your device.
+    > **Note:** the avahi sometimes does not work correctly. In this case try to replace `webdm.local` with the ip of your device.
 
         $ snappy-remote --url=ssh://webdm.local install guh_0.1.3_armhf.snap
 
