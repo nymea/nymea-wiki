@@ -22,6 +22,8 @@
 **Service Plugins**
 
 * [[LG SmartTv]]
+* [[Kodi]]
+* [[UDP Commander]]
 * [[Philips Hue]]
 * [[Wake On Lan]]
 * [[WeMo]]
