@@ -20,6 +20,7 @@ The guh package provides a `guhd.conf` file, which deines the settings for the d
     rf433rx=27
     rf433tx=22
 
+
 In the `JSONRPC` section are the settings for the TCP interface of the JSON-RPC API: 
 
 * *port* - Defines the port where the TCP server will listen. If you change the port please keep in mind that the `GuhPort` of the guh-webserver has to be changed to.
@@ -40,30 +41,33 @@ The location of the personal settings like configured devices, rules and plugin 
 
 * **User** - If you start guhd as user, the settings can be found in the home directory of the corresponding user: 
 
-    ~/.config/guh/*
+        ~/.config/guh/*
 
 * **root** -  If you start guhd as root or the system starts it with the init script, the personal settings will be stored in:
 
-    /etc/guh/*
+        /etc/guh/*
 
 
 ## Reset configuration
  
 * **user** - If you start guhd as user, you will have to delete following files: 
 
-    $ rm ~/.config/guh/devices.conf
-    $ rm ~/.config/guh/rules.conf
-    $ rm ~/.config/guh/plugins.conf
+        $ rm ~/.config/guh/devices.conf
+        $ rm ~/.config/guh/rules.conf
+        $ rm ~/.config/guh/plugins.conf
 
 * **root** -  If you start guhd as root or the system starts it with the init script, you will have to delete following files:
 
-    $ sudo rm /etc/guh/devices.conf
-    $ sudo rm /etc/guh/rules.conf
-    $ sudo rm /etc/guh/plugins.conf 
+
+        $ sudo rm /etc/guh/devices.conf
+        $ sudo rm /etc/guh/rules.conf
+        $ sudo rm /etc/guh/plugins.conf 
 
 > **Note:** you need to restart guhd to clean up also the runtime configurations after deleting the configuration files.
 
 ## Logging Database
+
+The logging database is a sqlite3 database and contains every logg event of the guhd server. 
 
 * **user** - If you start guhd as user, the logging database will be stored in: 
 
@@ -80,14 +84,13 @@ To reset the database, just delete the file and restart guhd.
 # guh-webserver
 The guh-webserver configuration file can be found here:
 
+        $ cat /etc/guh/guh-webserver.conf
 
-    $ cat /etc/guh/guh-webserver.conf
-
-    IP = "0.0.0.0"
-    Port = 3000
-    GuhIP = "127.0.0.1"
-    GuhPort = 1234
-    StaticFolder = "/usr/share/guh-webinterface/public"
+        IP = "0.0.0.0"
+        Port = 3000
+        GuhIP = "127.0.0.1"
+        GuhPort = 1234
+        StaticFolder = "/usr/share/guh-webinterface/public"
 
 
 * *IP* - The IP of the web server
