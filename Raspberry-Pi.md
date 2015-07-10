@@ -143,9 +143,9 @@ Mount the SD card:
     $ sudo mount -t vfat /dev/sdb1 /mnt/raspberry-boot/    
     $ cd /mnt/raspberry-boot/
 
-Download the latest latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.6.zip) file:
+Download the latest latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-raspbian-netinstall/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.6.zip) file:
 
-    $ sudo wget http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.6.zip
+    $ sudo wget http://www.guh.guru:8080/job/build-raspbian-netinstall/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.6.zip
 
 Unzip the file:
 
@@ -180,7 +180,7 @@ In order to prepare the SD card under MacOS, you need to download the SD Formatt
 
     ![SD Formatter MacOS](images/macos-sd-formatter.png)
     
-4. Unzip the latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.6.zip) to the BOOT partition on the SD card:
+4. Unzip the latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-raspbian-netinstall/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.6.zip) to the BOOT partition on the SD card:
 
     ![SD card directory](images/macos-sd-directory.png)
     
@@ -207,7 +207,7 @@ In order to prepare the SD card under Windows, you need to download the SD Forma
     
     ![SD Formatter Windows Complete](images/windows-sd-formatter-complete.png)
 
-4. Unzip the latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-installer/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.6.zip) to the BOOT partition on the SD card:
+4. Unzip the latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-raspbian-netinstall/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.6.zip) to the BOOT partition on the SD card:
 
     ![SD card directory](images/windows-sd-directory.png)
     
