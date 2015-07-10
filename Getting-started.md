@@ -5,6 +5,8 @@ Once you have installed *guh* successfully you can start the *guhd* daemon. Ther
 * starting guh as daemon (service) 
 * starting guh as application (terminal application) and see all debug outputs.
 
+> **Note:** if you have installed the snappy package, please follow the [Getting started with guh snappy](https://github.com/guh/guh/wiki/Getting-started-snappy) instructions.
+
 In order to get help you can type in the terminal `guhd -h`:
 
     $ guhd -h
@@ -19,33 +21,39 @@ In order to get help you can type in the terminal `guhd -h`:
       -h, --help       Displays this help.
       -v, --version    Displays version information.
       -n, --no-daemon  Run guhd in the foreground, not as daemon.
-      -d, --debug <[No]DebugCategory>
+      -d, --debug <[No]DebugCategory> ...
 
-    
+Also a manual page is available:
+
+    $ man guhd
+
 By default, `guhd` will start as a daemon. If you want to start guhd as an application, you can pass the parameter `-n` and it will start in the foreground. 
+
+If you want to see a special debug category, you can pass that category to the parameter. You can find all available categories in the help message (`guhd -h`):
+
+    > **Example:** start guhd in the foreground and enable the JsonRpc debug messages:
+    
+    $ guhd -n -d JsonRpc
 
 The `guhd` package provides also an initscript, which allows you to start, stop, restart and get the status the *guh*-daemon.
 
     $ sudo service guhd
     Usage: /etc/init.d/guhd {start|stop|restart|status}
 
-##### Start the service
-In order to start the service you can call following command:
+Start the service:
 
     $ sudo service guhd start
 
-##### Stop the service
-In order to stop the service you can call following command:
+Stop the service:
 
     $ sudo service guhd stop
 
-##### Restart the service
-In order to restart the service you can call following command:
+
+Restart the service:
 
     $ sudo service guhd restart
 
-##### Get the status of the daemon
-In order to find out if the service is running or not you can call following command:
+Get the status of the service:
 
     $ sudo service guhd status
 
@@ -82,7 +90,7 @@ If you want to disable auto starting guhd on boot, you can call following comman
 
 In order to interact and play with the guhd you can use the command line interface `guh-cli`.
 
-The *guh-cli* (command line interface) is an admin tool written in python to communicate with the [*guh*](https://github.com/guh/guh) JSON-RPC API and test functionality of *guh*. The installation guide can be found [[guh-cli]](here).
+The *guh-cli* (command line interface) is an admin tool written in python to communicate with the [*guh*](https://github.com/guh/guh) JSON-RPC API and test the functions of *guh*. The installation guide can be found [[guh-cli]](here).
 
 In order to start guh-cli you need to know on which host *guh* is currently running. If guh is running on `localhost`, you can start the application as follows:
 
@@ -91,7 +99,7 @@ In order to start guh-cli you need to know on which host *guh* is currently runn
 If you need help you can run:
 
     $ man guh-cli
-    
+        
 or you can run directly:
 
     $ guh-cli -h
@@ -137,9 +145,12 @@ Once the web-server is running you can open your favorite web-browser and enter 
 
 [http://127.0.0.1:3000](http://127.0.0.1:3000)
 
-If you have installed avahi (`$ apt-get install avahi-daemon avahi-utils` you can access the the webserver with the `hostname` of the device where guh-webserver is running:
+If you have installed avahi (`$ apt-get install avahi-daemon avahi-utils`) you can access the the webserver with the `hostname` of the device where guh-webserver is running:
 
 hostname.local:3000
 
 > Example: if you are using a Raspberry Pi and the [guh-netinstal](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-minimal-net-install-system) the hostame will be `guh` [http://guh.local:3000](http://guh.local:3000)
+
+
+
 

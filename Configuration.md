@@ -1,59 +1,61 @@
 # Configuration
 --------------------------------------------
 * [guh](https://github.com/guh/guh/wiki/Configuration#guh)
-    * [General configuration](https://github.com/guh/guh/wiki/Configuration#guh#general-configuration)
-        * [GPIO section](https://github.com/guh/guh/wiki/Configuration#guh#gpio-section)
-    * [Devices](https://github.com/guh/guh/wiki/Configuration#guh#devices)
-    * [Rules](https://github.com/guh/guh/wiki/Configuration#guh#rules)
-    * [Reset configuration](https://github.com/guh/guh/wiki/Configuration#guh#reset-configuration)
 * [guh-webserver](https://github.com/guh/guh/wiki/Configuration#guh-webserver) 
 
 --------------------------------------------
-# guh
-*guh* saves all the configured devices and rules in two separated config files, which can be found in
-
-    $ ~/.config/guh/
-
-> **Note:** if you start guhd as daemon, the home folder will be currently at `/`, because a daemon does not need a user to start. All configuration files will be stred in `/.config/guh/`. This will be fixed as soon as possible.
+# guhd
 
 
-Depending on the user how starts *guh*, the config files will be stored in that home directory (`$ cd ~`). If you are starting *guh* as `root` this folder will be in the root home directory. 
 
-   
-## General configuration
 
-The *guhd* configurations will be stored in:
 
-    $ ~/.config/guh/guhd.conf
+## Global settings
+The guh package provides a `guhd.conf` file, which will be located by default in:
 
-#### GPIO section
+    $ cat /etc/guh/guhd.conf
 
-> Coming soon...
+    [JSONRPC]
+    port=1234
+    interfaces="lo","all"
+    ip="IPv4", "IPv6"
 
-## Devices
-    
-The configured *devices* will be stored in:
+    [GPIO]
+    rf433rx=27
+    rf433tx=22
 
-    $ ~/.config/guh/devices.conf
 
-## Rules
+In the `JSONRPC` section are the settings for the TCP interface of the JSON-RPC API: 
 
-The created *rules* will be stored in:
+* *port* - Defines the port where the TCP server will listen. If you change the port please keep in mind that the `GuhPort` of the guh-webserver has to be changed to.
 
-    $ ~/.config/guh/rules.conf
+* *interfaces* - Defines the networkinterfaces where the TCP server will listen. You can check the networkinterfaces with `$ ifconfig -a`. If the value *all* is in the values, the server will listen on all networkinterfaces. 
 
-## Reset configuration
+* *ip* - Defines the address types of the server. Available address types are `IPv4` and `IPv6`. If the value *any* is in the values, the server will listen on both address types. 
 
-If you want to reset all guh configuration, just delete everything in this folder and restart *guh*.
+In the `GPIO` section are the settings for the hardware GPIOs depending on the board you are using:
 
-    $ rm ~/.config/guh/*
-    
+* *rf433rx* - Defines the GPIO pin number (in the filesystem) where the RF 433 MHz receiver is connected. 
+
+* *rf433tx* - Defines the GPIO pin number (in the filesystem) where the RF 433 MHz transmitter is connected.
+
+## Personal settings
+
+
+
+Depending on which user starts *guhd* the settings files will be stored in different locations. If `root` or the init system starts guhd, the 
+
+## Logging Database
+
+
+
+
 --------------------------------------------
 # guh-webserver
 The guh-webserver configuration file can be found here:
 
 
-    $ sudo nano /etc/guh/guh-webserver.conf
+    $ cat /etc/guh/guh-webserver.conf
 
     IP = "0.0.0.0"
     Port = 3000
@@ -61,15 +63,16 @@ The guh-webserver configuration file can be found here:
     GuhPort = 1234
     StaticFolder = "/usr/share/guh-webinterface/public"
 
-`IP`           ...The IP of the web server
 
-`Port`         ...The port of the web server
+* *IP* - The IP of the web server
 
-`GuhIP`        ...The IP where guhd is running
+* *Port* - The port of the web server
 
-`GuhPort`      ...The port where guhd is listening 
+* *GuhIP* - The IP where guhd is running
 
-`StaticFolder` ...The folder containing the static files of guh-webinterface
+* *GuhPort* - The port where guhd is listening 
+
+* *StaticFolder* - The folder containing the static files of guh-webinterface
 
 
 
