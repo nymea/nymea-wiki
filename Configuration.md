@@ -39,24 +39,24 @@ In the `GPIO` section are the settings for the hardware GPIOs depending on the b
 
 The location of the personal settings like configured devices, rules and plugin depends on the user who starts guh.
 
-* **User** - If you start guhd as user, the settings can be found in the home directory of the corresponding user: 
+**User** - If you start guhd as user, the settings can be found in the home directory of the corresponding user: 
 
         ~/.config/guh/*
 
-* **root** -  If you start guhd as root or the system starts it with the init script, the personal settings will be stored in:
+**root** -  If you start guhd as root or the system starts it with the init script, the personal settings will be stored in:
 
         /etc/guh/*
 
 
 ## Reset configuration
  
-* **user** - If you start guhd as user, you will have to delete following files: 
+**user** - If you start guhd as user, you will have to delete following files: 
 
         $ rm ~/.config/guh/devices.conf
         $ rm ~/.config/guh/rules.conf
         $ rm ~/.config/guh/plugins.conf
 
-* **root** -  If you start guhd as root or the system starts it with the init script, you will have to delete following files:
+**root** -  If you start guhd as root or the system starts it with the init script, you will have to delete following files:
 
 
         $ sudo rm /etc/guh/devices.conf
@@ -69,14 +69,13 @@ The location of the personal settings like configured devices, rules and plugin 
 
 The logging database is a sqlite3 database and contains every logg event of the guhd server. 
 
-* **user** - If you start guhd as user, the logging database will be stored in: 
+**user** - If you start guhd as user, the logging database will be stored in: 
 
-    ~/.config/guhd.log
+        ~/.config/guhd.log
 
-* **root** -  If you start guhd as root or the system starts it with the init script, the logging database will be stored in: 
+**root** -  If you start guhd as root or the system starts it with the init script, the logging database will be stored in: 
 
-    /var/log/guhd.log
-
+        /var/log/guhd.log
 
 To reset the database, just delete the file and restart guhd.
 
