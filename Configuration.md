@@ -6,12 +6,8 @@
 --------------------------------------------
 # guhd
 
-
-
-
-
 ## Global settings
-The guh package provides a `guhd.conf` file, which will be located by default in:
+The guh package provides a `guhd.conf` file, which deines the settings for the daemon and can be found in:
 
     $ cat /etc/guh/guhd.conf
 
@@ -23,7 +19,6 @@ The guh package provides a `guhd.conf` file, which will be located by default in
     [GPIO]
     rf433rx=27
     rf433tx=22
-
 
 In the `JSONRPC` section are the settings for the TCP interface of the JSON-RPC API: 
 
@@ -41,14 +36,45 @@ In the `GPIO` section are the settings for the hardware GPIOs depending on the b
 
 ## Personal settings
 
+The location of the personal settings like configured devices, rules and plugin depends on the user who starts guh.
+
+* **User** - If you start guhd as user, the settings can be found in the home directory of the corresponding user: 
+
+    ~/.config/guh/*
+
+* **root** -  If you start guhd as root or the system starts it with the init script, the personal settings will be stored in:
+
+    /etc/guh/*
 
 
-Depending on which user starts *guhd* the settings files will be stored in different locations. If `root` or the init system starts guhd, the 
+## Reset configuration
+ 
+* **user** - If you start guhd as user, you will have to delete following files: 
+
+    $ rm ~/.config/guh/devices.conf
+    $ rm ~/.config/guh/rules.conf
+    $ rm ~/.config/guh/plugins.conf
+
+* **root** -  If you start guhd as root or the system starts it with the init script, you will have to delete following files:
+
+    $ sudo rm /etc/guh/devices.conf
+    $ sudo rm /etc/guh/rules.conf
+    $ sudo rm /etc/guh/plugins.conf 
+
+> **Note:** you need to restart guhd to clean up also the runtime configurations after deleting the configuration files.
 
 ## Logging Database
 
+* **user** - If you start guhd as user, the logging database will be stored in: 
+
+    ~/.config/guhd.log
+
+* **root** -  If you start guhd as root or the system starts it with the init script, the logging database will be stored in: 
+
+    /var/log/guhd.log
 
 
+To reset the database, just delete the file and restart guhd.
 
 --------------------------------------------
 # guh-webserver
