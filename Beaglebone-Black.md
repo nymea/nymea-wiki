@@ -9,6 +9,9 @@
 
 --------------------------------------------
 
+> **Note:** If you want to install guh on your Beaglebone Black with Ubuntu Core, please follow the [[Snappy]] guide. 
+ 
+
 ## Install Ubuntu Trusty
 In order to install guh on the [Beaglebone Black](http://beagleboard.org/black) we recommend to use the Ubuntu Trusty 14.04 LTS image. A very good an easy installation instruction for the microSD card can be found : 
 
