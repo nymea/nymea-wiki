@@ -7,7 +7,6 @@
 * [[Elro]]
 * [[Intertechno]]
 * [[Leynew]]
-* [[Elro]]
 * [[Unitec]]
 
 **Service Plugins**
