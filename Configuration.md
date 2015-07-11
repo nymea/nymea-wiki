@@ -7,7 +7,7 @@
 # guhd
 
 ## Global settings
-The guh package provides a `guhd.conf` file, which deines the settings for the daemon and can be found in:
+The guh package provides a `guhd.conf` file, which defines the settings for the daemon and can be found in:
 
     $ cat /etc/guh/guhd.conf
 
@@ -25,19 +25,19 @@ In the `JSONRPC` section are the settings for the TCP interface of the JSON-RPC 
 
 * *port* - Defines the port where the TCP server will listen. If you change the port please keep in mind that the `GuhPort` of the guh-webserver has to be changed to.
 
-* *interfaces* - Defines the networkinterfaces where the TCP server will listen. You can check the networkinterfaces with `$ ifconfig -a`. If the value *all* is in the values, the server will listen on all networkinterfaces. 
+* *interfaces* - Defines the network interfaces where the TCP server will listen. You can check the network interfaces with `$ ifconfig -a`. If the value *all* is in the values, the server will listen on all network interfaces. 
 
 * *ip* - Defines the address types of the server. Available address types are `IPv4` and `IPv6`. If the value *any* is in the values, the server will listen on both address types. 
 
 In the `GPIO` section are the settings for the hardware GPIOs depending on the board you are using:
 
-* *rf433rx* - Defines the GPIO pin number (in the filesystem) where the RF 433 MHz receiver is connected. 
+* *rf433rx* - Defines the GPIO pin number (in the file system) where the RF 433 MHz receiver is connected. 
 
-* *rf433tx* - Defines the GPIO pin number (in the filesystem) where the RF 433 MHz transmitter is connected.
+* *rf433tx* - Defines the GPIO pin number (in the file system) where the RF 433 MHz transmitter is connected.
 
 ## Personal settings
 
-The location of the personal settings like configured devices, rules and plugin depends on the user who starts guh.
+The location of the personal settings like configured devices, rules and plugins depends on the user who starts guh.
 
 **User** - If you start guhd as user, the settings can be found in the home directory of the corresponding user: 
 
@@ -67,7 +67,7 @@ The location of the personal settings like configured devices, rules and plugin 
 
 ## Logging Database
 
-The logging database is a sqlite3 database and contains every logg event of the guhd server. 
+The logging database is a sqlite3 database and contains every log event of the guhd server. 
 
 **user** - If you start guhd as user, the logging database will be stored in: 
 
