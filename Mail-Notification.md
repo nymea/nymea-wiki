@@ -7,6 +7,6 @@ The mail notification plugin allows you to send a mail notification from a mail 
 
 Currently following mail clients are supported:
 
-* Google Mail (With the Google Mail Notification you can send a mail with your gmail address to a recipient.)
-* Yahoo Mail (The Yahoo Mail Notification you can send a mail with your yahoo address to a recipient. )
-* Custom Mail (With the Custom Mail Notification you can set up a custom SMTP connection)
+* **Google Mail** (With the Google Mail Notification you can send a mail with your Gmail address to a recipient.)
+* **Yahoo Mail** (The Yahoo Mail Notification you can send a mail with your yahoo address to a recipient. )
+* **Custom Mail** (With the Custom Mail Notification you can set up a custom SMTP connection)
