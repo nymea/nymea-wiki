@@ -15,7 +15,7 @@ But first log in to Ubuntu Core device:
 
         $ ssh ubuntu@webdm.local	# password: ubuntu
 
-        > **Note:** the avahi sometimes does not work correctly. In this case try to replace `webdm.local` with the ip of your device.
+    > **Note:** the avahi sometimes does not work correctly. In this case try to replace `webdm.local` with the ip of your device.
 
 Now you shoud see running two services from guh:
 
