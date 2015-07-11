@@ -15,9 +15,10 @@ But first log in to Ubuntu Core device:
 
         $ ssh ubuntu@webdm.local	# password: ubuntu
 
-    > **Note:** the avahi sometimes does not work correctly. In this case try to replace `webdm.local` with the ip of your device.
+    
+> **Note:** the avahi sometimes does not work correctly. In this case try to replace `webdm.local` with the ip of your device.
 
-Now you shoud see running two services from guh:
+Now you should see running two services from guh:
 
         $ systemctl list-units | grep guh
 
@@ -32,11 +33,11 @@ or for the webserver:
 
         $ sudo journalctl -f -u guh_webserver_0.1.3.service
 
-If you want to play with the api you can start the command line interface [[guh-cli]] as user `ubuntu`:
+If you want to play with the API you can start the command line interface [[guh-cli]] as user `ubuntu`:
 
         $ guh.guh-cli
 
-The guh REST API and the guh-webinterface are accessable over port 3000. The guhd JSON-RPC API runns on port 1234.
+The guh REST API and the guh-webinterface are accessible over port 3000. The guhd JSON-RPC API runns on port 1234.
 
 ## Configurations
 
