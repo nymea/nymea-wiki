@@ -1,9 +1,10 @@
-# Install *guh*-core on the Raspberry Pi
+# Install *guh*-core on the Raspberry Pi B
 --------------------------------------------
 
 This tutorial shows you how to install *guh* on the [Raspberry Pi](http://www.raspberrypi.org/). The easiest and recommended way is to use the [guh-netinstall](https://github.com/guh/raspbian-netinstall-config) provided by *guh* 
 > Thanks to the awesome work of [raspbian-ua-netinst](https://github.com/debian-pi/raspbian-ua-netinst).
 
+If you want to install guh on the Raspberry Pi 2 Rev. B, please follow the [[Snappy]] guide. 
 ## Table of contents:
 
 * [Install *guh* on Debian *jessie* (minimal **net-install** system)](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-minimal-net-install-system)
