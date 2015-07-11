@@ -31,7 +31,7 @@ By default, `guhd` will start as a daemon. If you want to start guhd as an appli
 
 If you want to see a special debug category, you can pass that category to the parameter. You can find all available categories in the help message (`guhd -h`):
 
-    > **Example:** start guhd in the foreground and enable the JsonRpc debug messages:
+> **Example:** start guhd in the foreground and enable the JsonRpc debug messages:
     
     $ guhd -n -d JsonRpc
 
@@ -58,7 +58,7 @@ Get the status of the service:
     $ sudo service guhd status
 
 ## Autostart guhd
-If you want to autostart guhd on boot, you can enable the service by calling following command:
+If you want to auto start guhd on boot, you can enable the service by calling following command:
 
     $ sudo update-rc.d guhd defaults
     
@@ -149,7 +149,7 @@ If you have installed avahi (`$ apt-get install avahi-daemon avahi-utils`) you c
 
 hostname.local:3000
 
-> Example: if you are using a Raspberry Pi and the [guh-netinstal](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-minimal-net-install-system) the hostame will be `guh` [http://guh.local:3000](http://guh.local:3000)
+> Example: if you are using a Raspberry Pi and the [guh-netinstal](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-minimal-net-install-system) the host name will be `guh` [http://guh.local:3000](http://guh.local:3000)
 
 
 
