@@ -3,9 +3,9 @@
 
 > Ubuntu Core provides transactional updates with rigorous application isolation. This is the smallest, safest Ubuntu ever, on devices and on the cloud. We’re excited to unleash a new wave of developer innovation with snappy Ubuntu Core! ” - Mark Shuttleworth, founder of Ubuntu and Canonical.
 
-So we decidet to try the new system to use the advantages of the snappy package system and give you the possibility to play with Ubuntu Core and guh on you [Beaglebone Black](http://beagleboard.org/BLACK) or [Raspberry Pi 2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/). You can find a good documentation of the new operating system from Canonical [Ubuntu Core](https://developer.ubuntu.com/en/snappy/).
+So we decided to try the new system to use the advantages of the snappy package system and give you the possibility to play with Ubuntu Core and guh on you [Beaglebone Black](http://beagleboard.org/BLACK) or [Raspberry Pi 2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/). You can find a good documentation of the new operating system from Canonical [Ubuntu Core](https://developer.ubuntu.com/en/snappy/).
 
-Currently we provide a guh snappy package only `armhf`, but we have planend to change that soon. If you want to install guh on you device you can do following: 
+Currently we provide a guh snappy package only `armhf`, but we have planned to change that soon. If you want to install guh on you device you can do following: 
 
 ## Install snappy tools
 
@@ -82,7 +82,7 @@ In this example I have a 8 GB SD card which is device `/dev/sdb`.
 
 In this example I have a 8 GB SD card which is device `/dev/sdb`.
 
-3. Extrackt the image:
+3. Extract the image:
 
         $ unxz ubuntu-15.04-snappy-armhf-rpi2.img.xz
 
