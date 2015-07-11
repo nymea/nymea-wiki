@@ -10,10 +10,12 @@ In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.lis
     *Note:* please replace `<dist>` with the codename of your Ubuntu distribution. You can get your system version with `lsb_release -a`. In the repository are following distributions available:`trusty` `utopic` and `vivid`. Available architectures are `amd64` `i386` and `armhf`.
      
     Copy following lines into the file (with replaced `<dist>`) and save it:
+
         ## guh repo
         deb http://repo.guh.guru <dist> main
         deb-src http://repo.guh.guru <dist> main
         
+
     > **Alternative:** `$ echo -e "\n## guh repo\ndeb http://repo.guh.guru <dist> main\ndeb-src http://repo.guh.guru <dist> main" | sudo tee /etc/apt/sources.list.d/guh.list`
     
     Add the public key of the [*guh*-repo](http://repo.guh.guru/) to your keylist.
