@@ -1,8 +1,8 @@
-![guhIO Logo](http://guh.guru/downloads/press/guhIO.png)
+<div style="text-align:center"><img src ="http://guh.guru/downloads/press/guhIO.png" /></div>
 
 # Welcome to the *guh* wiki!
 --------------------------------------------
-*guh* (/[guːh]/ - pronounced German and sounds like "*goo*") is an open source home automation server, which allows to control a lot of different devices from many different manufacturers. With the powerful rule engine you are able to connect any device available in the system and create individual scenes and behaviors for your home. 
+*guhIO* (/[guːh]/ - pronounced German and sounds like "*goo*") is an open source home automation software, which allows to control a lot of different devices from many different manufacturers. With the powerful rule engine you are able to connect any device and create individual scenes and behaviors for your home. 
 
 --------------------------------------------
 # Table of contents
