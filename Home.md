@@ -1,4 +1,4 @@
-![guh logo](wiki/images/guh-logo.png)
+![guhIO Logo](http://guh.guru/downloads/press/guhIO.png)
 
 # Welcome to the *guh* wiki!
 --------------------------------------------
