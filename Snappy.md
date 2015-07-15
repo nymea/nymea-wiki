@@ -1,7 +1,7 @@
 # Install *guh* on ubuntu-core (Snappy)
 --------------------------------------------
 
-> Ubuntu Core provides transactional updates with rigorous application isolation. This is the smallest, safest Ubuntu ever, on devices and on the cloud. We’re excited to unleash a new wave of developer innovation with snappy Ubuntu Core! ” - Mark Shuttleworth, founder of Ubuntu and Canonical.
+> Ubuntu Core provides transactional updates with rigorous application isolation. This is the smallest, safest Ubuntu ever, on devices and on the cloud. We’re excited to unleash a new wave of developer innovation with snappy Ubuntu Core! ” - *Mark Shuttleworth, founder of Ubuntu and Canonical*.
 
 So we decided to try the new system to use the advantages of the snappy package system and give you the possibility to play with Ubuntu Core and guh on you [Beaglebone Black](http://beagleboard.org/BLACK) or [Raspberry Pi 2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/). You can find a good documentation of the new operating system from Canonical [Ubuntu Core](https://developer.ubuntu.com/en/snappy/).
 
