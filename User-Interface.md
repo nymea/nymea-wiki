@@ -27,9 +27,41 @@ now you can type the Adress into your Browser
 `http://10.0.0.6:3000`
 the additoin of ":3000" is necessary, it indicates the port guh is listening - default is 3000
 
+***
+
+* **Web Interface Start Screen**
+![web interface start screen](https://cloud.githubusercontent.com/assets/5207214/8827351/87b17bd4-308c-11e5-96df-43ba3681fc6c.png)
+
+***
+
+* **Web Interface Add Device Screen**
+![web interface add device](https://cloud.githubusercontent.com/assets/5207214/8827355/8bec6326-308c-11e5-80e3-83fdef2a2899.png)
+
+***
+
+
+
 ## Smartphone App
 
 At the moment wir are developing Apps for Android and iOS. It will take some time that it can be downloaded in the App-Stores. But for the Android Users there is a Alpha Prototype to play around (and report some bugs).
+
+***
+
+* **Settings Screen**
+
+![Edit Settings Screen](https://cloud.githubusercontent.com/assets/5207214/8828811/51dc1bec-3094-11e5-8805-b2be415ece97.png)
+
+***
+
+* **Device Screen**
+
+![Device Screen](https://cloud.githubusercontent.com/assets/5207214/8829159/720dbf0a-3095-11e5-9b80-6c6c9c05dc1a.png)
+
+***
+
+* **Rule Screen*
+
+![Rule Screen](https://cloud.githubusercontent.com/assets/5207214/8828873/956c125e-3094-11e5-8970-221f0d8bef89.png)
 
 ## Command Line Interface
 
