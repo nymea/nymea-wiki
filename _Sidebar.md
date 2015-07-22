@@ -18,7 +18,7 @@
 * [[Getting started snappy]]
 
 **[[User Interface]]**
-* [[Webinterface]]
+* [[Web Interface]]
 * [[Smartphone App]]
 * [Command Line Interface](https://github.com/guh/guh/wiki/guh-cli)
 
