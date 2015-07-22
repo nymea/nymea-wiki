@@ -1,4 +1,4 @@
-# Structure of *guhOS*
+# Structure of *guhIO*
 --------------------------------------------
 The whole system has basically three layers:
 
