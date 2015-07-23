@@ -1,8 +1,8 @@
-# User Interfaces
+# User Interfaces - Under Costruction
 
 Since you are such a smarty pants and has installed guhIO, you are now in the lucky position to choose from various user interfaces.
 
-## Web Interface
+# Web Interface
 
 If you took the raspberry netinstall image, guh will be availble at:
 `http://guh.local:3000`
@@ -41,9 +41,9 @@ the additoin of ":3000" is necessary, it indicates the port guh is listening - d
 
 
 
-## Smartphone App
+# Smartphone App
 
-At the moment wir are developing Apps for Android and iOS. It will take some time that it can be downloaded in the App-Stores. But for the Android Users there is a Alpha Prototype to play around (and report some bugs).
+At the moment there are Apps for Android and iOS in develoment. It will take some time until it can be downloaded in the App-Stores. For the Android users is a alpha prototype [App available](https://guh.guru/downloads/mobileapp/guh-mobile_0.1.0_android-debug.apk).
 
 ***
 
