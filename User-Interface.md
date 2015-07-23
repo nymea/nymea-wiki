@@ -1,4 +1,4 @@
-# User Interfaces - Under Costruction
+# User Interfaces - Under Construction
 
 Since you are such a smarty pants and has installed guhIO, you are now in the lucky position to choose from various user interfaces.
 
