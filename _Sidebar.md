@@ -31,6 +31,8 @@
     
 **[[Configuration]]**
 
+**[[Community]]**
+
 **[[FAQ]]**
 
 **[[License]]**
