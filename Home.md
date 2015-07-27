@@ -25,6 +25,8 @@
     * [Webserver](https://github.com/guh/guh/wiki/Getting-started#guh-webserver)
     * [[Getting started snappy]]
 
+* **[[User Interface]]**
+
 * **[[Plugins]]**
 
 * **[[Special Plugins]]**
