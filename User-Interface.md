@@ -45,6 +45,10 @@ the additoin of ":3000" is necessary, it indicates the port guh is listening - d
 
 At the moment there are Apps for Android and iOS in develoment. It will take some time until it can be downloaded in the App-Stores. For the Android users is a alpha prototype [App available](https://guh.guru/downloads/mobileapp/guh-mobile_0.1.0_android-debug.apk).
 
+The source code for the Apps are available here. 
+
+Iphone Users can use instead Ionic to http://ionicframework.com/getting-started/
+
 ***
 
 * **Settings Screen**
