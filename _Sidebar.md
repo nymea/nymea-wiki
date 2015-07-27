@@ -20,7 +20,7 @@
 **[[User Interface]]**
 * [Web Interface](https://github.com/guh/guh/wiki/User-Interface#Web Interface)
 * [Smartphone App](https://github.com/guh/guh/wiki/User-Interface#Smartphone App)
-* [Command Line Interface](https://github.com/guh/guh/wiki/guh-cli)
+* [Command Line Interface](https://github.com/guh/guh/wiki/User-Interface#Command Line Interface)
 
 **[[Plugins]]**
 
