@@ -7,7 +7,7 @@ If you want to present your project or want to share your newest developments, s
 
 If you are facing any troubles, than don't hesitate to reach out for us or the community members, we will be pleased to help you:
 
-* [Mailinglist](https://groups.google.com/forum/#!forum/guhio)
+* [Mailinglist](https://groups.google.com/forum/#!forum/guhio) - guhio@googlegroups.com
 * IRC Channel `#guh on freenode.net`
 
 Please, check before our FAQ or our [Google+ Group](https://groups.google.com/forum/#!forum/guhio) if your question is already answered.
