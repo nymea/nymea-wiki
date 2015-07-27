@@ -34,9 +34,6 @@ The web interface is in an early development stage, in a couple of weeks it will
 
 At the moment there are Apps for Android and iOS in develoment. It will take some time until it can be downloaded in the App-Stores. For the Android users is a alpha prototype [App available](https://guh.guru/downloads/mobileapp/guh-mobile_0.1.0_android-debug.apk).
 
-The source code for the Apps are available here. 
-
-Iphone Users can use instead Ionic to http://ionicframework.com/getting-started/
 
 ***
 
