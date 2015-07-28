@@ -2,8 +2,8 @@
 
 Threre are various channels were you can find the guh team and the guhIO community.
 
-If you want to present your project or want to share your newest developments, share it please in the
-[Google+ Community](https://plus.google.com/u/0/communities/113467056514652214831). There you can also get the latest information about guhIO.
+If you want to present your project or want to share your newest developments you can share it in the
+[Google+ Community](https://plus.google.com/u/0/communities/113467056514652214831). There you can also find the latest news and information about guhIO.
 
 If you are facing any troubles, than don't hesitate to reach out for us or the community members, we will be pleased to help you:
 
