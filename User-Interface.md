@@ -1,12 +1,12 @@
 # User Interfaces
 
-Since you are such a smarty pants and has installed guhIO, you are now in the lucky position to choose from various user interfaces. 
+Since you are such a smarty pants and has installed guhIO, you are now in the lucky position to choose from various user interfaces. Each of the UI's has it's own advantages.
 
-First is the web interface, with your favorite web browser you. The web interface is the most convinient way to do the initial setup of guhIO. 
+First, the web interface - control your smart home on your desktop over the browser. It is the most convinient way to do the initial setup of guhIO. 
 
-The Smartphone apps are the comfortable way for the everyday use. On a dashboard you have the devices you use the most. Perfect to remote control your connected gadgets - remote control outside of your wifi network is currently not working, but will be able soon.
+To use a smartphone app is the comfortable way for the everyday use. On the dashboard you have the devices you use the most at a glance. Perfect for remote controling your connected gadgets - remote control outside of your wifi network is currently not working, but will be able soon.
 
-For development and debugging is the Command Line Interface the best choice. Right out of your Terminal you have the tool to call every function of guhIO, you can also sniff all the data guhIO is producing and can read the log file.  
+For development and debugging is the Command Line Interface the best choice. Right out of your Terminal you have the tool to call every function of guhIO. To sniff all the data of guhIO is also possible, like reading the log files.
 
 # Web Interface
 
@@ -32,7 +32,7 @@ The web interface is in an early development stage, in a couple of weeks it will
 
 # Smartphone App
 
-At the moment there are Apps for Android and iOS in develoment. It will take some time until it can be downloaded in the App-Stores. For the Android users is a alpha prototype [App available](https://guh.guru/downloads/mobileapp/guh-mobile_0.1.0_android-debug.apk).
+At the moment there are Apps for Android and iOS in develoment. It will take some time until they can be downloaded in the App-Stores. For the Android users is a prototype [App available](https://guh.guru/downloads/mobileapp/guh-mobile_0.1.0_android-debug.apk).
 
 
 ***
