@@ -8,6 +8,7 @@
 * [Plugins](https://github.com/guh/guh/wiki/REST-Api-documentation#plugins-resource)
 * [Rules](https://github.com/guh/guh/wiki/REST-Api-documentation#rules-resource)
 * [Logs](https://github.com/guh/guh/wiki/REST-Api-documentation#logs-resource)
+
 --------------------------------------------
 Http Protocol version: `HTTP/1.1`
 
