@@ -1,6 +1,14 @@
 
-## Description
+--------------------------------------------
+# Table of contents
 
+* [Devices](https://github.com/guh/guh/wiki/REST-Api-documentation#devices-resource)
+* [DeviceClasses](https://github.com/guh/guh/wiki/REST-Api-documentation#deviceclasses-resource)
+* [Vendors](https://github.com/guh/guh/wiki/REST-Api-documentation#vendors-resource)
+* [Plugins](https://github.com/guh/guh/wiki/REST-Api-documentation#plugins-resource)
+* [Rules](https://github.com/guh/guh/wiki/REST-Api-documentation#rules-resource)
+* [Logs](https://github.com/guh/guh/wiki/REST-Api-documentation#logs-resource)
+--------------------------------------------
 Http Protocol version: `HTTP/1.1`
 
 https://tools.ietf.org/html/rfc7231
