@@ -1,9 +1,6 @@
 # Configuration
 --------------------------------------------
-* [guh](https://github.com/guh/guh/wiki/Configuration#guh)
-* [guh-webserver](https://github.com/guh/guh/wiki/Configuration#guh-webserver) 
 
---------------------------------------------
 # guhd
 
 ## Global settings
@@ -16,6 +13,13 @@ The guh package provides a `guhd.conf` file, which defines the settings for the 
     interfaces="lo","all"
     ip="IPv4", "IPv6"
 
+    [Webserver]
+    port=3000
+    https=false
+    certificate=/etc/ssl/certs/guhd-certificate.crt
+    certificate-key=/etc/ssl/private/guhd-certificate.key
+    publicFolder=/usr/share/guh-webinterface/public
+
     [GPIO]
     rf433rx=27
     rf433tx=22
@@ -23,11 +27,23 @@ The guh package provides a `guhd.conf` file, which defines the settings for the 
 
 In the `JSONRPC` section are the settings for the TCP interface of the JSON-RPC API: 
 
-* *port* - Defines the port where the TCP server will listen. If you change the port please keep in mind that the `GuhPort` of the guh-webserver has to be changed to.
+* *port* - Defines the port where the TCP server will listen.
 
 * *interfaces* - Defines the network interfaces where the TCP server will listen. You can check the network interfaces with `$ ifconfig -a`. If the value *all* is in the values, the server will listen on all network interfaces. 
 
 * *ip* - Defines the address types of the server. Available address types are `IPv4` and `IPv6`. If the value *any* is in the values, the server will listen on both address types. 
+
+In the `Webserver` section are the settings for the webserver and the REST API:
+
+* *port* - Defines the port on which the webserver is running
+
+* *https* - Definens if the webserver is using a secure, encrypted connection (TLS 1.2) or not. Allowed values are `true` or `false`.
+ 
+* *certificate* - Defines the path to the certificate. This option is only needed if you are using `https`.
+
+* *certificate* - Defines the path to the private key for the certificate. This option is only needed if you are using `https`.
+
+* *publicFolder* - Defines the path to the public folder which will be published with from the webserver. This path describes the directory to the webinterface.
 
 In the `GPIO` section are the settings for the hardware GPIOs depending on the board you are using:
 
@@ -78,32 +94,6 @@ The logging database is a sqlite3 database and contains every log event of the g
         /var/log/guhd.log
 
 To reset the database, just delete the file and restart guhd.
-
---------------------------------------------
-# guh-webserver
-The guh-webserver configuration file can be found here:
-
-        $ cat /etc/guh/guh-webserver.conf
-
-        IP = "0.0.0.0"
-        Port = 3000
-        GuhIP = "127.0.0.1"
-        GuhPort = 1234
-        StaticFolder = "/usr/share/guh-webinterface/public"
-
-
-* *IP* - The IP of the web server
-
-* *Port* - The port of the web server
-
-* *GuhIP* - The IP where guhd is running
-
-* *GuhPort* - The port where guhd is listening 
-
-* *StaticFolder* - The folder containing the static files of guh-webinterface
-
-
-
 
 
 
