@@ -41,7 +41,9 @@ In the `Webserver` section are the settings for the webserver and the REST API:
 * **port** - Defines the port on which the webserver is running
 
 * **https** - Definens if the webserver is using a secure, encrypted connection (TLS 1.2) or not. Allowed values are `true` or `false`.
- 
+
+> **Note:** You need to create a self sigend certificate to use HTTPS. You can find the instructions here [[SSL-Certificate]]  
+
 * **certificate** - Defines the path to the certificate. This option is only needed if you are using `https`.
 
 * **certificate** - Defines the path to the private key for the certificate. This option is only needed if you are using `https`.
