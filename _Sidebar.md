@@ -17,6 +17,8 @@
 * [Webserver](https://github.com/guh/guh/wiki/Getting-started#guh-webserver)
 * [[Getting started snappy]]
 
+**[[Configuration]]**
+
 **[[User Interface]]**
 * [Web Interface](https://github.com/guh/guh/wiki/User-Interface#web-interface)
 * [Smartphone App](https://github.com/guh/guh/wiki/User-Interface#smartphone-app)
@@ -29,8 +31,6 @@
 * [[Boblightd]]
 * [[Lirc]]
     
-**[[Configuration]]**
-
 **[[Community]]**
 
 **[[FAQ]]**
