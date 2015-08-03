@@ -1,9 +1,10 @@
 # Create a SSL certificate
 --------------------------------------------
 
-If you want to use guhd webserver with a secure, encrypted connection you need to create a selfsigned certificate. This certificate will ensure, that the connection you are trying to establish is realy your guh server, and not some man in the minddle. Creating a certificate is quiet easy, so here we go.
+If you want to use guhd webserver with a secure, encrypted connection you need to create a self signed certificate. This certificate will ensure, that the connection you are trying to establish is really your guh server, and not some man in the middle. Creating a certificate is quiet easy, so here we go.
 
 [OpenSSL](http://www.openssl.org/)
+
 [More details](https://help.ubuntu.com/lts/serverguide/certificates-and-security.html)
 
 1. Generate the keys for the Certificate Signing Request (CSR)
@@ -20,7 +21,7 @@ If you want to use guhd webserver with a secure, encrypted connection you need t
         Verifying - Enter pass phrase for guhd-certificate.key:
 
 
-2. Create the insecure key (without a passphrase):
+2. Create the insecure key (without a pass phrase):
 
         $ openssl rsa -in guhd-certificate.key -out guhd-certificate.key.insecure
 
