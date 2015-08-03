@@ -1,8 +1,6 @@
 # Configuration
 --------------------------------------------
 
-# guhd
-
 ## Global settings
 The guh package provides a `guhd.conf` file, which defines the settings for the daemon and can be found in:
 
@@ -24,34 +22,42 @@ The guh package provides a `guhd.conf` file, which defines the settings for the 
     rf433rx=27
     rf433tx=22
 
+--------------------------------------------
+
+> **Note:** you have to restart the server to apply the changes
 
 In the `JSONRPC` section are the settings for the TCP interface of the JSON-RPC API: 
 
-* *port* - Defines the port where the TCP server will listen.
+* **port** - Defines the port where the TCP server will listen.
 
-* *interfaces* - Defines the network interfaces where the TCP server will listen. You can check the network interfaces with `$ ifconfig -a`. If the value *all* is in the values, the server will listen on all network interfaces. 
+* **interfaces** - Defines the network interfaces where the TCP server will listen. You can check the network interfaces with `$ ifconfig -a`. If the value *all* is in the values, the server will listen on all network interfaces. 
 
-* *ip* - Defines the address types of the server. Available address types are `IPv4` and `IPv6`. If the value *any* is in the values, the server will listen on both address types. 
+* **ip** - Defines the address types of the server. Available address types are `IPv4` and `IPv6`. If the value *any* is in the values, the server will listen on both address types. 
+
+--------------------------------------------
 
 In the `Webserver` section are the settings for the webserver and the REST API:
 
-* *port* - Defines the port on which the webserver is running
+* **port** - Defines the port on which the webserver is running
 
-* *https* - Definens if the webserver is using a secure, encrypted connection (TLS 1.2) or not. Allowed values are `true` or `false`.
+* **https** - Definens if the webserver is using a secure, encrypted connection (TLS 1.2) or not. Allowed values are `true` or `false`.
  
-* *certificate* - Defines the path to the certificate. This option is only needed if you are using `https`.
+* **certificate** - Defines the path to the certificate. This option is only needed if you are using `https`.
 
-* *certificate* - Defines the path to the private key for the certificate. This option is only needed if you are using `https`.
+* **certificate** - Defines the path to the private key for the certificate. This option is only needed if you are using `https`.
 
-* *publicFolder* - Defines the path to the public folder which will be published with from the webserver. This path describes the directory to the webinterface.
+* **publicFolder** - Defines the path to the public folder which will be published with from the webserver. This path describes the directory to the webinterface.
+
+--------------------------------------------
 
 In the `GPIO` section are the settings for the hardware GPIOs depending on the board you are using:
 
-* *rf433rx* - Defines the GPIO pin number (in the file system) where the RF 433 MHz receiver is connected. 
+* **rf433rx** - Defines the GPIO pin number (in the file system) where the RF 433 MHz receiver is connected. 
 
-* *rf433tx* - Defines the GPIO pin number (in the file system) where the RF 433 MHz transmitter is connected.
+* **rf433tx** - Defines the GPIO pin number (in the file system) where the RF 433 MHz transmitter is connected.
 
 ## Personal settings
+--------------------------------------------
 
 The location of the personal settings like configured devices, rules and plugins depends on the user who starts guh.
 
