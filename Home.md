@@ -25,6 +25,8 @@
     * [Webserver](https://github.com/guh/guh/wiki/Getting-started#guh-webserver)
     * [[Getting started snappy]]
 
+* **[[Configuration]]**
+
 * **[[User Interface]]**
 
 * **[[Plugins]]**
@@ -33,8 +35,6 @@
     * [[Mockdevice]]
     * [[Boblightd]]
     * [[Lirc]]
-
-* **[[Configuration]]**
 
 * **[[Community]]**
 
