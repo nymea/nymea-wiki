@@ -11,6 +11,7 @@ If you want to use guhd webserver with a secure, encrypted connection you need t
 
         $ openssl genrsa -des3 -out guhd-certificate.key 2048
 
+You need to enter twice a secure password:
 
         Generating RSA private key, 2048 bit long modulus
                                                                                                           
@@ -25,6 +26,7 @@ If you want to use guhd webserver with a secure, encrypted connection you need t
 
         $ openssl rsa -in guhd-certificate.key -out guhd-certificate.key.insecure
 
+Enter the passphrase from step `1`:
 
         Enter pass phrase for guhd-certificate.key:
         writing RSA key
