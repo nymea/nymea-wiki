@@ -1,8 +1,6 @@
-<!-- BADGES/ -->
+
 
 [![Developer doku](https://img.shields.io/travis/bevry/projectz/master.svg)](http://dev.guh.guru "Developer documentation")
-
-<!-- /BADGES -->
 
 <div style="text-align:center"><img src ="http://guh.guru/downloads/press/guhIO.png" /></div>
 
