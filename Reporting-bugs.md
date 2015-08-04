@@ -27,7 +27,8 @@ If you don't know where the bug occurs, please use the *guh*-daemon issues link.
 
 If you have any questions, you can get help in following locations:
 
-* [guh-mailinglist](https://guh.guru/cgi-bin/mailman/listinfo)
+* [guh-community](https://plus.google.com/u/0/communities/113467056514652214831)
+* [guh-blog](https://blog.guh.guru)
 * [#guh]() IRC channel on [freenode.net](https://freenode.net/)
 
 If you need any help with *guh* or if you are not shore if something is really a bug, or how to reprodue it please use one of the above channels.
