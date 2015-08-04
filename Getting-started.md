@@ -125,7 +125,7 @@ If you want to install the guh-webserver (REST-API) together with the `guh-webin
 
     $ sudo apt-get install guh-webserver
 
-This will install the webserver and the the webinterface, which will be accessable by default on port 3000. First you need to start the webserver:
+This will install the webserver and the the webinterface, which will be accessable by default on port 3333. First you need to start the webserver:
 
     $ sudo service guh-webserver start
 
@@ -143,7 +143,7 @@ Once the web-server is running you can open your favorite web-browser and enter 
 
 > Assuming the guh-webserver is running on your `localhost`. If the guh-webserver is running on an other location in you network replace `127.0.0.1` with the IP of your location.
 
-[http://127.0.0.1:3000](http://127.0.0.1:3333)
+[http://127.0.0.1:3333](http://127.0.0.1:3333)
 
 If you have installed avahi (`$ apt-get install avahi-daemon avahi-utils`) you can access the the webserver with the `hostname` of the device where guh-webserver is running:
 
