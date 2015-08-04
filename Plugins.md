@@ -18,7 +18,7 @@
 * [[Mail Notification]]
 * [[Open Weather Map]]
 
-**Service Plugins**
+**Network Plugins**
 
 * [[LG SmartTv]]
 * [[Kodi]]
