@@ -37,7 +37,7 @@ If you want to play with the API you can start the command line interface [[guh-
 
         $ guh.guh-cli
 
-The guh REST API and the guh-webinterface are accessible over port 3000. The guhd JSON-RPC API runns on port 1234.
+The guh REST API and the guh-webinterface are accessible over port 3333. The guhd JSON-RPC API runns on port 2222.
 
 ## Configurations
 
