@@ -5,7 +5,6 @@ If you have found a bug in *guh*, please create a new issue with the "**bug**" l
 
 * *guh*-daemon - [https://github.com/guh/guh/issues](https://github.com/guh/guh/issues)
 * *guh*-cli - [https://github.com/guh/guh-cli/issues](https://github.com/guh/guh-cli/issues)
-* *guh*-webserver - [https://github.com/guh/guh-webserver/issues](https://github.com/guh/guh-webserver/issues)
 * *guh*-webinterface - [https://github.com/guh/guh-webinterface/issues](https://github.com/guh/guh-webinterface/issues)
 
 If you don't know where the bug occurs, please use the *guh*-daemon issues link.
