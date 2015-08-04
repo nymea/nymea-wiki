@@ -112,7 +112,7 @@ or you can run directly:
       -h, --help     show this help message and exit
       -v, --version  show program's version number and exit
       --host HOST    the location of the guh daemon (default 127.0.0.1)
-      --port PORT    the port of the the guh daemon (default 1234)
+      --port PORT    the port of the the guh daemon (default 2222)
 
 Once *guh-cli* has established the connection to guhd, you will see the main menu. In the main menu you can either use the arrow keys to navigate or the item number of the menu list.
 
@@ -143,13 +143,13 @@ Once the web-server is running you can open your favorite web-browser and enter 
 
 > Assuming the guh-webserver is running on your `localhost`. If the guh-webserver is running on an other location in you network replace `127.0.0.1` with the IP of your location.
 
-[http://127.0.0.1:3000](http://127.0.0.1:3000)
+[http://127.0.0.1:3000](http://127.0.0.1:3333)
 
 If you have installed avahi (`$ apt-get install avahi-daemon avahi-utils`) you can access the the webserver with the `hostname` of the device where guh-webserver is running:
 
-hostname.local:3000
+hostname.local:3333
 
-> Example: if you are using a Raspberry Pi and the [guh-netinstal](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-minimal-net-install-system) the host name will be `guh` [http://guh.local:3000](http://guh.local:3000)
+> Example: if you are using a Raspberry Pi and the [guh-netinstal](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-minimal-net-install-system) the host name will be `guh` [http://guh.local:3333](http://guh.local:3333)
 
 
 
