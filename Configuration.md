@@ -2,29 +2,35 @@
 --------------------------------------------
 
 ## Global settings
-The guh package provides a `guhd.conf` file, which defines the settings for the daemon and can be found in:
+The guh package provides a `/etc/guh/guhd.conf` file, which defines the settings for the guh server and can be found in:
+
+> **Note:** you have to restart the guhd to apply the changes in this file.
 
     $ cat /etc/guh/guhd.conf
 
     [JSONRPC]
-    port=1234
-    interfaces="lo","all"
+    port=2222
+    interfaces="lo", "all"
     ip="IPv4", "IPv6"
-
-    [Webserver]
-    port=3000
+    
+    [WebServer]
+    port=3333
     https=false
+    publicFolder=/usr/share/guh-webinterface/public
+    
+    [WebSocketServer]
+    https=false
+    port=4444
+    
+    [SSL-Configuration]
     certificate=/etc/ssl/certs/guhd-certificate.crt
     certificate-key=/etc/ssl/private/guhd-certificate.key
-    publicFolder=/usr/share/guh-webinterface/public
-
+    
     [GPIO]
     rf433rx=27
     rf433tx=22
 
 --------------------------------------------
-
-> **Note:** you have to restart the server to apply the changes
 
 In the `JSONRPC` section are the settings for the TCP interface of the JSON-RPC API: 
 
@@ -36,19 +42,32 @@ In the `JSONRPC` section are the settings for the TCP interface of the JSON-RPC 
 
 --------------------------------------------
 
-In the `Webserver` section are the settings for the webserver and the REST API:
+In the `WebServer` section are the settings for the webserver and the REST API:
 
 * **port** - Defines the port on which the webserver is running
 
-* **https** - Definens if the webserver is using a secure, encrypted connection (TLS 1.2) or not. Allowed values are `true` or `false`.
+* **https** - Definens if the webserver is using a secure, encrypted connection (TLS 1.2) or not. Allowed values are `true` or `false`. The certificate and private key file has to be loaded successfully.
 
-> **Note:** You need to create a self sigend certificate to use HTTPS. You can find the instructions here [[SSL-Certificate]]  
+* **publicFolder** - Defines the path to the public folder which will be published with from the webserver. This path describes the directory to the webinterface.
+
+--------------------------------------------
+
+In the `WebSocketServer` section are the settings for the websocket server:
+
+* **port** - Defines the port on which the websocket server is running
+
+* **https** - Definens if the websocket server is using a secure, encrypted connection (TLS 1.2) or not. Allowed values are `true` or `false`. The certificate and private key file has to be loaded successfully.
+
+--------------------------------------------
+
+In the `SSL-Configuration` section are the settings for the SSL configuration used in guh. You need to create a certificate to use HTTPS, otherwise the connection will not be secure. 
+
+You can find the instructions how to create a certificate here [[SSL-Certificate]].  
 
 * **certificate** - Defines the path to the certificate. This option is only needed if you are using `https`.
 
 * **certificate** - Defines the path to the private key for the certificate. This option is only needed if you are using `https`.
 
-* **publicFolder** - Defines the path to the public folder which will be published with from the webserver. This path describes the directory to the webinterface.
 
 --------------------------------------------
 
