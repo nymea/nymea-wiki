@@ -124,7 +124,7 @@ Allowed methods:
         Content-Type: application/json; charset="utf-8";
     
         {
-            "deviceId": "Uuid"
+            "id": "Uuid"
         }
 
 
@@ -219,7 +219,7 @@ Allowed methods:
         Content-Type: application/json; charset="utf-8";
     
         {
-            "deviceId": "Uuid",
+            "id": "Uuid",
         }
 
 
@@ -585,7 +585,7 @@ Allowed methods:
         Content-Type: application/json; charset="utf-8";
     
         {
-            "ruleId": "Uuid"
+            "id": "Uuid"
         }
 
 -----------------------------------------------------
