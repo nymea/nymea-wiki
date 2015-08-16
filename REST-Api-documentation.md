@@ -25,6 +25,7 @@ Allowed methods:
 * `PUT` -> edit a resource
 * `POST` -> add a resource / do something with a resource 
 * `DELETE` -> delete a resource
+* `OPTIONS` -> check if a resource is available (used for CORS)
 
 * Minimal API request path: `/api/v1/{resource}`
 * Path for the webinterdace: `/`
