@@ -7,13 +7,64 @@ This tutorial shows you how to install *guh* on the [Raspberry Pi](http://www.ra
 If you want to install guh on the Raspberry Pi 2 Rev. B, please follow the [[Snappy]] guide. 
 ## Table of contents:
 
+* [Install *guh* on Debian *jessie* (existing system)](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-existing-system)
 * [Install *guh* on Debian *jessie* (minimal **net-install** system)](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-minimal-net-install-system)
     * [1. Prepare the SD card](https://github.com/guh/guh/wiki/Raspberry-Pi#1-prepare-the-sd-card)  
     * [2. Install](https://github.com/guh/guh/wiki/Raspberry-Pi#2-install)
-* [Install *guh* on Debian *jessie* (existing system)](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-existing-system)
-* [Install *guh* on Debian *wheezy*](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-wheezy)
-    * [Add Qt repository](https://github.com/guh/guh/wiki/Raspberry-Pi#add-qt-repository)
-    * [Install *guh*](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh)
+
+--------------------------------------------
+##Install *guh* on Debian *jessie* (existing system)
+If you already have a Debian *jessie* installation and want to install *guh* you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
+
+1. Add the [*guh*-repo](http://repo.guh.guru/) to the source list file:
+        
+        $ sudo nano /etc/apt/sources.list.d/guh.list
+            
+    Append following two lines at the end of the file:
+    
+        ## guh repo
+        deb http://repo.guh.guru jessie main
+        deb-src http://repo.guh.guru jessie main
+
+    > **Alternative:** `$ echo -e "\n## guh repo\ndeb http://repo.guh.guru jessie main\ndeb-src http://repo.guh.guru jessie main" | sudo tee /etc/apt/sources.list.d/guh.list`
+
+    Add the public key of the guh-repo to your keylist:
+    
+        $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 6B9376B0
+    
+2. Update your package lists:
+    
+        $ sudo apt-get update
+    
+    The *guh*-repository provides following packages:
+    
+        $ apt-cache search guh
+    
+        guh - Server for home automation systems - meta package
+        guh-cli - guh command line interface - python
+        guh-dbg - server for home automation systems - debug symbols
+        guh-doc - Documentation for the guh package (on-site) - documentation
+        guh-plugins - Plugins for guh server home automation systems
+        guh-tests - Tests for the guh package
+        guh-webinterface - Browser based user interface for guh
+        guh-webserver - A REST-API webserver for the guh-webinterface
+        guhd - Server daemon for home automation systems
+        libguh1 - Server for home automation systems - core library
+        libguh1-dev - Server for home automation systems - development files
+
+3. Install *guh* with following command:
+    
+        $ sudo apt-get --install-recommends install guh
+        
+    The repository contains always the latest stable build of the *guh* `master` branch. 
+    If you want to install the source code you can install:
+        
+        $ sudo apt-get source guh
+        $ sudo apt-get source guh-webserver
+
+Once, the installation is finished you continue with the [[Getting started]] instruction.
+
+
 
 --------------------------------------------
 ## Install *guh* on Debian *jessie* (minimal **net-install** system)
@@ -232,91 +283,10 @@ Now you have to wait ~35-40 minutes. Once the installation is finished, the Rasp
 
 In order to check if the installation has finished you can try to connect over `ssh` to the Raspberry Pi. When the installation has finished, the Raspberry Pi will reboot and boot the fresh system...and you will be able to connect:
 
-    $ ssh root@guh.local
-    $ password: guh
+    $ ssh root@guh.local  # password: guh
 
 > **Note:** because avahi-daemon is runing by default and the webinterface should already running you can also open following link [http://guh.local:3333](http://guh.local:3333)
 
 Now you have a fresh, clean and minimal installation of Debian *jessie* with *guh*. The `root` password is `guh`!
 
 You can proceed with the [[Getting started]] instructions.
-
---------------------------------------------
-##Install *guh* on Debian *jessie* (existing system)
-If you already have a Debian *jessie* installation and want to install *guh* you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
-
-1. Add the [*guh*-repo](http://repo.guh.guru/) to the source list file:
-        
-        $ sudo nano /etc/apt/sources.list.d/guh.list
-            
-    Append following two lines at the end of the file:
-    
-        ## guh repo
-        deb http://repo.guh.guru jessie main
-        deb-src http://repo.guh.guru jessie main
-
-        > **Alternative:** `$ echo -e "\n## guh repo\ndeb http://repo.guh.guru jessie main\ndeb-src http://repo.guh.guru jessie main" | sudo tee /etc/apt/sources.list.d/guh.list`
-
-    Add the public key of the guh-repo to your keylist:
-    
-        $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 6B9376B0
-    
-2. Update your package lists:
-    
-        $ sudo apt-get update
-    
-    The *guh*-repository provides following packages:
-    
-        $ apt-cache search guh
-    
-        guh - Server for home automation systems - meta package
-        guh-cli - guh command line interface - python
-        guh-dbg - server for home automation systems - debug symbols
-        guh-doc - Documentation for the guh package (on-site) - documentation
-        guh-plugins - Plugins for guh server home automation systems
-        guh-tests - Tests for the guh package
-        guh-webinterface - Browser based user interface for guh
-        guh-webserver - A REST-API webserver for the guh-webinterface
-        guhd - Server daemon for home automation systems
-        libguh1 - Server for home automation systems - core library
-        libguh1-dev - Server for home automation systems - development files
-
-3. Install *guh* with following command:
-    
-        $ sudo apt-get install guh guh-webserver libgl1-mesa-dev
-        
-    The repository contains always the latest stable build of the *guh* `master` branch. 
-    If you want to install the source code you can install:
-        
-        $ sudo apt-get source guh
-        $ sudo apt-get source guh-webserver
-        $ sudo apt-get source guh-webinterface
-
-Once, the installation is finished you continue with the [[Getting started]] instruction.
-
---------------------------------------------
-## Install *guh* on Debian *wheezy*
-
-> Coming soon...
-
-### Add Qt repository
-       
-> Thanks to [Sébastien Noel](http://twolife.be/raspbian/)!!
-
-Add the *twolife.be* repository source list:
-
-    $ sudo echo "deb http://twolife.be/raspbian/ wheezy main backports" >> /etc/apt/sources.list.d/twolife.list
-    $ sudo echo "deb-src http://twolife.be/raspbian/ wheezy main backports" >> /etc/apt/sources.list.d/twolife.list
-
-Download the public key:
-
-    $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 2578B775
-
-Update to fetch the new package list:
-
-    $ apt-get update    
-    
-### Install *guh*
-
-> Coming soon...
-
