@@ -60,7 +60,8 @@ If you already have a Debian *jessie* installation and want to install *guh* you
     If you want to install the source code you can install:
         
         $ sudo apt-get source guh
-        $ sudo apt-get source guh-webserver
+        $ sudo apt-get source guh-webinterface
+        $ sudo apt-get source guh-cli
 
 Once, the installation is finished you continue with the [[Getting started]] instruction.
 
