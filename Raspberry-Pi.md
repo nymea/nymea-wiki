@@ -54,7 +54,7 @@ If you already have a Debian *jessie* installation and want to install *guh* you
 
 3. Install *guh* with following command:
     
-        $ sudo apt-get --install-recommends install guh
+        $ sudo apt-get --install-recommends install guh libgl1-mesa-dev
         
     The repository contains always the latest stable build of the *guh* `master` branch. 
     If you want to install the source code you can install:
