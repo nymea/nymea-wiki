@@ -39,19 +39,19 @@ At the moment there are Apps for Android and iOS in develoment. It will take som
 
 * **Settings Screen**
 
-![Edit Settings Screen](https://cloud.githubusercontent.com/assets/5207214/8828811/51dc1bec-3094-11e5-8805-b2be415ece97.png)
+<img src="https://cloud.githubusercontent.com/assets/5207214/8828811/51dc1bec-3094-11e5-8805-b2be415ece97.png" width="35%" height="35%" />
 
 ***
 
 * **Device Screen**
 
-![Device Screen](https://cloud.githubusercontent.com/assets/5207214/8829159/720dbf0a-3095-11e5-9b80-6c6c9c05dc1a.png)
+<img src="https://cloud.githubusercontent.com/assets/5207214/8829159/720dbf0a-3095-11e5-9b80-6c6c9c05dc1a.png" width="35%" height="35%" />
 
 ***
 
 * **Rule Screen**
 
-![Rule Screen](https://cloud.githubusercontent.com/assets/5207214/8828873/956c125e-3094-11e5-8970-221f0d8bef89.png)
+<img src="https://cloud.githubusercontent.com/assets/5207214/8828873/956c125e-3094-11e5-8970-221f0d8bef89.png" width="35%" height="35%" />
 
 ## Command Line Interface
 --------------------------------------------
