@@ -124,9 +124,7 @@ Allowed methods:
         HTTP/1.1 200 Ok
         Content-Type: application/json; charset="utf-8";
     
-        {
-            "id": "Uuid"
-        }
+        "$ref:Device"
 
 
 -----------------------------------------------------
@@ -219,9 +217,7 @@ Allowed methods:
         HTTP/1.1 200 Ok
         Content-Type: application/json; charset="utf-8";
     
-        {
-            "id": "Uuid",
-        }
+        "$ref:Device"
 
 
 -----------------------------------------------------
@@ -529,7 +525,7 @@ Allowed methods:
 * Description: Returns the list of rule descriptions 
 * Optional parameters:
     
-        deviceId -> filter rules with the given deviceId in it         
+        deviceId -> filter rules with the given `deviceId` in it         
 
 * Response:
         
@@ -585,9 +581,7 @@ Allowed methods:
         HTTP/1.1 200 Ok
         Content-Type: application/json; charset="utf-8";
     
-        {
-            "id": "Uuid"
-        }
+        "ref:Rule"
 
 -----------------------------------------------------
 ### `PUT /api/v1/rules/{ruleId}`
