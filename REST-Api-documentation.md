@@ -12,7 +12,7 @@
 --------------------------------------------
 Http Protocol version: `HTTP/1.1`
 
-https://tools.ietf.org/html/rfc7231
+[https://tools.ietf.org/html/rfc7231](https://tools.ietf.org/html/rfc7231)
 
 In order to get notifications for your client application, 
 please take a look at the websocket server.
@@ -29,6 +29,36 @@ Allowed methods:
 
 * Minimal API request path: `/api/v1/{resource}`
 * Path for the webinterdace: `/`
+
+
+=====================================================
+## Error handling
+
+If a REST call could not be performend or there was an error,
+the REST API respons with a HTTP reply != 200 and a JSON map
+containing the corresponding error. 
+
+For the full error list please checkout the [JSON-RPC documentation](http://dev.guh.guru/jsonrpc.html#newest-json-rpc-api)
+
+### devices, deviceclasses, plugins, vendors
+
+        {
+            "error": "$ref:DeviceError"
+        }
+
+### rules
+
+        {
+            "error": "$ref:RuleError"
+        }
+
+
+### logs
+
+        {
+            "error": "$ref:LoggingError"
+        }
+
 
 # Resources
 =====================================================
@@ -48,6 +78,9 @@ Allowed methods:
             "$ref:Device"
         ]
              
+* Error type:
+
+        $ref:DeviceError
 
 -----------------------------------------------------
 ### `GET /api/v1/devices/{deviceId}`
@@ -61,6 +94,10 @@ Allowed methods:
            
         "$ref:Device"
         
+* Error type:
+
+        $ref:DeviceError
+
 
 -----------------------------------------------------
 ### `GET /api/v1/devices/{deviceId}/states`
@@ -76,6 +113,10 @@ Allowed methods:
             "$ref:State"
         ]
         
+* Error type:
+
+        $ref:DeviceError
+
 
 -----------------------------------------------------
 ### `GET /api/v1/devices/{deviceId}/states/{stateTypeId}`
@@ -90,7 +131,11 @@ Allowed methods:
         {
             "value": "Variant"
         }
-        
+     
+* Error type:
+
+        $ref:DeviceError
+   
 
 -----------------------------------------------------
 ### `POST /api/v1/devices`
@@ -126,6 +171,10 @@ Allowed methods:
     
         "$ref:Device"
 
+* Error type:
+
+        $ref:DeviceError
+   
 
 -----------------------------------------------------
 ### `PUT /api/v1/devices/{deviceId}`
@@ -157,7 +206,16 @@ Allowed methods:
 * Response:
     
         HTTP/1.1 200 Ok
+        Content-Type: application/json; charset="utf-8";
+
+        {
+            "error": "DeviceErrorNoError"
+        }
     
+* Error type:
+
+        $ref:DeviceError
+   
 
 -----------------------------------------------------
 ### `POST /api/v1/devices/pair`
@@ -197,6 +255,11 @@ Allowed methods:
             "setupMethod": "$ref:SetupMethod"
         }
 
+* Error type:
+
+        $ref:DeviceError
+   
+
 -----------------------------------------------------
 ### `POST /api/v1/devices/confirmpairing`
 
@@ -219,6 +282,10 @@ Allowed methods:
     
         "$ref:Device"
 
+* Error type:
+
+        $ref:DeviceError
+   
 
 -----------------------------------------------------
 ### `POST /api/v1/devices/{deviceId}/execute/{actionTypeId}`
@@ -239,7 +306,16 @@ Allowed methods:
 * Response:
     
         HTTP/1.1 200 Ok
+        Content-Type: application/json; charset="utf-8";
+
+        {
+            "error": "DeviceErrorNoError"
+        }
     
+* Error type:
+
+        $ref:DeviceError
+   
 
 -----------------------------------------------------
 ### `DELETE /api/v1/devices/{deviceId}`
@@ -249,10 +325,16 @@ Allowed methods:
 * Response:
     
         HTTP/1.1 200 Ok
+        Content-Type: application/json; charset="utf-8";
 
+        {
+            "error": "DeviceErrorNoError"
+        }
 
+* Error type:
 
-
+        $ref:DeviceError
+   
 
 =====================================================
 ## DeviceClasses resource
@@ -275,6 +357,10 @@ Allowed methods:
             "$ref:DeviceClass"
         ]
      
+* Error type:
+
+        $ref:DeviceError
+   
 
 -----------------------------------------------------
 ### `GET /api/v1/deviceclasses/{deviceClassId}`
@@ -290,6 +376,10 @@ Allowed methods:
             "$ref:DeviceClass"
         ]
              
+* Error type:
+
+        $ref:DeviceError
+   
 
 -----------------------------------------------------
 ### `GET /api/v1/deviceclasses/{deviceClassId}/actiontypes`
@@ -305,6 +395,10 @@ Allowed methods:
             "$ref:ActionType"
         ]
         
+* Error type:
+
+        $ref:DeviceError
+   
 
 -----------------------------------------------------
 ### `GET /api/v1/deviceclasses/{deviceClassId}/actiontypes/{actionTypeId}`
@@ -318,6 +412,10 @@ Allowed methods:
         
         "$ref:ActionType"
         
+* Error type:
+
+        $ref:DeviceError
+   
 
 -----------------------------------------------------
 ### `GET /api/v1/deviceclasses/{deviceClassId}/statetypes`
@@ -333,6 +431,10 @@ Allowed methods:
             "$ref:StateType"
         ]
         
+* Error type:
+
+        $ref:DeviceError
+   
 
 -----------------------------------------------------
 ### `GET /api/v1/deviceclasses/{deviceClassId}/statetypes/{stateTypeId}`
@@ -346,6 +448,10 @@ Allowed methods:
         
         "$ref:StateType"
      
+* Error type:
+
+        $ref:DeviceError
+   
 
 -----------------------------------------------------
 ### `GET /api/v1/deviceclasses/{deviceClassId}/eventtypes`
@@ -361,6 +467,10 @@ Allowed methods:
             "$ref:EventType"
         ]
         
+* Error type:
+
+        $ref:DeviceError
+   
 
 -----------------------------------------------------
 ### `GET /api/v1/deviceclasses/{deviceClassId}/eventtypes/{eventTypeId}`
@@ -374,6 +484,10 @@ Allowed methods:
         
         "$ref:EventType"
      
+* Error type:
+
+        $ref:DeviceError
+   
 
 -----------------------------------------------------
 ### `GET /api/v1/deviceclasses/{deviceClassId}/discover?params=["$ref:Param"]`
@@ -392,6 +506,11 @@ Allowed methods:
         [
             "$ref:DeviceDescriptor"
         ]
+
+* Error type:
+
+        $ref:DeviceError
+   
 
 * Example:
 
@@ -430,6 +549,10 @@ Allowed methods:
             "$ref:Vendor"
         ]
      
+* Error type:
+
+        $ref:DeviceError
+   
 
 -----------------------------------------------------
 ### `GET /api/v1/vendors/{vendorId}`
@@ -444,8 +567,10 @@ Allowed methods:
         
         "$ref:Vendor"
 
+* Error type:
 
-
+        $ref:DeviceError
+   
 
 =====================================================
 ## Plugins resource
@@ -464,6 +589,10 @@ Allowed methods:
             "$ref:Plugin"
         ]
      
+* Error type:
+
+        $ref:DeviceError
+   
 
 -----------------------------------------------------
 ### `GET /api/v1/plugins/{pluginId}`
@@ -477,6 +606,11 @@ Allowed methods:
         
         
         "$ref:Plugin"
+
+* Error type:
+
+        $ref:DeviceError
+   
 
 -----------------------------------------------------
 ### `GET /api/v1/plugins/{pluginId}/configuration`
@@ -492,6 +626,10 @@ Allowed methods:
             "$ref:Param"
         ]
     
+* Error type:
+
+        $ref:DeviceError
+   
 
 -----------------------------------------------------
 ### `PUT /api/v1/plugins/{pluginId}/configuration`
@@ -511,7 +649,16 @@ Allowed methods:
 * Response:
         
         HTTP/1.1 200 Ok
+        Content-Type: application/json; charset="utf-8";
 
+        {
+            "error": "DeviceErrorNoError"
+        }
+
+* Error type:
+
+        $ref:DeviceError
+   
         
         
 
@@ -536,6 +683,10 @@ Allowed methods:
             "ref:RuleDescription"
         ]
      
+* Error type:
+
+        $ref:RuleError
+   
 
 -----------------------------------------------------
 ### `GET /api/v1/rules/{ruleId}`
@@ -549,6 +700,10 @@ Allowed methods:
         
         "ref:Rule"
 
+* Error type:
+
+        $ref:RuleError
+   
 
 -----------------------------------------------------
 ### `POST /api/v1/rules`
@@ -583,6 +738,11 @@ Allowed methods:
     
         "ref:Rule"
 
+* Error type:
+
+        $ref:RuleError
+   
+
 -----------------------------------------------------
 ### `PUT /api/v1/rules/{ruleId}`
 
@@ -612,7 +772,16 @@ Allowed methods:
 * Response:
     
         HTTP/1.1 200 Ok
+        Content-Type: application/json; charset="utf-8";
 
+        {
+            "error": "RuleErrorNoError"
+        }
+
+* Error type:
+
+        $ref:RuleError
+   
 
 -----------------------------------------------------
 ### `POST /api/v1/rules/{ruleId}/enable`
@@ -626,7 +795,16 @@ Allowed methods:
 * Response:
     
         HTTP/1.1 200 Ok
+        Content-Type: application/json; charset="utf-8";
 
+        {
+            "error": "RuleErrorNoError"
+        }
+
+* Error type:
+
+        $ref:RuleError
+   
 
 -----------------------------------------------------
 ### `POST /api/v1/rules/{ruleId}/disable`
@@ -640,8 +818,16 @@ Allowed methods:
 * Response:
     
         HTTP/1.1 200 Ok
+        Content-Type: application/json; charset="utf-8";
 
+        {
+            "error": "RuleErrorNoError"
+        }
 
+* Error type:
+
+        $ref:RuleError
+   
 
 
 
@@ -695,6 +881,10 @@ Allowed methods:
             "ref:LogEntry"
         ]
      
+* Error type:
+
+        $ref:LoggingError
+   
 * Example request:
 
     * `filter={"loggingSources": ["LoggingSourceSystem"]}`
