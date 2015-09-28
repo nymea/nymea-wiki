@@ -7,7 +7,7 @@ In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.lis
         
         $ sudo nano /etc/apt/sources.list.d/guh.
         
-    *Note:* please replace `<dist>` with the codename of your Ubuntu distribution. You can get your system version with `lsb_release -a`. In the repository are following distributions available:`trusty` `utopic` and `vivid`. Available architectures are `amd64` `i386` and `armhf`.
+    > *Note:* please replace `<dist>` with the codename of your Ubuntu distribution. You can get your system version with `lsb_release -a`. In the repository are following distributions available:`trusty` `utopic` and `vivid`. Available architectures are `amd64` `i386` and `armhf`.
      
     Copy following lines into the file (with replaced `<dist>`) and save it:
 
@@ -38,21 +38,19 @@ In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.lis
         guh-plugins - Plugins for guh server home automation systems
         guh-tests - Tests for the guh package
         guh-webinterface - Browser based user interface for guh
-        guh-webserver - A REST-API webserver for the guh-webinterface
         guhd - Server daemon for home automation systems
         libguh1 - Server for home automation systems - core library
         libguh1-dev - Server for home automation systems - development files
 
 3. Install *guh* with following command:
     
-        $ sudo apt-get install guh guh-cli guh-webserver
+        $ sudo apt-get install guh guh-cli guh-webinterface
         
     The repository contains always the latest stable build of the *guh* `master` branch. 
     If you want to install the source code you can install:
         
         $ sudo apt-get source guh        
         $ sudo apt-get source guh-cli
-        $ sudo apt-get source guh-webserver
         $ sudo apt-get source guh-webinterface
         
 Once, the installation is finished you continue with the [[Getting started]] instruction.
