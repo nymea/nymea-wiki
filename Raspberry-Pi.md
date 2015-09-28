@@ -47,21 +47,21 @@ If you already have a Debian *jessie* installation and want to install *guh* you
         guh-plugins - Plugins for guh server home automation systems
         guh-tests - Tests for the guh package
         guh-webinterface - Browser based user interface for guh
-        guh-webserver - A REST-API webserver for the guh-webinterface
         guhd - Server daemon for home automation systems
         libguh1 - Server for home automation systems - core library
         libguh1-dev - Server for home automation systems - development files
 
 3. Install *guh* with following command:
     
-        $ sudo apt-get --install-recommends install guh libgl1-mesa-dev
+        $ sudo apt-get --install-recommends install guh libgl1-mesa-dev guh-webinterface
         
     The repository contains always the latest stable build of the *guh* `master` branch. 
     If you want to install the source code you can install:
         
         $ sudo apt-get source guh
-        $ sudo apt-get source guh-webinterface
         $ sudo apt-get source guh-cli
+        $ sudo apt-get source guh-webinterface
+
 
 Once, the installation is finished you continue with the [[Getting started]] instruction.
 
