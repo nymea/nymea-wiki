@@ -14,6 +14,7 @@ Officially is *guh* only supported on Linux platforms, which means this guide is
 * [Compile *guh* with the QtCreator](https://github.com/guh/guh/wiki/Compile-guh#compile-guh-with-the-qtcreator)
 * [Compile *guh* in the terminal](https://github.com/guh/guh/wiki/Compile-guh#compile-guh-in-the-terminal)
 * [*qmake* configuration](https://github.com/guh/guh/wiki/Compile-guh#qmake-configuration)
+* [*make* extra targets](https://github.com/guh/guh/wiki/Compile-guh#make-extra-targets)
 
 --------------------------------------------
 ## Compile *guh* with the QtCreator
@@ -127,8 +128,8 @@ Now you can run *guh* with following command:
 
 > **Note:** ensure that there is no other *guh* installation in your system. If you already have installed *guh* somewhere, there could be a collision with the different libs!
 
-    $ cd build-guh/server/
-    $ ./guhd
+        $ cd build-guh/server/
+        $ ./guhd
 
 You can proceed with the [[Getting started]] instructions.
 
@@ -140,19 +141,19 @@ In order to customize the build process, qmake offers some configurations.
 
 If you want to compile *guh* witout the test packages you can configure qmake like this:
 
-    $ qmake ../guh/ CONFIG+=disabletesting
+        $ qmake ../guh/ CONFIG+=disabletesting
     
 > **Note:** this will shorten the compilation time significantly.
 
 #### Compile guh with *boblightd* support
 
-    $ qmake ../guh/ CONFIG+=boblight
+        $ qmake ../guh/ CONFIG+=boblight
     
 If you want to compile *guh* with the boblightd plugin, you need to install the boblight libs first.
 
 > **Note:**If the boblight libs could not be found, you need to export the library path:
     
-    $ export LD_LIBRARY_PATH=/usr/local/lib/
+        $ export LD_LIBRARY_PATH=/usr/local/lib/
         
 To make it permanent, you can add this line to the `/etc/bash.bashrc` file. 
 
@@ -160,17 +161,40 @@ See also: [[Boblightd]]
     
 #### Compile with *coverage*
 
-    qmake ../guh/ CONFIG+=coverage
+        qmake ../guh/ CONFIG+=coverage
+
+#### Compile guh for snappy package
+
+        qmake ../guh/ CONFIG+=snappy
+
+#### Configure the installation path
+
+        qmake ../guh/ PREFIX="path/where/i/want/to/install/guh"
+
+Once you call `make install` all project output files will be installed in the corresponding directory.
 
 
+## *make* extra targets
+
+#### Build documentation
+
+        $ cd build-guh
+        $ make doc
+
+#### Build and run tests
+
+        $ cd build-guh
+        $ make test
 
 
+#### Check source code for missing license/copyright header
 
+        $ cd build-guh
+        $ make licensecheck
 
+#### Pack all depending libs to a folder
 
-
-
-
-
+        $ cd build-guh
+        $ make packlibs
 
 
