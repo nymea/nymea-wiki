@@ -118,34 +118,15 @@ Once *guh-cli* has established the connection to guhd, you will see the main men
 
 In the you are using the `Log monitor` the output will auto scroll down if the marked line is at the end of the log list. If you are navigating in previous logs a terminal flash will inform you about a new log entry. With the `space` key you can jump down to the newest log entry and the auto scroll will be enabled again.
 
-# *guh* webserver
---------------------------------------------
-
-If you want to install the guh-webserver (REST-API) together with the `guh-webinterface` you can run following command:
-
-    $ sudo apt-get install guh-webserver
-
-This will install the webserver and the the webinterface, which will be accessable by default on port 3333. First you need to start the webserver:
-
-    $ sudo service guh-webserver start
-
-The `status` `restart` and `stop` commands are the same as for the `guh` daemon. If you want to autostart the `guh-webserver` at boot you can enable it with
-
-    $ sudo update-rc.d guh-webserver defaults
-
-and disable it with:
-
-    sudo update-rc.d -f guh-webserver remove
-
 ## Access the web-interface
 
-Once the web-server is running you can open your favorite web-browser and enter open following URL:
+Once the *guhd* daemon is running you can open your favourite web-browser and enter open following URL:
 
-> Assuming the guh-webserver is running on your `localhost`. If the guh-webserver is running on an other location in you network replace `127.0.0.1` with the IP of your location.
+> Assuming *guhd* is running on `localhost`. If guhd is running on an other location in you network replace `127.0.0.1` with the IP of your location.
 
 [http://127.0.0.1:3333](http://127.0.0.1:3333)
 
-If you have installed avahi (`$ apt-get install avahi-daemon avahi-utils`) you can access the the webserver with the `hostname` of the device where guh-webserver is running:
+If you have installed avahi (`$ apt-get install avahi-daemon avahi-utils`) you can access the the webserver with the `hostname` of the device where guhd is running:
 
 hostname.local:3333
 
