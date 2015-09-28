@@ -16,7 +16,6 @@
 **[[Getting started]]**
 * [Autostart guhd](https://github.com/guh/guh/wiki/Getting-started#autostart-guhd)
 * [[guh cli]]
-* [Webserver](https://github.com/guh/guh/wiki/Getting-started#guh-webserver)
 * [[Getting started snappy]]
 
 **[[Configuration]]**
