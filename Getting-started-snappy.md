@@ -1,61 +1,49 @@
-# Getting started with *guh* snappy
+# Getting started with *guhIO* snappy
 --------------------------------------------
 
-Once you have successfully installed the guh snappy package ([[Snappy]]) the guh daemon and the guh-webserver should already be running. The guh snappy package contains the whole guh software:
+Once you have successfully installed the guhOP snappy package ([[Snappy]]) the guh daemon should already be running on the system. The guhIO snappy package contains the whole guh software:
 
 * guhd
 * libguh
 * guh-cli
-* guh-webserver
 * guh-webinterface
 
-The guhd daemon and the guh-webserver are services and can be controlled with `systemd`. The command line interface is installed as binary and can be started with `guh.guh-cli`
+The `guhd` daemon is a service and can be controlled with `systemd`. The command line interface `guh-cli` is installed as binary and can be started with `guhio.guh-cli`
 
 But first log in to Ubuntu Core device:
 
         $ ssh ubuntu@webdm.local	# password: ubuntu
 
     
-> **Note:** the avahi sometimes does not work correctly. In this case try to replace `webdm.local` with the ip of your device.
+> **Note:** the avahi sometimes does not work correctly. In this case try to replace `webdm.local` with the IP of your device.
 
 Now you should see running two services from guh:
 
         $ systemctl list-units | grep guh
 
-        guh_guhd_0.1.3.service        loaded active running   Daemon for the guh home automation systems
-        guh_webserver_0.1.3.service   loaded active running   The guh REST-API webserver
+        guhio_guhd_ICGAWgEBRJKY.service  loaded    active running    Daemon for the guh IoT server
 
-If you want to follow the debug output to see whats going on you can run:
+> **Note:** if you don't install the package from the store, the version string will be replaced with a uuid. In this example *ICGAWgEBRJKY*. You will have a different uuid.
 
-        $ sudo journalctl -f -u guh_guhd_0.1.3.service
+If you want to follow the debug output of the guhd service and to see what's going on you can run:
 
-or for the webserver:
-
-        $ sudo journalctl -f -u guh_webserver_0.1.3.service
+        $ sudo journalctl -f -u guhio_guhd_ICGAWgEBRJKY.service
 
 If you want to play with the API you can start the command line interface [[guh-cli]] as user `ubuntu`:
 
-        $ guh.guh-cli
+        $ guhio.guh-cli
 
-The guh REST API and the guh-webinterface are accessible over port 3333. The guhd JSON-RPC API runns on port 2222.
+The guh REST API and the guh-webinterface are accessible over port 3333. The guhd JSON-RPC API runns on port 2222 for the TCP connection and on 4444 for the websocket connection.
 
 ## Configurations
 
 All guh config files are stored in:
 
-        $ ls -l /writable/system-data/apps/guh.sideload/current/config/
+        $ ls -l /var/lib/apps/guhio.sideload/<currentUuid>/
 
 
 The log files will be saved to:
 
-        /var/log/guhd.log
-
-
-
-
-
-
-
-
+        $ ls -l /var/lib/apps/guhio.sideload/<currentUuid>/
 
 
