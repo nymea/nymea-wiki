@@ -5,6 +5,7 @@ Once you have successfully installed the guhOP snappy package ([[Snappy]]) the g
 
 * guhd
 * libguh
+* plugins
 * guh-cli
 * guh-webinterface
 
