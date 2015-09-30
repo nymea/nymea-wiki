@@ -44,6 +44,6 @@ All guh config files are stored in:
 
 The log files will be saved to:
 
-        $ ls -l /var/lib/apps/guhio.sideload/<currentUuid>/
+        $ ls -l /var/lib/apps/guhio.sideload/<currentUuid>/guhd.log
 
 
