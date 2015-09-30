@@ -1,11 +1,11 @@
-# Install *guh* on ubuntu-core (Snappy)
+# Install *guhIO* on ubuntu-core (Snappy)
 --------------------------------------------
 
 > Ubuntu Core provides transactional updates with rigorous application isolation. This is the smallest, safest Ubuntu ever, on devices and on the cloud. We’re excited to unleash a new wave of developer innovation with snappy Ubuntu Core! ” - *Mark Shuttleworth, founder of Ubuntu and Canonical*.
 
 So we decided to try the new system to use the advantages of the snappy package system and give you the possibility to play with Ubuntu Core and guh on you [Beaglebone Black](http://beagleboard.org/BLACK) or [Raspberry Pi 2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/). You can find a good documentation of the new operating system from Canonical [Ubuntu Core](https://developer.ubuntu.com/en/snappy/).
 
-Currently we provide a guh snappy package only `armhf`, but we have planned to change that soon. If you want to install guh on you device you can do following: 
+Currently we provide a guhIO snappy package only `armhf`, but we have planned to change that soon. If you want to install guhIO on you device you can do following: 
 
 ## Install snappy tools
 
@@ -101,25 +101,25 @@ In this example I have a 8 GB SD card which is device `/dev/sdb`.
 
 ## Install guh snap
 
-1. Download the latest guh snappy package [guh_0.1.3_armhf.snap](https://guh.guru/downloads/snappy/guh_0.1.3_armhf.snap):
+1. Download the latest guh snappy package [guhio_0.1.7_armhf.snap](https://guh.guru/downloads/snappy/guhio_0.1.7_armhf.snap):
 
-        $ wget https://guh.guru/downloads/snappy/guh_0.1.3_armhf.snap
+        $ wget https://guh.guru/downloads/snappy/guhio_0.1.7_armhf.snap
 
 2. Install guh snappy on the device:
 
     > **Note:** the avahi sometimes does not work correctly. In this case try to replace `webdm.local` with the ip of your device.
 
-        $ snappy-remote --url=ssh://webdm.local install guh_0.1.3_armhf.snap
+        $ snappy-remote --url=ssh://webdm.local:22 install guhio_0.1.7_armhf.snap
 
         =======================================================
-        Installing guh_0.1.3_armhf.snap from local environment
-        Installing /tmp/guh_0.1.3_armhf.snap
-        2015/07/10 22:41:53 Signature check failed, but installing anyway as requested
-        Name        Date       Version Developer 
-        ubuntu-core 2015-06-11 3       ubuntu    
-        guh         2015-07-10 0.1.3   sideload  
-        webdm       2015-06-11 0.9               
-        pi2         2015-06-11 0.13 
+        Installing guhio_0.1.7_armhf.snap from local environment
+        Installing /tmp/guhio_0.1.7_armhf.snap
+        2015/09/30 12:19:05.216483 verify.go:85: Signature check failed, but installing anyway as requested
+        Name        Date       Version      Developer 
+        ubuntu-core 2015-09-25 2            ubuntu    
+        guhio       2015-09-30 ICGAWgEBRJKY sideload  
+        webdm       2015-09-25 0.9          canonical 
+        pi2         2015-09-25 0.16         canonical
         =======================================================
 
 
