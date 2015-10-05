@@ -2,12 +2,15 @@
 --------------------------------------------
 # Table of contents
 
-* [Devices](https://github.com/guh/guh/wiki/REST-Api-documentation#devices-resource)
-* [DeviceClasses](https://github.com/guh/guh/wiki/REST-Api-documentation#deviceclasses-resource)
-* [Vendors](https://github.com/guh/guh/wiki/REST-Api-documentation#vendors-resource)
-* [Plugins](https://github.com/guh/guh/wiki/REST-Api-documentation#plugins-resource)
-* [Rules](https://github.com/guh/guh/wiki/REST-Api-documentation#rules-resource)
-* [Logs](https://github.com/guh/guh/wiki/REST-Api-documentation#logs-resource)
+* [Methods](https://github.com/guh/guh/wiki/REST-API#methods)
+* [Error handling](https://github.com/guh/guh/wiki/REST-API#error-handling)
+* [Resources](https://github.com/guh/guh/wiki/REST-API#resources)
+    * [Devices](https://github.com/guh/guh/wiki/REST-API#devices-resource)
+    * [DeviceClasses](https://github.com/guh/guh/wiki/REST-API#deviceclasses-resource)
+    * [Vendors](https://github.com/guh/guh/wiki/REST-API#vendors-resource)
+    * [Plugins](https://github.com/guh/guh/wiki/REST-API#plugins-resource)
+    * [Rules](https://github.com/guh/guh/wiki/REST-API#rules-resource)
+    * [Logs](https://github.com/guh/guh/wiki/REST-API#logs-resource)
 
 --------------------------------------------
 Http Protocol version: `HTTP/1.1`
