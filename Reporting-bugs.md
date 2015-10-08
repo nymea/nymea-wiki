@@ -16,6 +16,13 @@ If you don't know where the bug occurs, please use the *guh*-daemon issues link.
         $ guhd -n
 
     Now you can follow the debug output of the core and check what's going on.
+    In order to get detailed information about a certain part of *guhd* it's helpful to use the debug categories. You can find a list of available debug categories with the command
+
+        $ guhd -h
+
+    In order to enable a certain categorie you can start *guhd* with following command:
+
+        $ guhd -n -d <DebugCategory>
 
 2. Make shore, there is only one instance of `guhd` running on your system, otherwise they will block each others ports.
 3. Try to use the [guh-cli](https://github.com/guh/guh/wiki/guh-cli) (which is communicating directly with the JSON-RPC API)
