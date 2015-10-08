@@ -101,19 +101,19 @@ In this example I have a 8 GB SD card which is device `/dev/sdb`.
 
 ## Install guh snap
 
-1. Download the latest guh snappy package [guhio_0.1.7_armhf.snap](https://guh.guru/downloads/snappy/guhio_0.1.7_armhf.snap):
+1. Download the latest guh snappy package [guhio_0.1.8_armhf.snap](https://guh.guru/downloads/snappy/guhio_0.1.8_armhf.snap):
 
-        $ wget https://guh.guru/downloads/snappy/guhio_0.1.7_armhf.snap
+        $ wget https://guh.guru/downloads/snappy/guhio_0.1.8_armhf.snap
 
 2. Install guh snappy on the device:
 
     > **Note:** the avahi sometimes does not work correctly. In this case try to replace `webdm.local` with the ip of your device.
 
-        $ snappy-remote --url=ssh://webdm.local:22 install guhio_0.1.7_armhf.snap
+        $ snappy-remote --url=ssh://webdm.local:22 install guhio_0.1.8_armhf.snap
 
         =======================================================
-        Installing guhio_0.1.7_armhf.snap from local environment
-        Installing /tmp/guhio_0.1.7_armhf.snap
+        Installing guhio_0.1.8_armhf.snap from local environment
+        Installing /tmp/guhio_0.1.8_armhf.snap
         2015/09/30 12:19:05.216483 verify.go:85: Signature check failed, but installing anyway as requested
         Name        Date       Version      Developer 
         ubuntu-core 2015-09-25 2            ubuntu    
