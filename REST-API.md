@@ -721,6 +721,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
         {
             "name": "String",
             "o:enabled": "Bool",
+            "o:executable": "Bool",
             "o:eventDescriptor": "$ref:EventDescriptor",
             "o:stateEvaluator": "$ref:StateEvaluator",
             "actions": [
@@ -749,7 +750,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `PUT /api/v1/rules/{ruleId}`
 
-* JSON RPC method: Rules.EdidRule
+* JSON RPC method: Rules.EditRule
 * Description: Edit the rule with the given `{ruleId}`
 * Request:
         
@@ -759,6 +760,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
         {
             "name": "String",
             "o:enabled": "Bool",
+            "o:executable": "Bool",
             "o:eventDescriptor": "$ref:EventDescriptor",
             "o:stateEvaluator": "$ref:StateEvaluator",
             "actions": [
@@ -817,6 +819,50 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 * Request:
         
         POST /api/v1/rules/{ruleId}/disable
+
+* Response:
+    
+        HTTP/1.1 200 Ok
+        Content-Type: application/json; charset="utf-8";
+
+        {
+            "error": "RuleErrorNoError"
+        }
+
+* Error type:
+
+        $ref:RuleError
+   
+-----------------------------------------------------
+### `POST /api/v1/rules/{ruleId}/executeactions`
+
+* JSON RPC method: Rules.ExecuteActions
+* Description: Execute the actions of the rule with the given `{ruleId}`
+* Request:
+        
+        POST /api/v1/rules/{ruleId}/executeactions
+
+* Response:
+    
+        HTTP/1.1 200 Ok
+        Content-Type: application/json; charset="utf-8";
+
+        {
+            "error": "RuleErrorNoError"
+        }
+
+* Error type:
+
+        $ref:RuleError
+   
+-----------------------------------------------------
+### `POST /api/v1/rules/{ruleId}/executeexitactions`
+
+* JSON RPC method: Rules.ExecuteExitActions
+* Description: Execute the exit actions of the rule with the given `{ruleId}`
+* Request:
+        
+        POST /api/v1/rules/{ruleId}/executeexitactions
 
 * Response:
     
