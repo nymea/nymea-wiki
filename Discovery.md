@@ -1,6 +1,6 @@
 # UPnP
 
-The guhd server can be discovered in the local network by using the **UPnP 1.1** ([Universal Plug and Play](https://en.wikipedia.org/wiki/Universal_Plug_and_Play)) network discovery. The server will present it self as [UPnP Basic](http://upnp.org/specs/basic/basic1/) device according to the following specifications:
+The guhd server can be discovered in the local network by using the **UPnP 1.1** ([Universal Plug and Play](https://en.wikipedia.org/wiki/Universal_Plug_and_Play)) network discovery. The server will present it self as [UPnP Basic 1.0](http://upnp.org/specs/basic/basic1/) device according to the following specifications:
 
 http://upnp.org/specs/basic/UPnP-basic-Basic-v1-Device.pdf
 
@@ -22,8 +22,7 @@ In order to search for UPnP devices in the network a client can send following m
 
 > **Note:** use `\r\n` at the end of each line and twice at the end of the message.
 
-Each UPnP device in the network will respond to this SSDP *M_SEARCH* search message with a HTTP message. The guhd server response will look like this:
-
+Each UPnP device in the network will respond to the SSDP search message with a *HTTP/1.1* message. The guhd server response will look like this:
 
     HTTP/1.1 200 OK
     Cache-Control: max-age=1900
@@ -35,7 +34,7 @@ Each UPnP device in the network will respond to this SSDP *M_SEARCH* search mess
     ST:upnp:rootdevice
     USN:uuid:81d520cd-90cd-422d-9cbb-a0287e467e79::urn:schemas-upnp-org:device:Basic:1
 
-From this message you can use the `Location` header to get information about the guhd server. The server will present it self as Basic 1.0 device. At this point you already know the IP address of the server in the network. The server information will be available as xml document and can be accessed by performing a HTTP `GET` request to the `Location` header:
+From this message you can use the `Location` header to get information about the guhd server. The server will present it self as Basic 1.0 device. At this point you already know the IP address of the server in the network. The server information will be available as `xml` document and can be accessed by performing a HTTP `GET` request to the `Location` header:
 
     GET http://10.10.10.50:3333/server.xml
 
@@ -135,7 +134,9 @@ The response will look like this:
         </device>
     </root>
    
+The `URLBase` value of the device description shows you on which port and address the guhd webserver will be accessable. The `presentationURL` value describes the path where the **guh-webinterface** can be found (`URLBase` + `presentationURL`). The `websocketURL` value is the only value which is not part of the UPnP specification and describes the location of the websocket server.
 
+The `device` section provides information about the server according to the UPnP 1.1 specification. The icons can be accessed with a `GET` call on `URLBase` + `iconURL`.
 
 
 
