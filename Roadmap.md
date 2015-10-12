@@ -1,8 +1,46 @@
 This is the roadmap for the guhd server. The full changelog can be found [here](http://www.guh.guru:8080/job/guh-ci/changes).
 
+### V 0.6.0
+* Add web socket server
+* Add UPnP discovery
+* Add more tests
+* Add more plugins 
+* Make debug categories dynamic
+* Add error reporting to REST-API
+* Add "How to write plugins" documentation
+* Add execute rule action methods
+* Add snappy packaging support
+* Many small bug fixes
 
+--------------------------------------------
+### V 0.5.0
+* Update documentation style 
+* Add Webserver
+* Add REST-API
+* Add SSL support
+* Add Bluetooth LE support
+* Add log filter methods
+* Add more plugins 
+* Many small bug fixes
+* Add units
+* Add debug categories
+* Add CORS support to webserver
 
-## V 0.3.0
+--------------------------------------------
+### V 0.4.0
+* Add "Edit" devices method
+* Add "Edit" rules method
+* Add LogEngine
+* Create GuhSettings
+* Introduce guhserver namespace
+* Improve rule engine
+* Add input types
+* Add more plugins 
+* Many small bug fixes
+* Add support for "writeable" states in plugin meta data
+
+--------------------------------------------
+### V 0.3.0
 * Add UPnP resource
 * Add NetworkAccessManager resource
 * Add more plugins
@@ -13,7 +51,7 @@ This is the roadmap for the guhd server. The full changelog can be found [here](
 * Many small bug fixes
 
 --------------------------------------------
-## V 0.2.0
+### V 0.2.0
 * Load plugins dynamic
 * Add more tests
 * Add Brennenstuhl support
@@ -29,7 +67,7 @@ This is the roadmap for the guhd server. The full changelog can be found [here](
 * Add more plugins 
 
 --------------------------------------------
-## V 0.1.0
+### V 0.1.0
 * Create project structure
 * Add debian scripts
 * Add server structure
