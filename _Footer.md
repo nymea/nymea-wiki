@@ -1,1 +1,1 @@
-[[Home]] | [[Install]] | [[Getting started]] | [[Configuration]] | [[User Interface]] | [[Plugins]] | [[FAQ]] | [[License]]
+[[Home]] | [[Install]] | [[Getting started]] | [[Configuration]] | [API]([[REST-API]]) | [[User Interface]] | [[Plugins]] | [[FAQ]] | [[License]]
