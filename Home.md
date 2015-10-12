@@ -25,6 +25,7 @@
     * [Autostart guhd](https://github.com/guh/guh/wiki/Getting-started#autostart-guhd)
     * [[guh cli]]
     * [[Getting started snappy]]
+    * [[Discovery]]
 
 * **[[Configuration]]**
 
