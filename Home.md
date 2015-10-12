@@ -28,7 +28,7 @@
 
 * **[[Configuration]]**
 
-* **[[REST-API]]**
+* **[API](https://github.com/guh/guh/wiki/REST-API)**
 
 * **[[User Interface]]**
 
