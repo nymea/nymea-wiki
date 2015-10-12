@@ -38,7 +38,7 @@ Allowed methods:
 ## Error handling
 
 If a REST call could not be performend or there was an error,
-the REST API respons with a HTTP reply != 200 and a JSON map
+the REST API respons with a HTTP reply != `200` and a JSON map
 containing the corresponding error. 
 
 For the full error list please checkout the [JSON-RPC documentation](http://dev.guh.guru/jsonrpc.html#newest-json-rpc-api)
