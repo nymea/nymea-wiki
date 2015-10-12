@@ -28,6 +28,8 @@
 
 * **[[Configuration]]**
 
+* **[[REST-API]]**
+
 * **[[User Interface]]**
 
 * **[[Plugins]]**
