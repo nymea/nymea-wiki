@@ -21,6 +21,8 @@
 
 **[[Configuration]]**
 
+**[[REST-API]]**
+
 **[[User Interface]]**
 * [Web Interface](https://github.com/guh/guh/wiki/User-Interface#web-interface)
 * [Smartphone App](https://github.com/guh/guh/wiki/User-Interface#smartphone-app)
