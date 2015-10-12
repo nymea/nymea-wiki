@@ -12,6 +12,7 @@
     * [[Structure]]
     * [[Reporting bugs]]
     * [[Coding style]]
+    * [[Roadmap]]
 
 * **[[Install]]**
     * [[Ubuntu]]
