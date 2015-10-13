@@ -1,7 +1,7 @@
 This is the roadmap for the guhd server. The full changelog can be found [here](http://www.guh.guru:8080/job/guh-ci/changes).
 
 ### V 0.7.0
-* [ ] Add OAuth 2.0 
+* [x] Add OAuth 2.0 
 * [ ] Add parent/child device relation 
 * [ ] Add "possible values" for stateType
 * [ ] Add device remove policy (parent/child) 
