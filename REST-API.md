@@ -321,10 +321,23 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
    
 
 -----------------------------------------------------
-### `DELETE /api/v1/devices/{deviceId}`
+### `DELETE /api/v1/devices/{deviceId}?params={}`
 
 * JSON RPC method: Devices.RemoveConfiguredDevice
 * Description: Remove the device with the given `{deviceId}`
+* Optional parameters:
+        params -> JSON list of remove params (percent encoding)
+        
+        "params": {
+            "o:removePolicy": "$ref:RemovePolicy",
+            "o:removePolicyList": [
+                    {
+                        "policy": "$ref:RemovePolicy",
+                        "ruleId": "Uuid"
+                    }
+             ]
+        }
+
 * Response:
     
         HTTP/1.1 200 Ok
@@ -332,6 +345,9 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 
         {
             "error": "DeviceErrorNoError"
+            "o:ruleIds": [
+                  "Uuid"
+            ]
         }
 
 * Error type:
