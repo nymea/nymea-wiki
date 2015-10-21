@@ -1,5 +1,14 @@
 # Install *guh*-core on Ubuntu
---------------------------------------------
+
+In order to have the full feature support we recommend to use guhd on Ubuntu 15.04 Vivid:  
+
+----------------------------------------------
+|                  | Trusty | Utopic | Vivid |
+| ---------------- |:------:|:------:|:-----:|
+| guh-webinterface |    ✘   |    ✔   |   ✔   |
+| WebSocket Server |    ✘   |    ✔   |   ✔   |
+| Bluetooth LE     |    ✘   |    ✘   |   ✔   |
+----------------------------------------------
 
 In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
 
