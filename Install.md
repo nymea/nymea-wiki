@@ -1,4 +1,6 @@
 # Install *guh*-core
+--------------------------------------------
+
 Depending on the your platform and operating system, you can choose between following installation instructions:
 
 * [[Ubuntu]]
@@ -6,18 +8,20 @@ Depending on the your platform and operating system, you can choose between foll
 * [[Raspberry Pi]]
 * [[Beaglebone Black]]
 
+-----------------------------------------------------------
 | Ubuntu     | 14.04 Trusty | 14.10 Utopic | 15.04 Vivid  |
-|:-----------|-------------:|:------------:|:------------:|
-| amd64      |      [x]     |      [x]     |      [x]     |
-| i386       |      [x]     |      [x]     |      [x]     |
-| armhf      |      [x]     |      [ ]     |      [x]     |
+|:-----------|:------------:|:------------:|:------------:|
+| amd64      |       ✔      |       ✔      |       ✔      |
+| i386       |       ✔      |       ✔      |       ✔      |
+| armhf      |       ✘      |       ✘      |       ✔      |
 
 
+--------------------------------------------
 | Debian     |    Wheezy    |    Jessie    |
 |:-----------|-------------:|:------------:|
-| amd64      |      [ ]     |      [ ]     |
-| i386       |      [ ]     |      [ ]     |
-| armhf      |      [ ]     |      [x]     |
+| amd64      |       ✘      |       ✘      |
+| i386       |       ✘      |       ✘      |
+| armhf      |       ✘      |       ✔      |
 
 
 If you want to use *guh*-core somewhere else, you can also compile the code by using following instructions:
