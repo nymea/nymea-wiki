@@ -6,7 +6,7 @@ In order to have the full feature support we recommend to use guhd on Ubuntu 15.
 |                  | Trusty | Utopic | Vivid |
 | ---------------- |:------:|:------:|:-----:|
 | guh-webinterface |    ✘   |    ✔   |   ✔   |
-| WebSocket Server |    ✘   |    ✔   |   ✔   |
+| Websocket server |    ✘   |    ✔   |   ✔   |
 | Bluetooth LE     |    ✘   |    ✘   |   ✔   |
 ----------------------------------------------
 
