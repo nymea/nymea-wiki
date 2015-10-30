@@ -17,7 +17,7 @@ Depending on the your platform and operating system, you can choose between foll
 --------------------------------------------------------------------------
 
 --------------------------------------------
-| Debian     |    Wheezy    |    Jessie    |
+| Debian     |  Wheezy 7.0  |  Jessie 8.0  |
 |:-----------|-------------:|:------------:|
 | `amd64`    |       ✘      |       ✔      |
 | `i386`     |       ✘      |       ✔      |
