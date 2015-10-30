@@ -1,5 +1,13 @@
 # Install *guh*-core on Debian
 
+--------------------------------------------
+| Debian     |  Wheezy 7.0  |  Jessie 8.0  |
+|:-----------|-------------:|:------------:|
+| `amd64`    |       ✘      |       ✔      |
+| `i386`     |       ✘      |       ✔      |
+| `armhf`    |       ✘      |       ✔      |
+--------------------------------------------
+
 In order to install *guh* on Debian you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
 
 1. Create the [*guh*-repository](http://repo.guh.guru/) list file:
