@@ -16,6 +16,7 @@
 
 * **[[Install]]**
     * [[Ubuntu]]
+    * [[Debian]]
     * [[Snappy]]
     * [[Raspberry Pi]]
     * [[Beaglebone Black]]
