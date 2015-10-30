@@ -2,22 +2,30 @@
 
 In order to have the full feature support we recommend to use guhd on Ubuntu 15.04 Vivid:  
 
-----------------------------------------------
-|                  | Trusty | Utopic | Vivid |
-| ---------------- |:------:|:------:|:-----:|
-| guh-webinterface |    ✘   |    ✔   |   ✔   |
-| Websocket server |    ✘   |    ✔   |   ✔   |
-| Bluetooth LE     |    ✘   |    ✘   |   ✔   |
-----------------------------------------------
+------------------------------------------------------
+|                  | Trusty | Utopic | Vivid |  Wily |
+| ---------------- |:------:|:------:|:-----:|:-----:|
+| guh-webinterface |    ✘   |    ✔   |   ✔   |   ✔   |
+| Websocket server |    ✘   |    ✔   |   ✔   |   ✔   |
+| Bluetooth LE     |    ✘   |    ✘   |   ✔   |   ✔   |
+------------------------------------------------------
 
 In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
 
 1. Create the [*guh*-repository](http://repo.guh.guru/) list file:
         
-        $ sudo nano /etc/apt/sources.list.d/guh.
+        $ sudo nano /etc/apt/sources.list.d/guh.list
         
-    > *Note:* please replace `<dist>` with the codename of your Ubuntu distribution. You can get your system version with `lsb_release -a`. In the repository are following distributions available:`trusty` `utopic` and `vivid`. Available architectures are `amd64` `i386` and `armhf`.
-     
+    In the repository are following distributions available:
+    * `trusty` 
+    * `utopic`  
+    * `vivid`
+    * `wily` 
+
+    Available architectures are `amd64` `i386` and `armhf`.
+    
+    > *Note:* please replace `<dist>` with the codename of your Ubuntu distribution. You can get your system version with `lsb_release -a`. 
+
     Copy following lines into the file (with replaced `<dist>`) and save it:
 
         ## guh repo
