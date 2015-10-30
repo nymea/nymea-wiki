@@ -8,13 +8,13 @@ Depending on the your platform and operating system, you can choose between foll
 * [[Raspberry Pi]]
 * [[Beaglebone Black]]
 
------------------------------------------------------------
-| Ubuntu     | 14.04 Trusty | 14.10 Utopic | 15.04 Vivid  |
-|:-----------|:------------:|:------------:|:------------:|
-| amd64      |       ✔      |       ✔      |       ✔      |
-| i386       |       ✔      |       ✔      |       ✔      |
-| armhf      |       ✘      |       ✘      |       ✔      |
-
+--------------------------------------------------------------------------
+| Ubuntu     | 14.04 Trusty | 14.10 Utopic | 15.04 Vivid  | 15.10 Wily   |
+|:-----------|:------------:|:------------:|:------------:|:------------:|
+| amd64      |       ✔      |       ✔      |       ✔      |       ✔      |
+| i386       |       ✔      |       ✔      |       ✔      |       ✔      |
+| armhf      |       ✘      |       ✘      |       ✔      |       ✘      |
+--------------------------------------------------------------------------
 
 --------------------------------------------
 | Debian     |    Wheezy    |    Jessie    |
@@ -22,7 +22,7 @@ Depending on the your platform and operating system, you can choose between foll
 | amd64      |       ✘      |       ✘      |
 | i386       |       ✘      |       ✘      |
 | armhf      |       ✘      |       ✔      |
-
+--------------------------------------------
 
 If you want to use *guh*-core somewhere else, you can also compile the code by using following instructions:
 
