@@ -10,7 +10,7 @@ The project page of boblight can be found [here](https://code.google.com/p/bobli
 Install all needed packages:
 
     $ apt-get update
-    $ apt-get install build-essential subversion portaudio19-dev libusb-1.0-0-dev
+    $ apt-get install build-essential subversion portaudio19-dev libusb-1.0-0-dev libxrender-dev
     
 Download the source code using:
 
