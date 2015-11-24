@@ -15,7 +15,7 @@ The repository provides packages for following architectures:
 |:-----------|:------------:|:------------:|:------------:|:------------:|
 | `amd64`    |       ✔      |       ✔      |       ✔      |       ✔      |
 | `i386`     |       ✔      |       ✔      |       ✔      |       ✔      |
-| `armhf`    |       ✘      |       ✘      |       ✔      |       ✘      |
+| `armhf`    |       ✘      |       ✘      |       ✔      |       ✔      |
 --------------------------------------------------------------------------
 
 In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
