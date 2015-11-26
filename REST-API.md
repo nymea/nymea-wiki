@@ -113,7 +113,10 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
         Content-Type: application/json; charset="utf-8";
         
         [
-            "$ref:State"
+            {
+                "stateTypeId": "Uuid",
+                "value": "Variant"
+            }
         ]
         
 * Error type:
