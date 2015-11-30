@@ -7,7 +7,7 @@ This is the roadmap for the guhd server. The full change log can be found [here]
 * Basic system settings
 
 
-### V 0.7.0
+### V 0.7.0 (current development)
 * ~~Add OAuth 2.0~~ 
 * ~~Add parent/child device relation~~ 
 * Add "possible values" for stateType
