@@ -2,12 +2,13 @@ This is the roadmap for the guhd server. The full changelog can be found [here](
 
 ### V 0.7.0
 * [x] Add OAuth 2.0 
-* [ ] Add parent/child device relation 
+* [x] Add parent/child device relation 
 * [ ] Add "possible values" for stateType
-* [ ] Add device remove policy (parent/child) 
+* [x] Add device remove policy (parent/child) 
 * [ ] Add DisplayPin mock device
-* [ ] Add more tests
+* [x] Add more tests
 * [ ] Add more plugins
+* [x] CoAP Support
 
 --------------------------------------------
 ### V 0.6.0
