@@ -1,4 +1,11 @@
-This is the roadmap for the guhd server. The full changelog can be found [here](http://www.guh.guru:8080/job/guh-ci/changes).
+This is the roadmap for the guhd server. The full change log can be found [here](http://www.guh.guru:8080/job/guh-ci/changes).
+
+### V 0.8.0
+* Tag system
+* User authentication
+* Remote access
+* Basic system settings
+
 
 ### V 0.7.0
 * ~~Add OAuth 2.0~~ 
