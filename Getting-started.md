@@ -27,7 +27,8 @@ In order to get help you can type in the terminal `guhd -h`:
       -h, --help       Displays this help.
       -v, --version    Displays version information.
       -n, --no-daemon  Run guhd in the foreground, not as daemon.
-      -p, --print-all  Enables all debug categories. This parameter overrides all debug category parameters.  
+      -p, --print-all  Enables all debug categories. This parameter 
+                       overrides all debug category parameters.  
       -d, --debug <[No]DebugCategory> ...
 
 Also a manual page is available:
