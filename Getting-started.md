@@ -12,8 +12,12 @@ In order to get help you can type in the terminal `guhd -h`:
     $ guhd -h
     Usage: guhd [options]
 
-    guh ( /[guːh]/ ) is an open source home automation server, which allows to
-    control a lot of different devices from many different manufacturers.
+    guh ( /[guːh]/ ) is an open source IoT (Internet of Things) server, 
+    which allows to control a lot of different devices from many different. 
+    manufacturers. With the powerful rule engine you are able to connect any 
+    device available in the system and create individual scenes and behaviours 
+    for your environment.
+
     guhd 0.2.0 (C) 2014-2015 guh
     Released under the GNU GENERAL PUBLIC LICENSE Version 2.
     
@@ -21,6 +25,7 @@ In order to get help you can type in the terminal `guhd -h`:
       -h, --help       Displays this help.
       -v, --version    Displays version information.
       -n, --no-daemon  Run guhd in the foreground, not as daemon.
+      -p, --print-all  Enables all debug categories. This parameter overrides all debug category parameters.  
       -d, --debug <[No]DebugCategory> ...
 
 Also a manual page is available:
@@ -31,59 +36,48 @@ By default, `guhd` will start as a daemon. If you want to start guhd as an appli
 
 If you want to see a special debug category, you can pass that category to the parameter. You can find all available categories in the help message (`guhd -h`):
 
-> **Example:** start guhd in the foreground and enable the JsonRpc debug messages:
+> **Example:** start guhd in the foreground and enable the `JsonRpc` and `Hardware` debug messages:
     
-    $ guhd -n -d JsonRpc
+    $ guhd -n -d JsonRpc -d Hardware
 
-The `guhd` package provides also an initscript, which allows you to start, stop, restart and get the status the *guh*-daemon.
-
-    $ sudo service guhd
-    Usage: /etc/init.d/guhd {start|stop|restart|status}
+The `guhd` package provides also systemd service, which allows you to start, stop, restart and get the status the *guh*-daemon.
 
 Start the service:
 
-    $ sudo service guhd start
+    $ sudo systemctl status guhd
 
 Stop the service:
 
-    $ sudo service guhd stop
-
+    $ sudo systemctl stop guhd
 
 Restart the service:
 
-    $ sudo service guhd restart
+    $ sudo sudo systemctl restart guhd
 
 Get the status of the service:
 
-    $ sudo service guhd status
+    $ sudo systemctl status guhd
 
 ## Autostart guhd
 If you want to auto start guhd on boot, you can enable the service by calling following command:
 
-    $ sudo update-rc.d guhd defaults
+    $ systemctl enable guhd
     
-     Adding system startup for /etc/init.d/guhd ...
-       /etc/rc0.d/K20guhd -> ../init.d/guhd
-       /etc/rc1.d/K20guhd -> ../init.d/guhd
-       /etc/rc6.d/K20guhd -> ../init.d/guhd
-       /etc/rc2.d/S20guhd -> ../init.d/guhd
-       /etc/rc3.d/S20guhd -> ../init.d/guhd
-       /etc/rc4.d/S20guhd -> ../init.d/guhd
-       /etc/rc5.d/S20guhd -> ../init.d/guhd
+    Created symlink from /etc/systemd/system/multi-user.target.wants/guhd.service to /etc/systemd/system/guhd.service.
 
 ### Disable autostart guhd
 If you want to disable auto starting guhd on boot, you can call following command:
 
-    $ sudo update-rc.d -f guhd remove
-     
-     Removing any system startup links for /etc/init.d/guhd ...
-       /etc/rc0.d/K20guhd
-       /etc/rc1.d/K20guhd
-       /etc/rc2.d/K80guhd
-       /etc/rc3.d/K80guhd
-       /etc/rc4.d/K80guhd
-       /etc/rc5.d/K80guhd
-       /etc/rc6.d/K20guhd
+    $ sudo systemctl disable guhd
+
+    Removed symlink /etc/systemd/system/multi-user.target.wants/guhd.service.
+
+## Follow debug output
+
+If you have guhd running in the background (as daemon and started with systemd) you can see the live debug out by monitoring the log file. You can do that with following command:
+
+    $ sudo tail -f /var/log/guhd.log 
+
 
 --------------------------------------------
 # *guh*-cli
@@ -131,6 +125,8 @@ If you have installed avahi (`$ apt-get install avahi-daemon avahi-utils`) you c
 hostname.local:3333
 
 > Example: if you are using a Raspberry Pi and the [guh-netinstal](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-minimal-net-install-system) the host name will be `guh` [http://guh.local:3333](http://guh.local:3333)
+
+If you want to enable an encrypted connection using SSL you can checkout the [[Configuration]] wiki.
 
 
 
