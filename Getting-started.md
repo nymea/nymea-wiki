@@ -18,9 +18,11 @@ In order to get help you can type in the terminal `guhd -h`:
     device available in the system and create individual scenes and behaviours 
     for your environment.
 
-    guhd 0.2.0 (C) 2014-2015 guh
+    guhd 0.7.0 (C) 2014-2015 guh
     Released under the GNU GENERAL PUBLIC LICENSE Version 2.
-    
+
+    API version: 34
+
     Options:
       -h, --help       Displays this help.
       -v, --version    Displays version information.
@@ -127,7 +129,5 @@ hostname.local:3333
 > Example: if you are using a Raspberry Pi and the [guh-netinstal](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-minimal-net-install-system) the host name will be `guh` [http://guh.local:3333](http://guh.local:3333)
 
 If you want to enable an encrypted connection using SSL you can checkout the [[Configuration]] wiki.
-
-
 
 
