@@ -56,16 +56,18 @@ In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.lis
     
         $ apt-cache search guh
     
-        guh - Server for home automation systems - meta package
+        guh - An open source IoT server - meta package
         guh-cli - guh command line interface - python
-        guh-dbg - server for home automation systems - debug symbols
+        guh-dbg - An open source IoT server - debug symbols
         guh-doc - Documentation for the guh package (on-site) - documentation
-        guh-plugins - Plugins for guh server home automation systems
+        guh-plugins - Plugins for guh IoT server
         guh-tests - Tests for the guh package
         guh-webinterface - Browser based user interface for guh
-        guhd - Server daemon for home automation systems
-        libguh1 - Server for home automation systems - core library
-        libguh1-dev - Server for home automation systems - development files
+        guh-webinterface-doc - Documentation of the guh webinterface source code (on-site) - documentation
+        guhd - An open source IoT server - daemon
+        libguh1 - An open source IoT server - core library
+        libguh1-dev - An open source IoT server - development files
+
 
 3. Install *guh* with following command:
     
