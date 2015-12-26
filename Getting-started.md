@@ -47,7 +47,7 @@ The `guhd` package provides also systemd service, which allows you to start, sto
 
 Start the service:
 
-    $ sudo systemctl status guhd
+    $ sudo systemctl start guhd
 
 Stop the service:
 
@@ -55,7 +55,7 @@ Stop the service:
 
 Restart the service:
 
-    $ sudo sudo systemctl restart guhd
+    $ sudo systemctl restart guhd
 
 Get the status of the service:
 
@@ -64,7 +64,7 @@ Get the status of the service:
 ## Autostart guhd
 If you want to auto start guhd on boot, you can enable the service by calling following command:
 
-    $ systemctl enable guhd
+    $ sudo systemctl enable guhd
     
     Created symlink from /etc/systemd/system/multi-user.target.wants/guhd.service to /etc/systemd/system/guhd.service.
 
