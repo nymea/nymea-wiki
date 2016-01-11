@@ -158,6 +158,10 @@ If you want to compile *guh* with the boblightd plugin, you need to install the 
 To make it permanent, you can add this line to the `/etc/bash.bashrc` file. 
 
 See also: [[Boblightd]]
+
+#### Compile with *RF433 GPIO* support
+
+        qmake ../guh/ CONFIG+=enable433gpio
     
 #### Compile with *coverage*
 
