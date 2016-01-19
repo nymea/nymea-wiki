@@ -44,10 +44,10 @@ Depending on the network setup `avahi` sometimes does not work. In that case you
 
     $ ssh guh@192.168.0.X    # password: ubuntu
 
-Please make an update in the new system to make sure there is the newest version of `guh`:
+Please make an update on the new system to make sure there is the newest version of `guh` installed:
 
     $ sudo apt-get update
-    $ sudo apt-get upgrade
+    $ sudo apt-get dist-upgrade
 
 
 -----------------------------------------------------
