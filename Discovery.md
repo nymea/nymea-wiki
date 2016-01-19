@@ -30,7 +30,7 @@ Each UPnP device in the network will respond to the SSDP search message with a *
     EXT:
     CONTENT-LENGTH:0
     Location: http://10.10.10.50:3333/server.xml
-    Server: guh/0.6.0 UPnP/1.1 
+    Server: guh/0.7.0 UPnP/1.1 
     ST:upnp:rootdevice
     USN:uuid:81d520cd-90cd-422d-9cbb-a0287e467e79::urn:schemas-upnp-org:device:Basic:1
 
@@ -51,12 +51,12 @@ The response will look like this:
         <presentationURL>/</presentationURL>
         <device>
             <deviceType>urn:schemas-upnp-org:device:Basic:1</deviceType>
-            <friendlyName>guhd</friendlyName>
-            <manufacturer>guh</manufacturer>
-            <manufacturerURL>http://guh.guru</manufacturerURL>
+            <friendlyName>guhIO</friendlyName>
+            <manufacturer>guh GmbH</manufacturer>
+            <manufacturerURL>http://guh.io</manufacturerURL>
             <modelDescription>Home automation server</modelDescription>
             <modelName>guhd</modelName>
-            <modelNumber>0.6.0</modelNumber>
+            <modelNumber>0.7.0</modelNumber>
             <modelURL>http://guh.io</modelURL>
             <UDN>uuid:81d520cd-90cd-422d-9cbb-a0287e467e79</UDN>
             <iconList>
