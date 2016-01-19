@@ -6,10 +6,10 @@ This tutorial shows you how to install *guh* on the [Raspberry Pi B/B+](https://
 
 ## Table of contents:
 
-* [Install *guh* on Debian *jessie* (existing system)](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-existing-system)
-* [Install *guh* on Debian *jessie* (minimal **net-install** system)](https://github.com/guh/guh/wiki/Raspberry-Pi#install-guh-on-debian-jessie-minimal-net-install-system)
-    * [1. Prepare the SD card](https://github.com/guh/guh/wiki/Raspberry-Pi#1-prepare-the-sd-card)  
-    * [2. Install](https://github.com/guh/guh/wiki/Raspberry-Pi#2-install)
+* [Install *guh* on Debian *jessie* (existing system)](https://github.com/guh/guh/wiki/Raspberry-Pi-1#install-guh-on-debian-jessie-existing-system)
+* [Install *guh* on Debian *jessie* (minimal **net-install** system)](https://github.com/guh/guh/wiki/Raspberry-Pi-1#install-guh-on-debian-jessie-minimal-net-install-system)
+    * [1. Prepare the SD card](https://github.com/guh/guh/wiki/Raspberry-Pi-1#1-prepare-the-sd-card)  
+    * [2. Install](https://github.com/guh/guh/wiki/Raspberry-Pi-1#2-install)
 
 --------------------------------------------
 ##Install *guh* on Debian *jessie* (existing system)
