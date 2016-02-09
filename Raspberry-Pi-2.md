@@ -1,7 +1,7 @@
 # Install *guh* on the Raspberry Pi 2
 --------------------------------------------
 
-This tutorial shows you how to install *guh* on the [Raspberry Pi 2](https://www.raspberrypi.org/documentation/hardware/raspberrypi/models/README.md). The easiest and recommended way is to use the preconfigured image provided by *guh*. You can find the latest image [here](http://guh.guru/downloads/rpi2/2015-12-19-guh-ubuntu-rpi2-vivid.zip). This image was build with the `guh-image-builder` which can be found here:
+This tutorial shows you how to install *guh* on the [Raspberry Pi 2](https://www.raspberrypi.org/documentation/hardware/raspberrypi/models/README.md). The easiest and recommended way is to use the preconfigured image provided by *guh*. You can find the latest image [here](http://guh.guru/downloads/rpi2/2016-02-09-guh-ubuntu-rpi2-vivid.zip). This image was build with the `guh-image-builder` which can be found here:
 
 https://github.com/guh/guh-image-builder
 
@@ -14,10 +14,13 @@ https://github.com/guh/guh-image-builder
     $ sudo apt-get install zip bmap-tools
 
 
+Download the image:
+
+    $ wget http://guh.guru/downloads/rpi2/2016-02-09-guh-ubuntu-rpi2-vivid.zip
+
 Once you have downloaded the image you can unzip the file:
-> **Note:** replace the image version with you downloaded image.
    
-     $ unzip 2015-12-19-guh-ubuntu-rpi2-vivid.zip
+     $ unzip 2016-02-09-guh-ubuntu-rpi2-vivid.zip
 
 
 -----------------------------------------------------
@@ -25,8 +28,11 @@ Once you have downloaded the image you can unzip the file:
 
 > **Note:** Please replace `sdX` with the device of your SD card. You can use `lsblk` to check which device is your SD card. 
 
+    $ sudo bmaptool copy --bmap 2016-02-09-guh-ubuntu-rpi2-vivid.bmap 2016-02-09-guh-ubuntu-rpi2-vivid.img /dev/sdX
 
-    $ sudo bmaptool copy --bmap 2015-12-19-guh-ubuntu-rpi2-vivid.bmap 2015-12-19-guh-ubuntu-rpi2-vivid.img /dev/sdX
+If you have problems with `bmaptool` you can also flash the image directly with `dd`:
+
+    $ sudo dd if=2016-02-09-guh-ubuntu-rpi2-vivid.img of=/dev/sdX bs=1M
 
 Once the process is finished you can insert the micro SD card into the Raspberry Pi 2, connect the ethernet cable and power it on.
 
@@ -36,7 +42,6 @@ Once the process is finished you can insert the micro SD card into the Raspberry
 You can try to connect to the Raspberry Pi 2 using the hostname of the device (`guh`):
 
     $ ssh guh@guh.local    # password: ubuntu
-
 
 Depending on the network setup `avahi` sometimes does not work. In that case you can connect to the device using the ip address:
 
