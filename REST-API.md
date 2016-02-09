@@ -31,7 +31,7 @@ Allowed methods:
 * `OPTIONS` -> check if a resource is available (used for CORS)
 
 * Minimal API request path: `/api/v1/{resource}`
-* Path for the webinterdace: `/`
+* Path for the webinterface: `/`
 
 
 =====================================================
