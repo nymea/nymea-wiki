@@ -1,5 +1,12 @@
 The *guh* webserver API authentication is by default enabled and can be accessed with the [Basic Authentication Scheme](http://tools.ietf.org/html/rfc1945#section-11.1). Once a client is logged in using the user name and password the server will return an access token. This token can be used for any further API call. This makes sure there is no user name or password saved on the client side. It is highly recommended to use a secure `SSL/TLS` connection for the whole authentication traffic. How to generate a SSL certificate and configure the server using https can be found in the [[Configuration]] wiki.
 
+--------------------------------------------
+## Table of contents:
+
+* [Login](https://github.com/guh/guh/wiki/Webserver-authentication#1-login)
+* [Using the token](https://github.com/guh/guh/wiki/Webserver-authentication#2-using-the-token)
+
+
 ## 1. Login
 
 > **Note:** if authentication is disabled in the *guh* server, the `/api/v1/authentication` resource will be disabled and cannot be accessed. Each request on this resource will answered with a `403 Forbidden` message.
