@@ -1,4 +1,3 @@
-
 ![guhIO](http://guh.guru/downloads/press/guhIO.png)
 
 # Welcome to the *guhIO* wiki!
