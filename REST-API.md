@@ -183,10 +183,38 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
    
 
 -----------------------------------------------------
-### `PUT /api/v1/devices/{deviceId}`
+### `POST /api/v1/devices/{deviceId}`
 
 * JSON RPC method: Devices.EditDevice
-* Description: Edit the device with the given `{deviceId}` (CreateMethodUser)
+* Description: Edit the device name with the given `{deviceId}` (without setup)
+* Request:
+        
+        POST /api/v1/devices/{deviceId}
+        Content-Type: application/json; charset="utf-8";
+        
+        {
+            "name": "String"
+        }
+        
+* Response:
+    
+        HTTP/1.1 200 Ok
+        Content-Type: application/json; charset="utf-8";
+
+        {
+            "error": "DeviceErrorNoError"
+        }
+    
+* Error type:
+
+        $ref:DeviceError
+   
+
+-----------------------------------------------------
+### `PUT /api/v1/devices/{deviceId}`
+
+* JSON RPC method: Devices.ReconfigureDevice
+* Description: Reconfigure the device with the given `{deviceId}` (CreateMethodUser).
 * Request:
         
         PUT /api/v1/devices/{deviceId}
@@ -199,7 +227,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
              ]    
         }
         
-    Edit a device with the given `{deviceId}` (CreateMethodDiscoverys):
+    Reconfigure a device with the given `{deviceId}` (CreateMethodDiscoverys):
             
         PUT /api/v1/devices/{deviceId}
         Content-Type: application/json; charset="utf-8";
