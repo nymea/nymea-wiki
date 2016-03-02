@@ -186,7 +186,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 ### `POST /api/v1/devices/{deviceId}`
 
 * JSON RPC method: Devices.EditDevice
-* Description: Edit the device name with the given `{deviceId}` (without setup)
+* Description: Edit the name of the device with the given `{deviceId}` (without setup)
 * Request:
         
         POST /api/v1/devices/{deviceId}
