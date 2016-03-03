@@ -155,6 +155,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 
         {
             "deviceClassId": "Uuid",
+            "name": "String",
             "deviceParams": [
                 "$ref:Param"
              ]    
@@ -167,6 +168,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
         
         {
             "deviceClassId": "Uuid",
+            "name": "String",
             "deviceDescriptorId": "Uuid"
         }
         
@@ -263,6 +265,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 
         {
             "deviceClassId": "Uuid",
+            "name": "String",
             "deviceParams": [
                 "$ref:Param"
              ]    
@@ -275,6 +278,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
         
         {
             "deviceClassId": "Uuid",
+            "name": "String",
             "deviceDescriptorId": "Uuid"
         }
         
