@@ -70,7 +70,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `GET /api/v1/devices`
 
-* JSON RPC method: Devices.GetConfiguredDevices
+* JSON RPC method: `Devices.GetConfiguredDevices`
 * Description: Returns the list of configured devices
 * Response:
         
@@ -105,7 +105,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `GET /api/v1/devices/{deviceId}/states`
 
-* JSON RPC method: Devices.GetStateValues
+* JSON RPC method: `Devices.GetStateValues`
 * Description: Returns the list of the states from the device with the given `{deviceId}`
 * Response:
         
@@ -127,7 +127,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `GET /api/v1/devices/{deviceId}/states/{stateTypeId}`
 
-* JSON RPC method: Devices.GetStateValue
+* JSON RPC method: `Devices.GetStateValue`
 * Description: Returns the value of the state with the given `{stateTypeId}` from the device with the given `{deviceId}`
 * Response:
         
@@ -146,7 +146,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `POST /api/v1/devices`
 
-* JSON RPC method: Devices.AddConfiguredDevice
+* JSON RPC method: `Devices.AddConfiguredDevice`
 * Description: Add a new device (CreateMethodUser)
 * Request:
         
@@ -187,7 +187,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `POST /api/v1/devices/{deviceId}`
 
-* JSON RPC method: Devices.EditDevice
+* JSON RPC method: `Devices.EditDevice`
 * Description: Edit the name of the device with the given `{deviceId}` (without setup)
 * Request:
         
@@ -215,7 +215,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `PUT /api/v1/devices/{deviceId}`
 
-* JSON RPC method: Devices.ReconfigureDevice
+* JSON RPC method: `Devices.ReconfigureDevice`
 * Description: Reconfigure the device with the given `{deviceId}` (CreateMethodUser).
 * Request:
         
@@ -256,7 +256,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `POST /api/v1/devices/pair`
 
-* JSON RPC method: Devices.PairDevice
+* JSON RPC method: `Devices.PairDevice`
 * Description: Pair a device (CreateMethodUser)
 * Request:
         
@@ -301,7 +301,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `POST /api/v1/devices/confirmpairing`
 
-* JSON RPC method: Devices.ConfirmPairing
+* JSON RPC method: `Devices.ConfirmPairing`
 * Description: Confirm the pairing of a device. In case of `SetupMethodEnterPin` or `SetupMethodDisplayPin` also provide the pin in the param `secret`.
 * Request:
         
@@ -328,7 +328,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `POST /api/v1/devices/{deviceId}/execute/{actionTypeId}`
 
-* JSON RPC method: Devices.ExecuteAction
+* JSON RPC method: `Devices.ExecuteAction`
 * Description: Execute the action with the given `{actionTypeId}` on device with the given `{deviceId}`
 * Request:
         
@@ -358,7 +358,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `DELETE /api/v1/devices/{deviceId}?params={}`
 
-* JSON RPC method: Devices.RemoveConfiguredDevice
+* JSON RPC method: `Devices.RemoveConfiguredDevice`
 * Description: Remove the device with the given `{deviceId}`
 * Optional parameters:
         params -> JSON list of remove params (percent encoding)
@@ -396,7 +396,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `GET /api/v1/deviceclasses?vendorId="{vendorId}"`
 
-* JSON RPC method: Devices.GetSupportedDevices
+* JSON RPC method: `Devices.GetSupportedDevices`
 * Description: Returns the list of supported devices
 * Optional parameters:
     
@@ -438,7 +438,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `GET /api/v1/deviceclasses/{deviceClassId}/actiontypes`
 
-* JSON RPC method: Devices.GetActionTypes
+* JSON RPC method: `Devices.GetActionTypes`
 * Description: Returns the list of ActionTypes for the given `{deviceClassId}`
 * Response:
         
@@ -457,7 +457,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `GET /api/v1/deviceclasses/{deviceClassId}/actiontypes/{actionTypeId}`
 
-* JSON RPC method: Actions.GetActionType
+* JSON RPC method: `Actions.GetActionType`
 * Description: Returns the `{actionTypeId}` for the given `{deviceClassId}`
 * Response:
         
@@ -474,7 +474,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `GET /api/v1/deviceclasses/{deviceClassId}/statetypes`
 
-* JSON RPC method: Devices.GetStateTypes
+* JSON RPC method: `Devices.GetStateTypes`
 * Description: Returns the list of StateTypes for the given `{deviceClassId}`
 * Response:
         
@@ -493,7 +493,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `GET /api/v1/deviceclasses/{deviceClassId}/statetypes/{stateTypeId}`
 
-* JSON RPC method: States.GetStateType
+* JSON RPC method: `States.GetStateType`
 * Description: Returns the StateType for the given `{stateTypeId}`
 * Response:
         
@@ -510,7 +510,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `GET /api/v1/deviceclasses/{deviceClassId}/eventtypes`
 
-* JSON RPC method: Devices.GetEventTypes
+* JSON RPC method: `Devices.GetEventTypes`
 * Description: Returns the list of EventTypes for the given `{deviceClassId}`
 * Response:
         
@@ -529,7 +529,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `GET /api/v1/deviceclasses/{deviceClassId}/eventtypes/{eventTypeId}`
 
-* JSON RPC method: Events.GetEventType
+* JSON RPC method: `Events.GetEventType`
 * Description: Returns the EventType for the given `{eventTypeId}`
 * Response:
         
@@ -546,7 +546,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `GET /api/v1/deviceclasses/{deviceClassId}/discover?params=["$ref:Param"]`
 
-* JSON RPC method: Devices.GetDiscoveredDevices
+* JSON RPC method: `Devices.GetDiscoveredDevices`
 * Description: Get discovered devices for the given `{deviceClassId}`
 * Optional parameters: 
     
@@ -592,7 +592,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `GET /api/v1/vendors`
 
-* JSON RPC method: Devices.GetSupportedVendors
+* JSON RPC method: `Devices.GetSupportedVendors`
 * Description: Returns the list of supported vendors
 * Response:
         
@@ -632,7 +632,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `GET /api/v1/plugins`
 
-* JSON RPC method: Devices.GetPlugins
+* JSON RPC method: `Devices.GetPlugins`
 * Description: Returns the list of loaded plugins
 * Response:
         
@@ -669,7 +669,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `GET /api/v1/plugins/{pluginId}/configuration`
 
-* JSON RPC method: Devices.GetPluginConfiguration
+* JSON RPC method: `Devices.GetPluginConfiguration`
 * Description: Returns the plugin configuration of the given `{pluginId}`
 * Response:
         
@@ -688,7 +688,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `PUT /api/v1/plugins/{pluginId}/configuration`
 
-* JSON RPC method: Devices.SetPluginConfiguration
+* JSON RPC method: `Devices.SetPluginConfiguration`
 * Description: Set the configuration of the plugin with the given `{pluginId}`
 * Request:
         
@@ -722,7 +722,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `GET /api/v1/rules?deviceId={deviceId}`
 
-* JSON RPC method: Rules.GetRules
+* JSON RPC method: `Rules.GetRules`
 * Description: Returns the list of rule descriptions 
 * Optional parameters:
     
@@ -745,7 +745,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `GET /api/v1/rules/{ruleId}`
 
-* JSON RPC method: Rules.GetRuleDetails
+* JSON RPC method: `Rules.GetRuleDetails`
 * Description: Returns the details of the rule with the given `{ruleId}`
 * Response:
         
@@ -762,7 +762,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `POST /api/v1/rules`
 
-* JSON RPC method: Rules.AddRule
+* JSON RPC method: `Rules.AddRule`
 * Description: Add a new rule
 * Request:
         
@@ -801,7 +801,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `PUT /api/v1/rules/{ruleId}`
 
-* JSON RPC method: Rules.EditRule
+* JSON RPC method: `Rules.EditRule`
 * Description: Edit the rule with the given `{ruleId}`
 * Request:
         
@@ -842,7 +842,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `POST /api/v1/rules/{ruleId}/enable`
 
-* JSON RPC method: Rules.EnableRule
+* JSON RPC method: `Rules.EnableRule`
 * Description: Enable the rule with the given `{ruleId}`
 * Request:
         
@@ -865,7 +865,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `POST /api/v1/rules/{ruleId}/disable`
 
-* JSON RPC method: Rules.DisableRule
+* JSON RPC method: `Rules.DisableRule`
 * Description: Disable the rule with the given `{ruleId}`
 * Request:
         
@@ -887,7 +887,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `POST /api/v1/rules/{ruleId}/executeactions`
 
-* JSON RPC method: Rules.ExecuteActions
+* JSON RPC method: `Rules.ExecuteActions`
 * Description: Execute the actions of the rule with the given `{ruleId}`
 * Request:
         
@@ -909,7 +909,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `POST /api/v1/rules/{ruleId}/executeexitactions`
 
-* JSON RPC method: Rules.ExecuteExitActions
+* JSON RPC method: `Rules.ExecuteExitActions`
 * Description: Execute the exit actions of the rule with the given `{ruleId}`
 * Request:
         
@@ -937,7 +937,7 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
 -----------------------------------------------------
 ### `GET /api/v1/logs?filter={logFilter}`
 
-* JSON RPC method: Logging.GetLogEntries
+* JSON RPC method: `Logging.GetLogEntries`
 * Description: Get the LogEntries matching the given filter. 
 * Optional parameters:
     
