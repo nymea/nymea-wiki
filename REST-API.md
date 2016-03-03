@@ -20,6 +20,10 @@ Http Protocol version: `HTTP/1.1`
 In order to get notifications for your client application, 
 please take a look at the websocket server.
 
+The references in the API `$ref:` to certain types correspond the JSON RPC API types which can be found here:
+
+http://dev.guh.guru/jsonrpc.html#newest-json-rpc-api
+
 =====================================================
 ## Methods
 
