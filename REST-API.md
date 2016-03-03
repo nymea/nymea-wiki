@@ -309,8 +309,8 @@ For the full error list please checkout the [JSON-RPC documentation](http://dev.
         Content-Type: application/json; charset="utf-8";
 
         {
-            "pairingTransactionId": "Uuid"
-            "o:secret": "String",
+            "pairingTransactionId": "Uuid",
+            "o:secret": "String"
         }
                 
 * Response:
