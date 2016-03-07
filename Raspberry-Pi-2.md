@@ -29,7 +29,7 @@ Once you have downloaded the image you can unzip the file:
 > **Note:** Please replace `sdX` with the device of your SD card. You can use `lsblk` to check which device is your SD card. 
 
 
-    $ sudo dd if=2016-02-09-guh-ubuntu-rpi2-vivid.img of=/dev/sdX bs=1M
+    $ sudo dd if=2016-03-07-guh-ubuntu-16.04-armhf-raspberry-pi-2.zip of=/dev/sdX bs=1M
 
 Once the process is finished you can insert the micro SD card into the Raspberry Pi 2, connect the ethernet cable and power it on.
 
