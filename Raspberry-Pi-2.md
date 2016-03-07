@@ -16,11 +16,11 @@ https://github.com/guh/guh-image-builder
 
 Download the image:
 
-    $ wget http://guh.guru/downloads/rpi2/2016-02-09-guh-ubuntu-rpi2-vivid.zip
+    $ wget http://guh.guru/downloads/rpi2/2016-03-07-guh-ubuntu-16.04-armhf-raspberry-pi-2.zip
 
 Once you have downloaded the image you can unzip the file:
    
-     $ unzip 2016-02-09-guh-ubuntu-rpi2-vivid.zip
+     $ unzip 2016-03-07-guh-ubuntu-16.04-armhf-raspberry-pi-2.zip
 
 
 -----------------------------------------------------
@@ -28,9 +28,6 @@ Once you have downloaded the image you can unzip the file:
 
 > **Note:** Please replace `sdX` with the device of your SD card. You can use `lsblk` to check which device is your SD card. 
 
-    $ sudo bmaptool copy --bmap 2016-02-09-guh-ubuntu-rpi2-vivid.bmap 2016-02-09-guh-ubuntu-rpi2-vivid.img /dev/sdX
-
-If you have problems with `bmaptool` you can also flash the image directly with `dd`:
 
     $ sudo dd if=2016-02-09-guh-ubuntu-rpi2-vivid.img of=/dev/sdX bs=1M
 
@@ -41,13 +38,13 @@ Once the process is finished you can insert the micro SD card into the Raspberry
 ### Login 
 You can try to connect to the Raspberry Pi 2 using the hostname of the device (`guh`):
 
-    $ ssh guh@guh.local    # password: ubuntu
+    $ ssh guh@guh.local    # password: guh
 
 Depending on the network setup `avahi` sometimes does not work. In that case you can connect to the device using the ip address:
 
 > **Note:** Please replace `192.168.0.X` with the ip of your Raspberry Pi 2.
 
-    $ ssh guh@192.168.0.X    # password: ubuntu
+    $ ssh guh@192.168.0.X    # password: guh
 
 Please make an update on the new system to make sure there is the newest version of `guh` installed:
 
@@ -89,7 +86,7 @@ Once you have selected your timezone, you can run following command:
     $ passwd
   
     Changing password for guh.
-    (current) UNIX password: ubuntu
+    (current) UNIX password: guh
     Enter new UNIX password:
     Retype new UNIX password:
     passwd: password updated successfully
