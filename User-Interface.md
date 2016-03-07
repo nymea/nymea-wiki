@@ -18,15 +18,36 @@ The web interface is in an early development stage, in a couple of weeks it will
 
 ***
 
-* **Web Interface Start Screen**
-![web interface start screen](https://cloud.githubusercontent.com/assets/5207214/8827351/87b17bd4-308c-11e5-96df-43ba3681fc6c.png)
+* **Web Interface Login Screen**
+
+
+![web interface login screen](images/guhIO_login.pdf =700x)
 
 ***
 
-* **Web Interface Add Device Screen**
-![web interface add device](https://cloud.githubusercontent.com/assets/5207214/8827355/8bec6326-308c-11e5-80e3-83fdef2a2899.png)
+* **Web Interface Device Screen**
+
+
+![web interface device screen](images/guhIO_devices.pdf =700x)
 
 ***
+
+
+* **Web Interface Device Search**
+s
+
+![web interface device screen](images/guhIO_tags.pdf =700x)
+
+***
+
+
+* **Web Interface Dashboard**
+
+![web interface device screen](images/guhIO_dashboard.pdf =700x)
+
+***
+
+
 
 
 
