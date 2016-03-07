@@ -21,29 +21,29 @@ The web interface is in an early development stage, in a couple of weeks it will
 * **Web Interface Login Screen**
 
 
-![web interface login screen](images/guhIO_login.png =700x)
+![web interface login screen](images/guhIO_login.png)
 
 ***
 
 * **Web Interface Device Screen**
 
 
-![web interface device screen](images/guhIO_devices.png =700x)
+![web interface device screen](images/guhIO_devices.png)
 
 ***
 
 
 * **Web Interface Device Search**
-s
 
-![web interface device screen](images/guhIO_tags.png =700x)
+
+![web interface device screen](images/guhIO_tags.png)
 
 ***
 
 
 * **Web Interface Dashboard**
 
-![web interface device screen](images/guhIO_dashboard.png =700x)
+![web interface device screen](images/guhIO_dashboard.png)
 
 ***
 
