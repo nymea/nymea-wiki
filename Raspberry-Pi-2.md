@@ -11,7 +11,7 @@ https://github.com/guh/guh-image-builder
     $ sudo apt-get update
     $ sudo apt-get upgrade
     
-    $ sudo apt-get install zip bmap-tools
+    $ sudo apt-get install zip
 
 
 Download the image:
@@ -24,7 +24,7 @@ Once you have downloaded the image you can unzip the file:
 
 
 -----------------------------------------------------
-### Flash the image to the micro SD card (minimum size 2GB):
+### Flash the image to the micro SD card (minimum size 4GB):
 
 > **Note:** Please replace `sdX` with the device of your SD card. You can use `lsblk` to check which device is your SD card. 
 
