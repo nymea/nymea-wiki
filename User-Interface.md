@@ -1,12 +1,11 @@
 # User Interfaces
 
-Since you are such a smarty pants and has installed guhIO, you are now in the lucky position to choose from various user interfaces. Each of the UI's has it's own advantages.
+Since you are such a smarty pants and has installed guhIO, you are now in the lucky position to choose from two user interfaces. Each of the UI's has it's own advantages.
 
-First, the web interface - control your smart home on your desktop over the browser. It is the most convinient way to do the initial setup of guhIO. 
+First, the webinterface - control your smart home through the browser. It is the most convenient way to do the initial setup of guhIO.
+Smartphone Apps coming soon!
 
-To use a smartphone app is the comfortable way for the everyday use. On the dashboard you have the devices you use the most at a glance. Perfect for remote controling your connected gadgets - remote control outside of your wifi network is currently not working, but will be able soon.
-
-For development and debugging is the Command Line Interface the best choice. Right out of your Terminal you have the tool to call every function of guhIO. To sniff all the data of guhIO is also possible, like reading the log files.
+The best choice for development, debugging or complex rules is the Command Line Interface.
 
 # Web Interface
 
@@ -14,7 +13,7 @@ guhIO has a built in web server. Take the browser that you prefer and type in th
 
 If you don't know how to access the web server, take a look at the [getting started wiki](https://github.com/guh/guh/wiki/Getting-started#access-the-web-interface)
 
-The web interface is in an early development stage, in a couple of weeks it will look more fancy, just look out for updates.
+The web interface is in an early development stage, in a couple of weeks it will look as fancy as the examples on this site, just watch out for updates!
 
 ***
 
@@ -50,29 +49,6 @@ The web interface is in an early development stage, in a couple of weeks it will
 
 
 
-
-# Smartphone App
-
-At the moment there are Apps for Android and iOS in develoment. It will take some time until they can be downloaded in the App-Stores. For the Android users is a prototype [App available](https://guh.guru/downloads/mobileapp/guh-mobile_0.1.0_android-debug.apk).
-
-
-***
-
-* **Settings Screen**
-
-<img src="https://cloud.githubusercontent.com/assets/5207214/8828811/51dc1bec-3094-11e5-8805-b2be415ece97.png" width="35%" height="35%" />
-
-***
-
-* **Device Screen**
-
-<img src="https://cloud.githubusercontent.com/assets/5207214/8829159/720dbf0a-3095-11e5-9b80-6c6c9c05dc1a.png" width="35%" height="35%" />
-
-***
-
-* **Rule Screen**
-
-<img src="https://cloud.githubusercontent.com/assets/5207214/8828873/956c125e-3094-11e5-8970-221f0d8bef89.png" width="35%" height="35%" />
 
 ## Command Line Interface
 --------------------------------------------
