@@ -14,7 +14,7 @@ guhIO has a built in web server. Open your preferred browser and type in the add
 
 If you don't know how to access the web server, take a look at the [getting started wiki](https://github.com/guh/guh/wiki/Getting-started#access-the-web-interface)
 
-The web interface is in an early development stage, in a couple of weeks it will look as fancy as the examples on this site, just watch out for updates!
+The web interface is in an early development stage, in a couple of weeks it will look as fancy as the examples on this site. Just watch out for updates!
 
 ***
 
