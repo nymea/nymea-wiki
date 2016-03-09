@@ -23,9 +23,8 @@
 
 **[API](https://github.com/guh/guh/wiki/REST-API)**
 
-**[[User Interface]]**
+**[[User Interfaces]]**
 * [Web Interface](https://github.com/guh/guh/wiki/User-Interface#web-interface)
-* [Smartphone App](https://github.com/guh/guh/wiki/User-Interface#smartphone-app)
 * [Command Line Interface](https://github.com/guh/guh/wiki/User-Interface#command-line-interface)
 
 **[[Plugins]]**
