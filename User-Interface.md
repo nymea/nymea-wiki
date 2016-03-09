@@ -1,15 +1,16 @@
 # User Interfaces
 
-Since you are such a smarty pants and has installed guhIO, you are now in the lucky position to choose from two user interfaces. Each of the UI's has it's own advantages.
+Since you are such a smarty pants and successfully installed guhIO, you are now in the lucky position to choose from two user interfaces. Each of the UI's has it's own advantages.
 
-First, the webinterface - control your smart home through the browser. It is the most convenient way to do the initial setup of guhIO.
-Smartphone Apps coming soon!
+First the webinterface: control your smart home through the browser. It is the most convenient way to do the initial setup of guhIO.
 
 The best choice for development, debugging or complex rules is the Command Line Interface.
 
+Smartphone Apps coming soon!
+
 # Web Interface
 
-guhIO has a built in web server. Take the browser that you prefer and type in the adress of your device guhIO is running on.
+guhIO has a built in web server. Open your preferred browser and type in the address of your device guhIO is running on.
 
 If you don't know how to access the web server, take a look at the [getting started wiki](https://github.com/guh/guh/wiki/Getting-started#access-the-web-interface)
 
