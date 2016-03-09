@@ -1,6 +1,6 @@
 # User Interfaces
 
-Since you are such a smarty pants and successfully installed guhIO, you are now in the lucky position to choose from two user interfaces. Each of the UI's has it's own advantages.
+Since you are such a smarty pants and successfully installed guhIO, you are now in the lucky position to choose between two user interfaces. Each of the UI's has it's own advantages.
 
 First the webinterface: control your smart home through the browser. It is the most convenient way to do the initial setup of guhIO.
 
