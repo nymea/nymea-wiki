@@ -73,7 +73,7 @@ Once, the installation is finished you continue with the [[Getting started]] ins
 If you want a fresh, new and minimal installation of *guh* on the [Raspberry Pi](http://www.raspberrypi.org/), we recommend to this tutorial, which will install everything you need to run *guh*. Basically you just need to do following three steps:
 
 1. Delete all partitions of the SD card (minimal size of 1GB) and create a new single `FAT32` partition.
-2. Mount the partition and unzip the latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-raspbian-netinstall/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.7.zip) file on it.
+2. Mount the partition and unzip the latest [guh-netinstall.zip](http://jenkins.guh.guru/job/build-raspbian-netinstall/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.7.zip) file on it.
 3. Insert the SD card into the Raspberry Pi, connect the network cable, connect the power cable and wait until the Raspberry Pi performs a reboot.
 
 This procedure will install the whole system directly from the internet with the newest packages and a pre-configured *guh* installation.
@@ -196,9 +196,9 @@ Mount the SD card:
     $ sudo mount -t vfat /dev/sdb1 /mnt/raspberry-boot/    
     $ cd /mnt/raspberry-boot/
 
-Download the latest latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-raspbian-netinstall/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.7.zip) file:
+Download the latest latest [guh-netinstall.zip](http://jenkins.guh.guru/job/build-raspbian-netinstall/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.7.zip) file:
 
-    $ sudo wget http://www.guh.guru:8080/job/build-raspbian-netinstall/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.7.zip
+    $ sudo wget http://jenkins.guh.guru/job/build-raspbian-netinstall/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.7.zip
 
 Unzip the file:
 
@@ -233,7 +233,7 @@ In order to prepare the SD card under MacOS, you need to download the SD Formatt
 
     ![SD Formatter MacOS](images/macos-sd-formatter.png)
     
-4. Unzip the latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-raspbian-netinstall/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.7.zip) to the BOOT partition on the SD card:
+4. Unzip the latest [guh-netinstall.zip](http://jenkins.guh.guru/job/build-raspbian-netinstall/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.7.zip) to the BOOT partition on the SD card:
 
     ![SD card directory](images/macos-sd-directory.png)
     
@@ -260,7 +260,7 @@ In order to prepare the SD card under Windows, you need to download the SD Forma
     
     ![SD Formatter Windows Complete](images/windows-sd-formatter-complete.png)
 
-4. Unzip the latest [guh-netinstall.zip](http://www.guh.guru:8080/job/build-raspbian-netinstall/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.7.zip) to the BOOT partition on the SD card:
+4. Unzip the latest [guh-netinstall.zip](http://jenkins.guh.guru/job/build-raspbian-netinstall/lastSuccessfulBuild/artifact/guh-netinstall-v1.0.7.zip) to the BOOT partition on the SD card:
 
     ![SD card directory](images/windows-sd-directory.png)
     
