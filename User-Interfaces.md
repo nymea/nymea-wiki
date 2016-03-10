@@ -7,7 +7,7 @@ First the webinterface: control your smart home through the browser. It is the m
 
 The best choice for development, debugging or complex rules is the Command Line Interface.
 
-Smartphone Apps coming soon!
+Smartphone Apps are available soon!
 
 # Web Interface
 
