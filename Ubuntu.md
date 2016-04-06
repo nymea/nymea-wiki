@@ -1,22 +1,22 @@
 # Install *guh*-core on Ubuntu
 
-In order to have the full feature support we recommend to use guhd on Ubuntu 15.04 Vivid:  
+In order to have the full feature support we recommend to use guhd on Ubuntu 16.04 Xenial:  
 
-|                  | Trusty | Utopic | Vivid |  Wily |
-| ---------------- |:------:|:------:|:-----:|:-----:|
-| guh-webinterface |    ✘   |    ✔   |   ✔   |   ✔   |
-| Websocket server |    ✘   |    ✔   |   ✔   |   ✔   |
-| Bluetooth LE     |    ✘   |    ✘   |   ✔   |   ✔   |
+|                  | Trusty | Utopic | Vivid |  Wily | Xenial |
+| ---------------- |:------:|:------:|:-----:|:-----:|:------:|
+| guh-webinterface |    ✘   |    ✔   |   ✔   |   ✔   |    ✔   |
+| Websocket server |    ✘   |    ✔   |   ✔   |   ✔   |    ✔   |
+| Bluetooth LE     |    ✘   |    ✘   |   ✔   |   ✔   |    ✔   |
 
 
 The repository provides packages for following architectures:
 
-| Ubuntu     | 14.04 Trusty | 14.10 Utopic | 15.04 Vivid  | 15.10 Wily   |
-|:-----------|:------------:|:------------:|:------------:|:------------:|
-| `amd64`    |       ✔      |       ✔      |       ✔      |       ✔      |
-| `i386`     |       ✔      |       ✔      |       ✔      |       ✔      |
-| `armhf`    |       ✘      |       ✘      |       ✔      |       ✔      |
---------------------------------------------------------------------------
+| Ubuntu     | 14.04 Trusty | 14.10 Utopic | 15.04 Vivid  | 15.10 Wily   | 16.04 Xenial |
+|:-----------|:------------:|:------------:|:------------:|:------------:|:------------:|
+| `amd64`    |       ✔      |       ✔      |       ✔      |       ✔      |       ✔      |
+| `i386`     |       ✔      |       ✔      |       ✔      |       ✔      |       ✔      |
+| `armhf`    |       ✘      |       ✘      |       ✔      |       ✔      |       ✔      |
+-----------------------------------------------------------------------------------------
 
 In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
 
@@ -28,11 +28,12 @@ In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.lis
     * `trusty` 
     * `utopic`  
     * `vivid`
-    * `wily` 
+    * `wily`
+    * `xenial` 
 
     Available architectures are `amd64` `i386` and `armhf`.
     
-    > *Note:* please replace `<dist>` with the codename of your Ubuntu distribution. You can get your system version with `lsb_release -a`. 
+    > *Note:* please replace `<dist>` with the codename of your Ubuntu distribution. You can get your system version with `lsb_release -a` or `$ cat /etc/os-release`. 
 
     Copy following lines into the file (with replaced `<dist>`) and save it:
 
