@@ -15,7 +15,7 @@ Depending on the your platform and operating system, you can choose between foll
 | `amd64`    |       ✔      |       ✔      |       ✔      |       ✔      |       ✔      |
 | `i386`     |       ✔      |       ✔      |       ✔      |       ✔      |       ✔      |
 | `armhf`    |       ✘      |       ✘      |       ✔      |       ✔      |       ✔      |
------------------------------------------------------------------------------------------
+
 
 --------------------------------------------
 | Debian     |  Wheezy 7.0  |  Jessie 8.0  |
