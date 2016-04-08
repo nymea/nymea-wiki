@@ -46,8 +46,8 @@ In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.lis
     
     Add the public key of the [*guh*-repo](http://repo.guh.guru/) to your keylist.
     
-        $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 6B9376B0
-    
+        $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key A1A19ED6
+
         
 2. Update your package lists:
     
