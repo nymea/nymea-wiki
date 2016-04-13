@@ -44,7 +44,8 @@ If you already have a Debian *jessie* installation and want to install *guh* you
         guh-dbg - An open source IoT server - debug symbols
         guh-doc - Documentation for the guh package (on-site) - documentation
         guh-plugins - Plugins for guh IoT server
-        guh-tests - Tests for the guh package
+        guh-plugins-merkur - Plugins for guh IoT server - 6LoWPAN Merkur boards
+        guh-tests - Tests and mock plugin for the guh package
         guh-webinterface - Browser based user interface for guh
         guh-webinterface-doc - Documentation of the guh webinterface source code (on-site) - documentation
         guhd - An open source IoT server - daemon
