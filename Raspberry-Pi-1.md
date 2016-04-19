@@ -29,7 +29,7 @@ If you already have a Debian *jessie* installation and want to install *guh* you
 
     Add the public key of the guh-repo to your keylist:
     
-        $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 6B9376B0
+        $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key A1A19ED6
     
 2. Update your package lists:
     
