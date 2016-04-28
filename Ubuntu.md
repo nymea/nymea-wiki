@@ -2,11 +2,11 @@
 
 In order to have the full feature support we recommend to use guhd on Ubuntu 16.04 Xenial:  
 
-|                  | Trusty | Utopic | Vivid |  Wily | Xenial |
-| ---------------- |:------:|:------:|:-----:|:-----:|:------:|
-| guh-webinterface |    ✘   |    ✔   |   ✔   |   ✔   |    ✔   |
-| Websocket server |    ✘   |    ✔   |   ✔   |   ✔   |    ✔   |
-| Bluetooth LE     |    ✘   |    ✘   |   ✔   |   ✔   |    ✔   |
+|                  | Trusty | Vivid |  Wily | Xenial |
+| ---------------- |:------:|:-----:|:-----:|:------:|
+| guh-webinterface |    ✘   |   ✔   |   ✔   |    ✔   |
+| Websocket server |    ✘   |   ✔   |   ✔   |    ✔   |
+| Bluetooth LE     |    ✘   |   ✔   |   ✔   |    ✔   |
 
 
 The repository provides packages for following architectures:
