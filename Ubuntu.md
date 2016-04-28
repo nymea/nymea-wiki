@@ -11,12 +11,12 @@ In order to have the full feature support we recommend to use guhd on Ubuntu 16.
 
 The repository provides packages for following architectures:
 
-| Ubuntu     | 14.04 Trusty | 14.10 Utopic | 15.04 Vivid  | 15.10 Wily   | 16.04 Xenial |
-|:-----------|:------------:|:------------:|:------------:|:------------:|:------------:|
-| `amd64`    |       ✔      |       ✔      |       ✔      |       ✔      |       ✔      |
-| `i386`     |       ✔      |       ✔      |       ✔      |       ✔      |       ✔      |
-| `armhf`    |       ✘      |       ✘      |       ✔      |       ✔      |       ✔      |
------------------------------------------------------------------------------------------
+| Ubuntu     | 14.04 Trusty | 15.04 Vivid  | 15.10 Wily   | 16.04 Xenial |
+|:-----------|:------------:|:------------:|:------------:|:------------:|
+| `amd64`    |       ✔      |       ✔      |       ✔      |       ✔      |
+| `i386`     |       ✔      |       ✔      |       ✔      |       ✔      |
+| `armhf`    |       ✘      |       ✔      |       ✔      |       ✔      |
+--------------------------------------------------------------------------
 
 In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
 
