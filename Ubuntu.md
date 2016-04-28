@@ -26,7 +26,7 @@ In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.lis
         
     In the repository are following distributions available:
     * `trusty` 
-    * `utopic` (stop support: 29.04.2016)
+    * `utopic` (end of support: 29.04.2016)
     * `vivid`
     * `wily`
     * `xenial` 
