@@ -18,10 +18,10 @@ In order to get help you can type in the terminal `guhd -h`:
     device available in the system and create individual scenes and behaviours 
     for your environment.
 
-    guhd 0.7.0 (C) 2014-2015 guh
+    guhd 0.7.1 (C) 2014-2016 guh
     Released under the GNU GENERAL PUBLIC LICENSE Version 2.
 
-    API version: 34
+    API version: 40
 
     Options:
       -h, --help       Displays this help.
