@@ -1,22 +1,13 @@
 # Install *guh*-core on Ubuntu
 
-In order to have the full feature support we recommend to use guhd on Ubuntu 16.04 Xenial:  
-
-|                  | Trusty | Vivid |  Wily | Xenial |
-| ---------------- |:------:|:-----:|:-----:|:------:|
-| guh-webinterface |    ✘   |   ✔   |   ✔   |    ✔   |
-| Websocket server |    ✘   |   ✔   |   ✔   |    ✔   |
-| Bluetooth LE     |    ✘   |   ✔   |   ✔   |    ✔   |
-
-
 The repository provides packages for following architectures:
 
-| Ubuntu     | 14.04 Trusty | 15.04 Vivid  | 15.10 Wily   | 16.04 Xenial |
-|:-----------|:------------:|:------------:|:------------:|:------------:|
-| `amd64`    |       ✔      |       ✔      |       ✔      |       ✔      |
-| `i386`     |       ✔      |       ✔      |       ✔      |       ✔      |
-| `armhf`    |       ✘      |       ✔      |       ✔      |       ✔      |
---------------------------------------------------------------------------
+| Ubuntu     | 15.04 Vivid  | 15.10 Wily   | 16.04 Xenial |
+|:-----------|:------------:|:------------:|:------------:|
+| `amd64`    |       ✔      |       ✔      |       ✔      |
+| `i386`     |       ✔      |       ✔      |       ✔      |
+| `armhf`    |       ✔      |       ✔      |       ✔      |
+-----------------------------------------------------------
 
 In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
 
@@ -25,7 +16,7 @@ In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.lis
         $ sudo nano /etc/apt/sources.list.d/guh.list
         
     In the repository are following distributions available:
-    * `trusty` 
+    * `trusty` (end of support: 10.05.2016)
     * `utopic` (end of support: 29.04.2016)
     * `vivid`
     * `wily`
@@ -62,6 +53,7 @@ In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.lis
         guh-dbg - An open source IoT server - debug symbols
         guh-doc - Documentation for the guh package (on-site) - documentation
         guh-plugins - Plugins for guh IoT server
+        guh-plugins-maker - Plugins for guh IoT server - for maker, tinker and hackers
         guh-plugins-merkur - Plugins for guh IoT server - 6LoWPAN Merkur boards
         guh-tests - Tests and mock plugin for the guh package
         guh-webinterface - Browser based user interface for guh
