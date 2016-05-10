@@ -3,6 +3,7 @@ This is the roadmap for the guhd server. The full change log can be found [here]
 ### V 0.8.0 (current development)
 * Tag system
 * ~~User authentication~~
+* ~~ZeroConf support~~
 * Remote access
 * Basic system settings
 
