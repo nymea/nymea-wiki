@@ -24,7 +24,7 @@ If you don't know where the bug occurs, please use the *guh*-daemon issues link.
 
         $ guhd -n -d <DebugCategory>
 
-2. Make shore, there is only one instance of `guhd` running on your system, otherwise they will block each others ports.
+2. Make sure, there is only one instance of `guhd` running on your system, otherwise they will block each others ports.
 3. Try to use the [guh-cli](https://github.com/guh/guh/wiki/guh-cli) (which is communicating directly with the JSON-RPC API)
 4. If you have made an upgrade of guh, a plugin configuration might have changed. Try to reset the configurations (see [here](https://github.com/guh/guh/wiki/Configuration)) and restart the guh daemon.
 
