@@ -1,7 +1,7 @@
 # Install *guh* on the Raspberry Pi 2
 --------------------------------------------
 
-This tutorial shows you how to install *guh* on the [Raspberry Pi 2](https://www.raspberrypi.org/documentation/hardware/raspberrypi/models/README.md). The easiest and recommended way is to use the preconfigured image provided by *guh*. You can find the latest image [here](http://guh.guru/downloads/rpi2/2016-03-07-guh-ubuntu-16.04-armhf-raspberry-pi-2.zip). This image was build with the `guh-image-builder` which can be found here:
+This tutorial shows you how to install *guh* on the [Raspberry Pi 2](https://www.raspberrypi.org/documentation/hardware/raspberrypi/models/README.md). The easiest and recommended way is to use the preconfigured image provided by *guh*. You can find the latest image [here](http://guh.guru/downloads/rpi2/2016-06-27-guh-ubuntu-16.04-armhf-raspberry-pi-2.zip). This image was build with the `guh-image-builder` which can be found here:
 
 https://github.com/guh/guh-image-builder
 
@@ -16,11 +16,11 @@ https://github.com/guh/guh-image-builder
 
 Download the image:
 
-    $ wget http://guh.guru/downloads/rpi2/2016-03-07-guh-ubuntu-16.04-armhf-raspberry-pi-2.zip
+    $ wget http://guh.guru/downloads/rpi2/2016-06-27-guh-ubuntu-16.04-armhf-raspberry-pi-2.zip
 
 Once you have downloaded the image you can unzip the file:
    
-     $ unzip 2016-03-07-guh-ubuntu-16.04-armhf-raspberry-pi-2.zip
+     $ unzip 2016-06-27-guh-ubuntu-16.04-armhf-raspberry-pi-2.zip
 
 
 -----------------------------------------------------
@@ -29,7 +29,7 @@ Once you have downloaded the image you can unzip the file:
 > **Note:** Please replace `sdX` with the device of your SD card. You can use `lsblk` to check which device is your SD card. 
 
 
-    $ sudo dd if=2016-03-07-guh-ubuntu-16.04-armhf-raspberry-pi-2.zip of=/dev/sdX bs=1M
+    $ sudo dd if=2016-06-27-guh-ubuntu-16.04-armhf-raspberry-pi-2.img of=/dev/sdX bs=1M
 
 Once the process is finished you can insert the micro SD card into the Raspberry Pi 2, connect the ethernet cable and power it on.
 
