@@ -1,1 +1,1 @@
-[[Home]] | [[Install]] | [[Getting started]] | [[Configuration]] | [API](https://github.com/guh/guh/wiki/REST-API) | [[User Interfaces]] | [[Plugins]] | [[FAQ]] | [[License]]
+[[Home]] | [[Install]] | [[Getting started]] | [[Configuration]] | [API](https://github.com/guh/guh/wiki/REST-API) | [[User Interfaces]] | [Plugins](http://dev.guh.guru/plugins.html) | [[FAQ]] | [[License]]
