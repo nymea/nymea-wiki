@@ -33,12 +33,7 @@
 
 * **[[User Interfaces]]**
 
-* **[[Plugins]]**
-
-* **[[Special Plugins]]**
-    * [[Mockdevice]]
-    * [[Boblightd]]
-    * [[Lirc]]
+* **[Plugins](http://dev.guh.guru/plugins.html)**
 
 * **[[Community]]**
 
