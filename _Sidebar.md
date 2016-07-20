@@ -27,13 +27,8 @@
 * [Web Interface](https://github.com/guh/guh/wiki/User-Interfaces#web-interface)
 * [Command Line Interface](https://github.com/guh/guh/wiki/User-Interfaces#command-line-interface)
 
-**[[Plugins]]**
+**[Plugins](http://dev.guh.guru/plugins.html)**
 
-**[[Special Plugins]]**
-* [[Mockdevice]]
-* [[Boblightd]]
-* [[Lirc]]
-    
 **[[Community]]**
 
 **[[FAQ]]**
