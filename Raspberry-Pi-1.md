@@ -1,3 +1,6 @@
+# **Important: Raspberry Pi 1 is no longer supported!**
+--------------------------------------------
+
 # Install *guh* on the Raspberry Pi B
 --------------------------------------------
 
