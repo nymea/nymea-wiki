@@ -4,7 +4,7 @@ This tutorial shows you how to compile *guh*.
 
 *guh* is written in [Qt](http://qt-project.org/) which is a full development framework with tools designed to streamline the creation of applications and user interfaces for desktop, embedded, and mobile platforms. With Qt, you can reuse code efficiently to target multiple platforms with one code base.
 
-**You need a Qt version >= 5.2**
+**You need a Qt version >= 5.3**
 
 Officially is *guh* only supported on Linux platforms, which means this guide is for Linux users only.
 
@@ -180,10 +180,5 @@ Once you call `make install` all project output files will be installed in the c
 
         $ cd build-guh
         $ make licensecheck
-
-#### Pack all depending libs to a folder
-
-        $ cd build-guh
-        $ make packlibs
 
 
