@@ -145,27 +145,13 @@ If you want to compile *guh* witout the test packages you can configure qmake li
     
 > **Note:** this will shorten the compilation time significantly.
 
-#### Compile guh with *boblightd* support
-
-        $ qmake ../guh/ CONFIG+=boblight
-    
-If you want to compile *guh* with the boblightd plugin, you need to install the boblight libs first.
-
-> **Note:**If the boblight libs could not be found, you need to export the library path:
-    
-        $ export LD_LIBRARY_PATH=/usr/local/lib/
-        
-To make it permanent, you can add this line to the `/etc/bash.bashrc` file. 
-
-See also: [[Boblightd]]
-
-#### Compile with *RF433 GPIO* support
-
-        qmake ../guh/ CONFIG+=enable433gpio
-    
 #### Compile with *coverage*
 
         qmake ../guh/ CONFIG+=coverage
+
+#### Compile guh using ccache
+
+        qmake ../guh/ CONFIG+=ccache
 
 #### Compile guh for snappy package
 
@@ -189,7 +175,6 @@ Once you call `make install` all project output files will be installed in the c
 
         $ cd build-guh
         $ make test
-
 
 #### Check source code for missing license/copyright header
 
