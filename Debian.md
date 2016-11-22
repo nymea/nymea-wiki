@@ -6,31 +6,32 @@
 | `amd64`    |       ✘      |       ✔      |
 | `i386`     |       ✘      |       ✔      |
 | `armhf`    |       ✘      |       ✔      |
+| `arm64`    |       ✘      |       ✔      |
 --------------------------------------------
 
 In order to install *guh* on Debian you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
 
-1. Create the [*guh*-repository](http://repo.guh.guru/) list file:
+1. Create the [*guh*-repository](http://repository.guh.io) list file:
         
         $ sudo nano /etc/apt/sources.list.d/guh.list
         
     In the repository are following distributions available:
     * `jessie` 
 
-    Available architectures are `amd64` `i386` and `armhf`.
+    Available architectures are `amd64` `i386` `armhf` and `arm64`.
     
     > *Note:* You can get your system version with `cat /etc/os-release`. 
 
     Copy following lines into the file and save it:
 
         ## guh repo
-        deb http://repo.guh.guru jessie main
-        deb-src http://repo.guh.guru jessie main
+        deb http://repository.guh.io jessie main
+        deb-src http://repository.guh.io jessie main
         
 
-    > **Alternative:** `$ echo -e "\n## guh repo\ndeb http://repo.guh.guru jessie main\ndeb-src http://repo.guh.guru jessie main" | sudo tee /etc/apt/sources.list.d/guh.list`
+    > **Alternative:** `$ echo -e "\n## guh repo\ndeb http://repository.guh.io jessie main\ndeb-src http://repository.guh.io jessie main" | sudo tee /etc/apt/sources.list.d/guh.list`
     
-    Add the public key of the [*guh*-repo](http://repo.guh.guru/) to your keylist.
+    Add the public key of the [*guh*-repo](http://repository.guh.io) to your keylist.
     
         $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key A1A19ED6
     
