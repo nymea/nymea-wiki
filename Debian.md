@@ -1,5 +1,7 @@
 # Install *guh*-core on Debian
 
+Debian Wheezy will not be supported since there are missing important Qt libs.
+
 --------------------------------------------
 | Debian     |  Wheezy 7.0  |  Jessie 8.0  |
 |:-----------|-------------:|:------------:|
