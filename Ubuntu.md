@@ -2,13 +2,13 @@
 
 The repository provides packages for following architectures:
 
-| Ubuntu     | 15.04 Vivid  | 15.10 Wily   | 16.04 Xenial |
-|:-----------|:------------:|:------------:|:------------:|
-| `amd64`    |       ✔      |       ✔      |       ✔      |
-| `i386`     |       ✔      |       ✔      |       ✔      |
-| `armhf`    |       ✔      |       ✔      |       ✔      |
-| `arm64`    |       ✔      |       ✔      |       ✔      |
------------------------------------------------------------
+| Ubuntu     | 15.10 Wily   | 16.04 Xenial |
+|:-----------|:------------:|:------------:|
+| `amd64`    |       ✔      |       ✔      |
+| `i386`     |       ✔      |       ✔      |
+| `armhf`    |       ✔      |       ✔      |
+| `arm64`    |       ✔      |       ✔      |
+--------------------------------------------
 
 In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
 
@@ -19,7 +19,7 @@ In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.lis
     In the repository are following distributions available:
     * ~~`trusty`~~ (end of support: 10.05.2016)
     * ~~`utopic`~~ (end of support: 29.04.2016)
-    * `vivid`
+    * ~~`vivid`~~ (end of support: 16.02.2017)
     * `wily`
     * `xenial` 
 
