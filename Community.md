@@ -1,18 +1,13 @@
 # Community
 
-Threre are various channels were you can find the guh team and the guhIO community.
+There are various channels were you can find the guh team and the guhIO community.
 
 If you want to present your project or want to share your newest developments you can share it in the
 [Google+ Community](https://plus.google.com/u/0/communities/113467056514652214831). There you can also find the latest news and information about guhIO.
 
 If you are facing any troubles, don't hesitate to reach out for us or the community members, we will be pleased to help you:
 
-* [Mailinglist](https://groups.google.com/forum/#!forum/guhio) - guhio@googlegroups.com
-* IRC Channel `#guh` on *freenode.net*
-
-Please check out our FAQ or the [Google+ Group](https://groups.google.com/forum/#!forum/guhio) if your question has already been answered.
-
-From time to time the guh team is hosting and attending meet-ups and workshops. If you want to meet the developers of guhIO you can find us there. The next events are listed [here](https://plus.google.com/u/0/communities/113467056514652214831/events).
+[Gitter Community](https://gitter.im/guh-io)
 
 # Reporting bugs
 --------------------------------------------
