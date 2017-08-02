@@ -1,13 +1,12 @@
 # User interfaces
 --------------------------------------------
 
-Since you are such a smarty pants and successfully installed guhIO, you are now in the lucky position to choose between two user interfaces. Each of the UI's has it's own advantages.
+Since you have successfully installed guhIO, you are now in the lucky position to choose between two user interfaces. Each of the UI's has it's own advantages.
 
-First the webinterface: control your smart home through the browser. It is the most convenient way to interact with guhIO.
+The web interface is currently the most convenient way to interact with guhIO.
+For development, debugging or complex rules we recommend to use the command line interface.
 
-The best choice for development, debugging or complex rules is the Command Line Interface.
-
-Smartphone Apps are available soon!
+Smartphone Apps are available soon! 
 
 # Web Interface
 
