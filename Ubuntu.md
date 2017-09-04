@@ -20,8 +20,9 @@ In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.lis
     * ~~`trusty`~~ (end of support: 10.05.2016)
     * ~~`utopic`~~ (end of support: 29.04.2016)
     * ~~`vivid`~~ (end of support: 16.02.2017)
-    * `wily`
+    * ~~`wily`~~ (end of support: 01.09.2017)
     * `xenial` 
+    * `zesty` 
 
     Available architectures are `amd64` `i386` and `armhf`.
     
