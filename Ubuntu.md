@@ -24,7 +24,7 @@ In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.lis
     * `xenial` 
     * `zesty` 
 
-    Available architectures are `amd64` `i386` and `armhf`.
+    Available architectures are `amd64` `i386`, `armhf` and `arm64`.
     
     > *Note:* please replace `<dist>` with the codename of your Ubuntu distribution. You can get your system version with `lsb_release -a` or `$ cat /etc/os-release`. 
 
