@@ -2,7 +2,7 @@
 
 The repository provides packages for following architectures:
 
-| Ubuntu     | 15.10 Wily   | 16.04 Xenial |
+| Ubuntu     | 16.04 Xenial | 17.04 Zesty  | 
 |:-----------|:------------:|:------------:|
 | `amd64`    |       ✔      |       ✔      |
 | `i386`     |       ✔      |       ✔      |
