@@ -55,8 +55,10 @@ In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.lis
         guh-dbg - An open source IoT server - debug symbols
         guh-doc - Documentation for the guh package (on-site) - documentation
         guh-plugins - Plugins for guh IoT server
-        guh-plugins-maker - Plugins for guh IoT server - for maker, tinker and hackers
-        guh-plugins-merkur - Plugins for guh IoT server - 6LoWPAN Merkur boards
+        guh-plugins-maker - Plugins for guh IoT server - Meta package for makers, tinkers and hackers
+        guh-plugins-merkurboard - Plugins for guh IoT server - Meta package for 6LoWPAN Merkur boards
+        guh-plugins-433mhz - Plugins for guh IoT server - Meta package for RF 433 MHz plugins
+        guh-plugins-all - Plugins for guh IoT server - Meta package for all plugins
         guh-tests - Tests and mock plugin for the guh package
         guh-webinterface - Browser based user interface for guh
         guh-webinterface-doc - Documentation of the guh webinterface source code (on-site) - documentation
@@ -67,7 +69,7 @@ In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.lis
 
 3. Install *guh* with following command:
     
-        $ sudo apt-get install guh guh-cli guh-webinterface
+        $ sudo apt-get install guh guh-plugins guh-cli guh-webinterface
         
     The repository contains always the latest stable build of the *guh* `master` branch. 
     If you want to install the source code you can install:
