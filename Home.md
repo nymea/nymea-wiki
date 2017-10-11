@@ -1,4 +1,4 @@
-![guhIO](http://guh.guru/downloads/press/guhIO.png)
+![nymea](https://www.guh.io/downloads/media/logo/nymea_github.png)
 
 # Welcome to the *guhIO* wiki!
 --------------------------------------------
