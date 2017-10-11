@@ -1,4 +1,4 @@
-![nymea](https://www.guh.io/downloads/media/logo/nymea_github.png)
+![guh](https://www.guh.io/downloads/media/logo/guh_gh.png)
 
 Welcome to *guhIO*
 *guhIO* is an advanced open IoT gateway service written in Qt. 
