@@ -1,7 +1,6 @@
 ![nymea](https://www.guh.io/downloads/media/logo/nymea_github.png)
 
-# Welcome to the *guhIO* wiki!
---------------------------------------------
+Welcome to *guhIO*
 *guhIO* is an advanced open IoT gateway service written in Qt. 
 The main purpose is API management, but it can do much more. It is easy to attach new APIs (virtual connectors) and logically link data from any datapoint by a rule engine. Data from any source is stored locally and can be collected by simple JSON or REST APIs.
 
