@@ -2,7 +2,10 @@
 
 # Welcome to the *guhIO* wiki!
 --------------------------------------------
-*guhIO* (/[guːh]/ - pronounced German and sounds like "*goo*") is an open source IoT (Internet of Things) server, which allows to control a lot of different devices from many different manufacturers. With the powerful rule engine you are able to connect any device available in the system and create individual scenes and behaviours for your environment.
+*guhIO* is an advanced open IoT gateway service written in Qt. 
+The main purpose is API management, but it can do much more. It is easy to attach new APIs (virtual connectors) and logically link data from any datapoint by a rule engine. Data from any source is stored locally and can be collected by simple JSON or REST APIs.
+
+The project is initiated and maintained by the Founders of guh GmbH in Austria, who run the startup www.guh.io and deliver full-stack IoT services where this framework plays an important role.
 
 --------------------------------------------
 # Table of contents
