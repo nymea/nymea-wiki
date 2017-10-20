@@ -2,13 +2,13 @@
 
 The repository provides packages for following architectures:
 
-| Ubuntu     | 16.04 Xenial | 17.04 Zesty  | 
-|:-----------|:------------:|:------------:|
-| `amd64`    |       ✔      |       ✔      |
-| `i386`     |       ✔      |       ✔      |
-| `armhf`    |       ✔      |       ✔      |
-| `arm64`    |       ✔      |       ✔      |
---------------------------------------------
+| Ubuntu     | 16.04 Xenial | 17.04 Zesty  | 17.10 Artful |
+|:-----------|:------------:|:------------:|:------------:|
+| `amd64`    |       ✔      |       ✔      |       ✔      |
+| `i386`     |       ✔      |       ✔      |       ✔      |
+| `armhf`    |       ✔      |       ✔      |       ✔      |
+| `arm64`    |       ✔      |       ✔      |       ✔      |
+-----------------------------------------------------------
 
 In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
 
