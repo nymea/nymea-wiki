@@ -2,14 +2,14 @@
 
 Debian Wheezy will not be supported since there are missing important Qt libs.
 
---------------------------------------------
-| Debian     |  Wheezy 7.0  |  Jessie 8.0  |
-|:-----------|-------------:|:------------:|
-| `amd64`    |       ✘      |       ✔      |
-| `i386`     |       ✘      |       ✔      |
-| `armhf`    |       ✘      |       ✔      |
-| `arm64`    |       ✘      |       ✔      |
---------------------------------------------
+------------------------------------------------------------
+| Debian     |  Wheezy 7.0  |  Jessie 8.0  |  Stretch 9.0  |
+|:-----------|-------------:|:------------:|:-------------:|
+| `amd64`    |       ✘      |       ✔      |       ✔       |
+| `i386`     |       ✘      |       ✔      |       ✔       |
+| `armhf`    |       ✘      |       ✔      |       ✔       |
+| `arm64`    |       ✘      |       ✔      |       ✔       |
+------------------------------------------------------------
 
 In order to install *guh* on Debian you need to create the `/etc/apt/sources.list.d/guh.list` file and add the *guh*-repository:
 
@@ -19,6 +19,7 @@ In order to install *guh* on Debian you need to create the `/etc/apt/sources.lis
         
     In the repository are following distributions available:
     * `jessie` 
+    * `stretch`
 
     Available architectures are `amd64` `i386` `armhf` and `arm64`.
     
