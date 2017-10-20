@@ -23,6 +23,7 @@ In order to install *guh* on Ubuntu you need to create the `/etc/apt/sources.lis
     * ~~`wily`~~ (end of support: 01.09.2017)
     * `xenial` 
     * `zesty` 
+    * `artful`
 
     Available architectures are `amd64` `i386`, `armhf` and `arm64`.
     
