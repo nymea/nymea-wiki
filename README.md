@@ -1,1 +1,6 @@
-docs/en/01.landing-page/01.index.md
+# nymea-wiki
+--------------------------
+
+This repository contains the markdown wiki of the nymea core documentation. 
+
+An online version of this wiki can be found [here](https://nymea.io/wiki/nymea/master)
