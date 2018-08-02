@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="os_android.svg">
+   sodipodi:docname="os_android.svg"
+   inkscape:export-filename="/home/timon/guh/development/nymea-wiki/docs/en/images/os_android.png"
+   inkscape:export-xdpi="210.9375"
+   inkscape:export-ydpi="210.9375">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -26,16 +29,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="4.1484374"
-     inkscape:cx="57.184847"
+     inkscape:cx="-150.12213"
      inkscape:cy="57.283149"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
      units="px"
-     inkscape:window-width="1366"
-     inkscape:window-height="713"
+     inkscape:window-width="2880"
+     inkscape:window-height="1752"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="48"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -45,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
